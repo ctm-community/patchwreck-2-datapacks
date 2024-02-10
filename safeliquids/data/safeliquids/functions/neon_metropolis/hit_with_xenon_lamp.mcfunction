@@ -1,5 +1,7 @@
 # run this when a player hits a mob with the decay sword
 # note that, this function is ran once per each mob hit, since the advancement triggers per mob!
+# that is also why the xenon_lamp_decay tag is checked, to avoid applying decay to mobs multiple times.
+# That tag is removed from all hostile mobs every tick.
 
 execute if entity @s[advancements={safeliquids:neon_metropolis/hit_with_xenon_lamp={iframes_10=true}}] as @e[type=#minecraft:hostile_mobs,distance=..6, tag=!xenon_lamp_decay,nbt={HurtTime:10s},sort=nearest,limit=1] at @s run function safeliquids:neon_metropolis/decay_mob
 execute if entity @s[advancements={safeliquids:neon_metropolis/hit_with_xenon_lamp={iframes_9=true}}] as @e[type=#minecraft:hostile_mobs,distance=..6, tag=!xenon_lamp_decay,nbt={HurtTime:9s},sort=nearest,limit=1] at @s run function safeliquids:neon_metropolis/decay_mob
