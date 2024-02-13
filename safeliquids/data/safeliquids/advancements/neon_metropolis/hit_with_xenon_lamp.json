@@ -16,7 +16,7 @@
                     }
                 },
                 "entity": {
-                    "type": "#minecraft:hostile_mobs",
+                    "type": "#safeliquids:hostile_mobs",
                     "nbt": "{HurtTime:10s}"
                 }
             }
@@ -37,7 +37,7 @@
                     }
                 },
                 "entity": {
-                    "type": "#minecraft:hostile_mobs",
+                    "type": "#safeliquids:hostile_mobs",
                     "nbt": "{HurtTime:9s}"
                 }
             }
@@ -58,7 +58,7 @@
                     }
                 },
                 "entity": {
-                    "type": "#minecraft:hostile_mobs",
+                    "type": "#safeliquids:hostile_mobs",
                     "nbt": "{HurtTime:8s}"
                 }
             }
@@ -79,7 +79,7 @@
                     }
                 },
                 "entity": {
-                    "type": "#minecraft:hostile_mobs",
+                    "type": "#safeliquids:hostile_mobs",
                     "nbt": "{HurtTime:7s}"
                 }
             }
@@ -100,7 +100,7 @@
                     }
                 },
                 "entity": {
-                    "type": "#minecraft:hostile_mobs",
+                    "type": "#safeliquids:hostile_mobs",
                     "nbt": "{HurtTime:6s}"
                 }
             }
@@ -121,7 +121,7 @@
                     }
                 },
                 "entity": {
-                    "type": "#minecraft:hostile_mobs",
+                    "type": "#safeliquids:hostile_mobs",
                     "nbt": "{HurtTime:5s}"
                 }
             }
@@ -142,7 +142,7 @@
                     }
                 },
                 "entity": {
-                    "type": "#minecraft:hostile_mobs",
+                    "type": "#safeliquids:hostile_mobs",
                     "nbt": "{HurtTime:4s}"
                 }
             }
@@ -163,7 +163,7 @@
                     }
                 },
                 "entity": {
-                    "type": "#minecraft:hostile_mobs",
+                    "type": "#safeliquids:hostile_mobs",
                     "nbt": "{HurtTime:3s}"
                 }
             }
@@ -184,7 +184,7 @@
                     }
                 },
                 "entity": {
-                    "type": "#minecraft:hostile_mobs",
+                    "type": "#safeliquids:hostile_mobs",
                     "nbt": "{HurtTime:2s}"
                 }
             }
@@ -205,7 +205,7 @@
                     }
                 },
                 "entity": {
-                    "type": "#minecraft:hostile_mobs",
+                    "type": "#safeliquids:hostile_mobs",
                     "nbt": "{HurtTime:1s}"
                 }
             }

@@ -1,1 +1,1 @@
-tag @e[type=#minecraft:hostile_mobs] remove xenon_lamp_decay
+tag @e[type=#safeliquids:hostile_mobs] remove xenon_lamp_decay
