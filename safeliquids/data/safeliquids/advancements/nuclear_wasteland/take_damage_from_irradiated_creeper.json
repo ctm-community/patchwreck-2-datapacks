@@ -1,24 +1,24 @@
 {
-    "criteria":{
-        "ouch":{
-            "trigger":"entity_hurt_player",
-            "conditions":{
-                "damage":{
-                    "source_entity": {
-                        "type":"creeper",
-                        "nbt": "{Tags:[irradiated.creeper]}",
-                        "distance":{
-                            "absolute":{
-                                "max":5
-                            }
-                        }
-                    },
-                    "blocked": false
-                }
+  "criteria": {
+    "ouch": {
+      "trigger": "entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "source_entity": {
+            "type": "creeper",
+            "nbt": "{Tags:[irradiated.creeper]}",
+            "distance": {
+              "absolute": {
+                "max": 5
+              }
             }
+          },
+          "blocked": false
         }
-    },
-    "rewards":{
-        "function":"safeliquids:nuclear_wasteland/irradiated"
+      }
     }
+  },
+  "rewards": {
+    "function": "safeliquids:nuclear_wasteland/irradiated"
+  }
 }
