@@ -1,0 +1,29 @@
+{
+  "values": [
+    "#undead",
+    "#raiders",
+    "bee",
+    "blaze",
+    "cave_spider",
+    "creeper",
+    "dolphin",
+    "elder_guardian",
+    "ender_dragon",
+    "enderman",
+    "endermite",
+    "ghast",
+    "guardian",
+    "hoglin",
+    "iron_golem",
+    "magma_cube",
+    "piglin",
+    "piglin_brute",
+    "pufferfish",
+    "shulker",
+    "silverfish",
+    "spider",
+    "slime",
+    "vex",
+    "warden"
+  ]
+}

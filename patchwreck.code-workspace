@@ -1,0 +1,44 @@
+{
+  // Add all data packs to folders so that they are properly detected by Data-Pack Helper Plus
+  "folders": [
+    {
+      "path": "./patchwreck",
+      "name": "Patchwreck"
+    },
+    {
+      "path": "./safeliquids",
+      "name": "Safeliquids"
+    },
+    {
+      "path": ".",
+      "name": "Workspace"
+    }
+  ],
+  "settings": {
+    "[json]": {
+      "editor.detectIndentation": false,
+      "editor.indentSize": 2,
+      "editor.tabSize": 2,
+      "editor.formatOnSave": true
+    },
+    "[jsonc]": {
+      "editor.detectIndentation": false,
+      "editor.indentSize": 2,
+      "editor.tabSize": 2,
+      "editor.formatOnSave": true
+    },
+    // Exclude data packs from main workspace to avoid folder duplication
+    "files.exclude": {
+      "patchwreck": true,
+      "safeliquids": true
+    },
+    "prettier.tabWidth": 2
+  },
+  "extensions": {
+    "recommendations": [
+      "esbenp.prettier-vscode",
+      "minecraftcommands.syntax-mcfunction",
+      "spgoding.datapack-language-server"
+    ]
+  }
+}
