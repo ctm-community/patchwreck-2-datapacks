@@ -1,0 +1,28 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "offhand": {
+                  "nbt": "{bloodbeet: 1b}"
+                }
+              }
+            }
+          }
+        ],
+        "item": {
+          "items": ["minecraft:beetroot"]
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "manoloesmanolo:enchanted_grove/bloodbeet/eating"
+  }
+}

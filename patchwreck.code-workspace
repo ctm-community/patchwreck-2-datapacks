@@ -6,6 +6,10 @@
       "name": "Patchwreck"
     },
     {
+      "path": "./manoloesmanolo",
+      "name": "Manoloesmanolo"
+    },
+    {
       "path": "./safeliquids",
       "name": "Safeliquids"
     },
@@ -30,6 +34,7 @@
     // Exclude data packs from main workspace to avoid folder duplication
     "files.exclude": {
       "patchwreck": true,
+      "manoloesmanolo": true,
       "safeliquids": true
     },
     "prettier.tabWidth": 2
