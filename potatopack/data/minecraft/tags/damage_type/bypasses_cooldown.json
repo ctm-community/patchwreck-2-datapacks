@@ -1,0 +1,7 @@
+{
+  "values": [
+    "game:scale_no_i_frames_no_knockback",
+    "game:scale_no_i_frames_knockback",
+    "game:no_scale_no_i_frames_knockback",
+    "game:no_scale_no_i_frames_no_knockback"  ]
+}
