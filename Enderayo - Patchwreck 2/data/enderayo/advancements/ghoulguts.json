@@ -1,0 +1,24 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:consume_item",
+        "conditions": {
+          "player": {
+            "equipment": {
+              "chest": {
+                "nbt": "{Ghoul:1b}"
+              }
+            }
+          },
+          "item": {
+            "items": [
+              "minecraft:rotten_flesh"
+            ]
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "enderayo:items/ghoulguts"
+    }
+}

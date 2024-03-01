@@ -1,0 +1,1 @@
+$execute as $(selector) at @s run function clm:congospawn

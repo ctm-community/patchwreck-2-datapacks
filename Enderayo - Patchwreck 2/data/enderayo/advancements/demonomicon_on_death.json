@@ -1,0 +1,16 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:entity_killed_player",
+        "conditions": {
+          "player": {
+            "nbt": "{Inventory:[{tag:{Demonomicon:1b}}]}"
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "enderayo:items/demonomicon_on_death"
+    }
+}
+  
