@@ -1,0 +1,2 @@
+kill @s
+item replace entity @p weapon.mainhand with wooden_sword{display:{Name:'{"text":"🍃 Magic Sword 🍃","color":"green","bold":true,"italic":false}',Lore:['{"text":" "}','{"text":"✧ Permutation ✧","color":"dark_gray","italic":false}','{"text":"Drop this item to turn it into another weapon.","color":"gray","italic":false}']},Unbreakable:1b,qqru3kaMSword:1,Enchantments:[{id:"minecraft:fire_aspect",lvl:2s},{id:"minecraft:sharpness",lvl:5s}]} 1
