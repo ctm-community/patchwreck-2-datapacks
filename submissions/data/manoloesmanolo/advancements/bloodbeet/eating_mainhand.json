@@ -23,6 +23,6 @@
     }
   },
   "rewards": {
-    "function": "manoloesmanolo:enchanted_grove/bloodbeet/eating"
+    "function": "manoloesmanolo:bloodbeet/eating"
   }
 }

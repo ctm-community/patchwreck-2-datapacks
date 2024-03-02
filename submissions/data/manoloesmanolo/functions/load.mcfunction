@@ -9,5 +9,4 @@ scoreboard objectives add bloodbeet.stack_count dummy
 scoreboard objectives add bloodbeet.total_count dummy
 scoreboard objectives add bloodbeet.variables dummy
 
-data merge storage manoloesmanolo:enchanted_grove {bloodbeet: {count: 0b, item_slot: "weapon.mainhand"}}
-data merge storage manoloesmanolo:macro {variables: {}, entity: {}}
+data merge storage manoloesmanolo:storage {bloodbeet: {count: 0b, item_slot: "weapon.mainhand"}, variables: {}, entity: {}}

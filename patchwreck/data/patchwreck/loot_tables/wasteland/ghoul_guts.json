@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display: {Name: '{\"text\":\"Ghoul Guts\",\"color\":\"#874E0E\",\"bold\":true,\"italic\":false}', Lore: ['{\"text\":\" \"}', '{\"text\":\"Eating rotten flesh gives you\",\"color\":\"gray\",\"bold\":false,\"italic\":false}', '{\"text\":\"absorption instead of hunger.\",\"color\":\"gray\",\"bold\":false,\"italic\":false}'], color: 6042629}, HideFlags: 196, Unbreakable: 1b, Ghoul: 1b, Enchantments: [{id: \"minecraft:blast_protection\", lvl: 2s}], AttributeModifiers: [{AttributeName: \"generic.armor\", Name: \"generic.armor\", Amount: 6, Operation: 0, UUID: [I; -1347374697, 1862553259, -1981049287, -1376212456], Slot: \"chest\"}, {AttributeName: \"generic.knockback_resistance\", Name: \"generic.knockback_resistance\", Amount: 0.1d, Operation: 0, UUID: [I; 1504099365, 1588871204, -1767808192, -1123747580], Slot: \"chest\"}], Trim: {material: \"minecraft:copper\", pattern: \"minecraft:rib\"}}"
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_count",
+          "count": {
+            "type": "minecraft:score",
+            "target": {
+              "type": "minecraft:fixed",
+              "name": "$item_count"
+            },
+            "score": "patchwreck.variables",
+            "scale": 1
+          }
+        }
+      ]
+    }
+  ]
+}

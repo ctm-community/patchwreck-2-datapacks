@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:shield",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display: {Name: '{\"text\":\"Blue-Eyes White Dragon\",\"color\":\"gold\",\"bold\":true,\"italic\":false}', Lore: ['{\"text\":\" \"}', '{\"text\":\"Ability: Burst Stream of Destruction\",\"color\":\"#086EBD\",\"bold\":false,\"italic\":false}', '{\"text\":\"Sneak + Block an attack to activate (60s Cooldown)\",\"color\":\"gray\",\"bold\":false,\"italic\":true}', '[{\"text\":\"Deal 5\",\"color\":\"gray\",\"bold\":false,\"italic\":false},{\"text\":\"❤\",\"color\":\"red\",\"bold\":false,\"italic\":false},{\"text\":\" of damage in a cone in front of you.\",\"color\":\"gray\",\"bold\":false,\"italic\":false}]']}, HideFlags: 32, Unbreakable: 0b, enderayo.shieldability: 1b, Enchantments: [{id: \"minecraft:mending\", lvl: 1s}], BlockEntityTag: {Base: 12, Patterns: [{Color: 15, Pattern: \"mc\"}, {Color: 1, Pattern: \"bo\"}]}}"
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_count",
+          "count": {
+            "type": "minecraft:score",
+            "target": {
+              "type": "minecraft:fixed",
+              "name": "$item_count"
+            },
+            "score": "patchwreck.variables",
+            "scale": 1
+          }
+        }
+      ]
+    }
+  ]
+}
