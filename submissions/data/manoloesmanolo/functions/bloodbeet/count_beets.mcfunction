@@ -1,4 +1,4 @@
-#> manoloesmanolo:enchanted_grove/bloodbeet/count_beets
+#> manoloesmanolo:bloodbeet/count_beets
 # Count number of beets and leftovers in the player's inventory
 
 execute store result score @s bloodbeet.total_count run clear @s minecraft:beetroot{bloodbeet: 1b} 0

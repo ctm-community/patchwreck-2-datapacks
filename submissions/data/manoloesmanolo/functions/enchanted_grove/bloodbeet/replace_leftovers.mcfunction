@@ -1,4 +1,0 @@
-#> manoloesmanolo:enchanted_grove/bloodbeet/replace_leftovers
-# Replace item in $(item_slot) with 1 Bloodthirsty Beet Leftover
-
-$item replace entity @s $(item_slot) with minecraft:red_dye{display: {Name: '{"text":"❣ - Bloodthirsty Beet Leftovers - ❣","color":"#C40000","bold":true,"italic":false}', Lore: ['{"text":" "}', '[{"text":"💧 ","color":"dark_red","bold":true,"italic":false},{"text":"Sanguine Restauration","color":"dark_gray","bold":false,"italic":false,"underlined":true}]', '{"text":"You don\'t have any beets left! ","color":"gray","italic":false}', '{"text":"Don\'t worry, kill an enemy to","color":"gray","italic":false}', '{"text":"turn the leftovers back to beets!","color":"gray","italic":false}', '{"text":" "}', '{"text":"You feel a strange feeling when","color":"dark_gray"}', '{"text":"you look at the leftovers...","color":"dark_gray"}', '{"text":"Like if they were... Alive?...","color":"dark_gray"}']}, bloodleftover: 1b, Enchantments: [{}]} 1
