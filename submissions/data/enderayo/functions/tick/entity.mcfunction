@@ -1,3 +1,5 @@
+#> enderayo:tick/entity
+
 # Anti-Peacefull spawn buffer
 kill @s[tag=enderayo.temp]
 
@@ -16,12 +18,12 @@ execute as @s[tag=mutantghast] unless score @s enderayo.ghastcd matches ..0 run 
 
 # Bee Battlement
 execute as @s[type=bee,tag=enderayo.angry] at @s run data modify entity @s AngryAt set from entity @p UUID
-execute as @s[type=bee,tag=enderayo.angry,nbt={HasStung:1b}] run kill @s
+execute as @s[type=bee,tag=enderayo.angry,nbt={HasStung: 1b}] run kill @s
 execute as @s[tag=enderayo.battlement] at @s unless entity @e[type=sniffer,distance=..3] run kill @s
 
 # Curse of the Pharaoh
-execute as @s[type=interaction,tag=enderayo.curse,nbt={attack:{}}] at @s run playsound entity.skeleton_horse.death hostile @a[distance=..32] ~ ~ ~ 0.8 0.7
-execute as @s[type=interaction,tag=enderayo.curse,nbt={attack:{}}] at @s run kill @e[tag=enderayo.curse,limit=2,sort=nearest]
+execute as @s[type=interaction,tag=enderayo.curse,nbt={attack: {}}] at @s run playsound entity.skeleton_horse.death hostile @a[distance=..32] ~ ~ ~ 0.8 0.7
+execute as @s[type=interaction,tag=enderayo.curse,nbt={attack: {}}] at @s run kill @e[tag=enderayo.curse,limit=2,sort=nearest]
 execute as @s[type=interaction,tag=enderayo.curse] at @s run particle soul ~ ~ ~ 0.25 0.25 0.25 0.01 3 force @a[distance=..32]
 execute as @s[type=interaction,tag=enderayo.curse] at @s run particle falling_dust sand ~ ~ ~ 1.2 1.2 1.2 0.001 5 normal @a[distance=..32]
 

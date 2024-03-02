@@ -1,9 +1,9 @@
-execute as @s rotated ~90 ~ positioned ^7 ^ ^ run summon marker ~ ~ ~ {UUID:[I;0,83183,0,45],Tags:["enderayo.shieldability"]}
+execute as @s rotated ~90 ~ positioned ^7 ^ ^ run summon marker ~ ~ ~ {UUID: [I; 0, 83183, 0, 45], Tags: ["enderayo.shieldability"]}
 
 execute as @e[type=!player,distance=..7] if entity @e[type=marker,tag=enderayo.shieldability,distance=..7] run damage @s 10 dragon_breath by @p[scores={enderayo.shieldability=1..}]
 
 playsound entity.ender_dragon.growl player @a[distance=..32] ~ ~ ~ 1 0.9
-execute as @s at @s anchored eyes run particle soul_fire_flame ^ ^ ^0.5 2 0.2 2 0.2 100 force 
+execute as @s at @s anchored eyes run particle soul_fire_flame ^ ^ ^0.5 2 0.2 2 0.2 100 force
 
 execute as @s rotated ~45 ~ positioned ^1 ^ ^ run particle electric_spark ~ ~0.1 ~ 1 0.1 1 0.001 20 normal
 execute as @s rotated ~45 ~ positioned ^2 ^ ^ run particle electric_spark ~ ~0.1 ~ 1 0.1 1 0.001 20 normal
@@ -38,4 +38,4 @@ execute as @s rotated ~125 ~ positioned ^7 ^ ^ run particle electric_spark ~ ~0.
 execute as @s rotated ~130 ~ positioned ^7 ^ ^ run particle electric_spark ~ ~0.1 ~ 1 0.1 1 0.001 20 normal
 
 kill 00000000-0001-44ef-0000-00000000002d
-scoreboard players set .cd enderayo.shieldability 1200
+scoreboard players set $cooldown enderayo.shieldability 1200
