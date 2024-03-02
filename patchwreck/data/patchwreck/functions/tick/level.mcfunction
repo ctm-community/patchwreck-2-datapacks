@@ -2,7 +2,8 @@
 # Handle all Patchwreck ticking events
 
 # Run level tick events for sub-packs
-# function placeholder:placeholder/placeholder
+function enderayo:main
+function m97:tick
 
 ##Mob ticking
 execute as @e[type=item,tag=!bloodbeet_check] at @s run function manoloesmanolo:tick/entity

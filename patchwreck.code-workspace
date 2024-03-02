@@ -2,16 +2,20 @@
   // Add all data packs to folders so that they are properly detected by Data-Pack Helper Plus
   "folders": [
     {
+      "path": "./libraries",
+      "name": "Libraries"
+    },
+    {
+      "path": "./submissions",
+      "name": "Submissions"
+    },
+    {
       "path": "./patchwreck",
       "name": "Patchwreck"
     },
     {
-      "path": "./manoloesmanolo",
-      "name": "Manoloesmanolo"
-    },
-    {
-      "path": "./safeliquids",
-      "name": "Safeliquids"
+      "path": "./potatopack",
+      "name": "Potato Pack"
     },
     {
       "path": ".",
@@ -33,9 +37,10 @@
     },
     // Exclude data packs from main workspace to avoid folder duplication
     "files.exclude": {
+      "libraries": true,
+      "submissions": true,
       "patchwreck": true,
-      "manoloesmanolo": true,
-      "safeliquids": true
+      "potatopack": true
     },
     "prettier.tabWidth": 2
   },
