@@ -1,3 +1,5 @@
+#> enderayo:items/shieldability
+
 execute as @s rotated ~90 ~ positioned ^7 ^ ^ run summon marker ~ ~ ~ {UUID: [I; 0, 83183, 0, 45], Tags: ["enderayo.shieldability"]}
 
 execute as @e[type=!player,distance=..7] if entity @e[type=marker,tag=enderayo.shieldability,distance=..7] run damage @s 10 dragon_breath by @p[scores={enderayo.shieldability=1..}]

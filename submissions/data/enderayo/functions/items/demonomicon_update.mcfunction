@@ -1,3 +1,5 @@
+#> enderayo:items/demonomicon_update
+
 execute store result storage enderayo:demonomicon Amount float 0.01 run scoreboard players get $souls enderayo.demonomicon
 
 execute store result score $slot enderayo.demonomicon run data get entity @s Inventory[{tag: {Demonomicon: 1b}}].Slot

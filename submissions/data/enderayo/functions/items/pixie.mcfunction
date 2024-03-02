@@ -1,4 +1,6 @@
-effect give @a[distance=..3,nbt=!{active_effects:[{id:"minecraft:regeneration"}]}] regeneration 5 0 true
+#> enderayo:items/pixie
+
+effect give @a[distance=..3,nbt=!{active_effects: [{id: "minecraft:regeneration"}]}] regeneration 5 0 true
 
 particle heart ~ ~ ~ 1.5 1 1.5 0.1 1 normal @a
 
