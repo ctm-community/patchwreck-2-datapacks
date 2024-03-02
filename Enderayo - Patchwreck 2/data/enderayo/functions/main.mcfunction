@@ -1,12 +1,15 @@
 # Grouped @e
 execute as @e[type=!player] run function enderayo:grouped_at_e
 
-# Demonomicon
+# Player branch, honestly, not even worth the effort... this code is so horribly unoptimized but I don't want to spend hours fixing it
+#execute as @a at @s run function enderayo:player
+
+# Demononicon
 execute as @a[nbt={Inventory:[{tag:{Demonomicon:1b}}]}] run scoreboard players enable @s enderayo.demonomicon
 execute as @a[scores={enderayo.demonomicon=1..}] if score .cd enderayo.demonomicon matches 0 at @s run function enderayo:items/demonomicon
-execute as @a[scores={enderayo.demonomicon=1..}] if score .cd enderayo.demonomicon matches 1.. at @s run title @s actionbar {"text":"Demonomicon's ability is in cooldown.","color":"gray","bold":false,"italic":false}
+execute as @a[scores={enderayo.demonomicon=1..}] if score .cd enderayo.demonomicon matches 1.. at @s run title @s actionbar {"text":"Demonomicon's ability is on cooldown.","color":"gray","bold":false,"italic":false}
 execute if score .cd enderayo.demonomicon matches 1.. run scoreboard players remove .cd enderayo.demonomicon 1
-execute as @a[nbt={Inventory:[{tag:{Demonomicon:1b}}]}] if score .cd enderayo.demonomicon matches 1 run title @s actionbar {"text":"Demonomicon's Ability is Ready !","color":"#A10000","bold":false,"italic":false}
+execute as @a[nbt={Inventory:[{tag:{Demonomicon:1b}}]}] if score .cd enderayo.demonomicon matches 1 run title @s actionbar {"text":"Demonomicon's ability is Ready !","color":"#A10000","bold":false,"italic":false}
 execute as @a[scores={enderayo.demonomicon=1..}] run scoreboard players set @s enderayo.demonomicon 0
 
 execute as 00000000-0001-44ef-0000-00000000002c at @s run tag @e[type=!player,distance=..5.5] add enderayo.incircle
