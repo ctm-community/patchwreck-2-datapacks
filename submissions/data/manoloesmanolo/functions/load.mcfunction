@@ -1,4 +1,4 @@
-#> manoloesmanolo:load/level
+#> manoloesmanolo:load
 # Initialize scoreboards and storage
 
 scoreboard objectives add bloodbeet.eaten minecraft.used:beetroot
