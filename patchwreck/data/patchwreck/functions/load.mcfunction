@@ -6,6 +6,6 @@ function patchwreck:load/scoreboards
 
 # Initialize Patchwreck submissions
 function enderayo:load
-function m97:load
+function matt97:load
 function manoloesmanolo:load
 function qqruzka:load
