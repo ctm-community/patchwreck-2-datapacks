@@ -1,3 +1,4 @@
-advancement revoke @s only qqruzka:hurt
-execute as @a[nbt={SelectedItem:{id:"minecraft:golden_sword",tag:{qqru3kaCourt:1}}},nbt={Inventory:[{id:"minecraft:golden_sword",Slot:-106b,tag:{qqru3kaAnger:1}}]}] at @s run function qqruzka:egypt/check_tornado
-execute as @a[nbt={SelectedItem:{id:"minecraft:golden_sword",tag:{qqru3kaAnger:1}}},nbt={Inventory:[{id:"minecraft:golden_sword",Slot:-106b,tag:{qqru3kaCourt:1}}]}] at @s run function qqruzka:egypt/check_tornado
+
+scoreboard players add counter rngTornado 1
+execute if score counter rngTornado matches 5.. run function qqruzka:egypt/spawn_tornado
+execute if score counter rngTornado matches 5.. run scoreboard players set counter rngTornado 0
