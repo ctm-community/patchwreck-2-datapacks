@@ -1,7 +1,25 @@
 {
   "criteria": {
     "requirement": {
-      "trigger": "minecraft:player_hurt_entity"
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "mainhand": {
+              "items": [
+                "minecraft:golden_sword"
+              ],
+              "nbt": "{anubis:1}"
+            },
+            "offhand": {
+              "items": [
+                "minecraft:golden_sword"
+              ],
+              "nbt": "{anubis:1}"
+            }
+          }
+        }
+      }
     }
   },
   "rewards": {
