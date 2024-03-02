@@ -14,3 +14,4 @@ execute as @e[type=!minecraft:player] run function qqruzka:tick/entity
 # Branch player ticking events
 execute as @a run function enderayo:tick/player
 execute as @a run function manoloesmanolo:tick/player
+execute as @a run function qqruzka:tick/player
