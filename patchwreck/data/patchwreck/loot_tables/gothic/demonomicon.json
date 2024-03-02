@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display: {Name: '{\"text\":\"Demonomicon\",\"color\":\"#800000\",\"bold\":true,\"italic\":false}', Lore: ['{\"text\":\"Ability: Syphon Souls\",\"color\":\"red\",\"bold\":false,\"italic\":false}']}, HideFlags: 32, Demonomicon: 1b, AttributeModifiers: [{AttributeName: \"generic.attack_damage\", Name: \"generic.attack_damage\", Amount: 0d, Operation: 1, UUID: [I; 434135680, 503923890, -1844813261, -521992865], Slot: \"offhand\"}], title: \"\", author: \"\", generation: 0, pages: ['[{\"text\":\"\\\\n  << Summon Circle >>\",\"color\":\"red\",\"bold\":false,\"italic\":false,\"hoverEvent\":{\"action\":\"show_text\",\"value\":[{\"text\":\"Click Here !\",\"color\":\"red\",\"bold\":true,\"italic\":false}]},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger enderayo.demonomicon set 1\"}},{\"text\":\"\\\\n\\\\n\",\"obfuscated\":false,\"hoverEvent\":{\"action\":\"show_text\",\"value\":[{\"text\":\" \"}]},\"clickEvent\":{\"action\":\"change_page\",\"value\":\" \"}},{\"text\":\"uuuuuuuuuuuuuuuu\",\"color\":\"black\",\"bold\":true,\"italic\":false,\"obfuscated\":true,\"hoverEvent\":{\"action\":\"show_text\",\"value\":[{\"text\":\"zueuuhzgi\",\"color\":\"dark_red\",\"bold\":true,\"italic\":false,\"obfuscated\":true}]},\"clickEvent\":{\"action\":\"change_page\",\"value\":\" \"}},{\"text\":\"\\\\n\\\\nAbilty: Syphon Souls\",\"color\":\"red\",\"bold\":false,\"italic\":false,\"hoverEvent\":{\"action\":\"show_text\",\"value\":[{\"text\":\"Summon a circle that last 20s absorbing the souls of the monsters that dies inside of it. Each souls absorbed grant this book +1% damage (when in offhand) up to a maximum of +50% damage. ALL souls are lost on death.\",\"color\":\"gray\",\"bold\":false,\"italic\":false}]},\"clickEvent\":{\"action\":\"change_page\",\"value\":\" \"}},{\"text\":\"\\\\nClick above to activate (90s Cooldown)\\\\n\\\\n\",\"color\":\"gray\",\"bold\":false,\"italic\":false,\"hoverEvent\":{\"action\":\"show_text\",\"value\":[{\"text\":\"Summon a circle that last 20s absorbing the souls of the monsters that dies inside of it. Each souls absorbed grant this book +1% damage (when in offhand) up to a maximum of +50% damage. ALL souls are lost on death.\",\"color\":\"gray\",\"bold\":false,\"italic\":false}]},\"clickEvent\":{\"action\":\"change_page\",\"value\":\" \"}}]']}"
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_count",
+          "count": {
+            "type": "minecraft:score",
+            "target": {
+              "type": "minecraft:fixed",
+              "name": "$item_count"
+            },
+            "score": "patchwreck.variables",
+            "scale": 1
+          }
+        }
+      ]
+    }
+  ]
+}
