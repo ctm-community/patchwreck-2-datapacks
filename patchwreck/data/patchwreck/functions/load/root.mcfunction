@@ -3,6 +3,8 @@
 
 function patchwreck:load/level
 function manoloesmanolo:load/level
+function enderayo:init
+function m97:load
 
 # Set level init flag after all load functions have run
 scoreboard players set $level patchwreck.init 1
