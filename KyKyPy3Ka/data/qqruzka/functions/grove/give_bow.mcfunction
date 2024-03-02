@@ -1,2 +1,0 @@
-kill @s
-item replace entity @p weapon.mainhand with bow{display:{Name:'{"text":"🍃 Magic Bow 🍃","color":"green","bold":true,"italic":false}',Lore:['{"text":" "}','{"text":"✧ Permutation ✧","color":"dark_gray","italic":false}','{"text":"Drop this item to turn it into another weapon.","color":"gray","italic":false}','{"text":" "}']},Unbreakable:1b,qqru3kaMBow:1,Enchantments:[{id:"minecraft:flame",lvl:1s},{id:"minecraft:power",lvl:3s}]} 1
