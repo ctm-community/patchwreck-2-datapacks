@@ -21,8 +21,8 @@ execute if score $item_slot enderayo.variables matches -106 run loot replace ent
 execute unless score $item_slot enderayo.variables matches -106 if data storage enderayo:storage item run function enderayo:hyperdrift_helmet/replace_item with storage enderayo:storage item
 
 # Ghoulguts
-execute as @s[scores={enderayo.hunger=1..}] run effect clear @s hunger
-execute as @s[scores={enderayo.hunger=1..}] run scoreboard players set @s enderayo.hunger 0
+effect clear @s[scores={enderayo.hunger=1..}] hunger
+scoreboard players set @s[scores={enderayo.hunger=1..}] enderayo.hunger 0
 
 # Pixie Bucket
 execute as @s[nbt={SelectedItem: {id: "minecraft:axolotl_bucket", tag: {display: {Name: '{"text":"Lil\' Pixie","color":"#FF80C3","bold":true}'}}}}] run item replace entity @s weapon.mainhand with axolotl_bucket{display: {Name: '{"text":"Bucket of Pixie","color":"#FF5CD3","bold":true,"italic":false}', Lore: ['{"text":"Contains an axolotl that gives","color":"gray","bold":false,"italic":false}', '{"text":"regeneration I to nearby players.","color":"gray","bold":false,"italic":false}']}, EntityTag: {Invulnerable: 1b, UUID: [I; 351684, 97982, 186684, 83881], CustomNameVisible: 1b, Variant: 0, Tags: ["enderayo.pixie"], CustomName: '{"text":"Lil\' Pixie","color":"#FF80C3","bold":true}'}} 1
