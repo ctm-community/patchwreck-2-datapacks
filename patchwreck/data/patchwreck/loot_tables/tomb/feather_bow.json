@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bow",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display: {Name: '{\"text\":\"Feather Bow\",\"color\":\"#2189FF\",\"italic\":false}', Lore: ['{\"text\":\" \"}', '{\"text\":\"Light as a\",\"color\":\"#3A82A6\"}']}, Damage: 0, Enchantments: [{id: \"minecraft:flame\", lvl: 1s}], AttributeModifiers: [{AttributeName: \"generic.attack_damage\", Name: \"generic.attack_damage\", Amount: 3.5d, Operation: 0, UUID: [I; 700480871, 734349822, -1229377841, -721009428], Slot: \"mainhand\"}, {AttributeName: \"generic.movement_speed\", Name: \"generic.movement_speed\", Amount: 0.3d, Operation: 1, UUID: [I; 640308878, 1114262858, -1690700042, -100002299], Slot: \"offhand\"}, {AttributeName: \"generic.max_health\", Name: \"generic.max_health\", Amount: -4, Operation: 0, UUID: [I; 1981886072, 1231767499, -1168866500, 1814797865], Slot: \"offhand\"}]}"
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_count",
+          "count": {
+            "type": "minecraft:score",
+            "target": {
+              "type": "minecraft:fixed",
+              "name": "$item_count"
+            },
+            "score": "patchwreck.variables",
+            "scale": 1
+          }
+        }
+      ]
+    }
+  ]
+}

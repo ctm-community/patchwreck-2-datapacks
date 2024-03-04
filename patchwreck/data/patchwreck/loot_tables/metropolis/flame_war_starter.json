@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:flint_and_steel",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display: {Name: '{\"text\":\"Flame War Starter\",\"color\":\"red\",\"bold\":true,\"italic\":false}', Lore: ['{\"text\":\" \"}', '{\"text\":\"When in Main Hand: \",\"color\":\"gray\",\"italic\":false}', '{\"text\":\" 5.5 Attack Damage\",\"color\":\"dark_green\",\"italic\":false}', '{\"text\":\" ∞ Attack Speed\",\"color\":\"dark_green\",\"italic\":false}', '{\"text\":\"Unbreakable\",\"color\":\"blue\",\"italic\":false}', '{\"text\":\"When in Off Hand: \",\"color\":\"gray\",\"italic\":false}', '{\"text\":\"+2.75 Attack Damage\",\"color\":\"blue\",\"italic\":false}', '{\"text\":\" \"}', '{\"text\":\"\\\\\"The greatest thing I ever\",\"color\":\"#80796A\",\"italic\":false}', '{\"text\":\"learned was how to read...\",\"color\":\"#80796A\",\"italic\":false}', '{\"text\":\"for words are power. A single\",\"color\":\"#80796A\",\"italic\":false}', '{\"text\":\"sentence can heal hearts or\",\"color\":\"#80796A\",\"italic\":false}', '{\"text\":\"set them ablaze...\\\\\" - ???\",\"color\":\"#80796A\",\"italic\":false}']}, HideFlags: 254, Unbreakable: 1b, Damage: 0, Enchantments: [{id: \"minecraft:fire_aspect\", lvl: 5s}, {id: \"minecraft:knockback\", lvl: 1s}], AttributeModifiers: [{AttributeName: \"generic.attack_damage\", Name: \"generic.attack_damage\", Amount: 4.5d, Operation: 0, UUID: [I; 925982243, 1124747003, -1729641178, -904824753], Slot: \"mainhand\"}, {AttributeName: \"generic.attack_speed\", Name: \"generic.attack_speed\", Amount: 1024, Operation: 0, UUID: [I; 2088885938, -1781969695, -2140525531, 1128714173], Slot: \"mainhand\"}, {AttributeName: \"generic.attack_damage\", Name: \"generic.attack_damage\", Amount: 2.75d, Operation: 0, UUID: [I; -267813502, 396708628, -1827778667, 1281723226], Slot: \"offhand\"}]}"
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_count",
+          "count": {
+            "type": "minecraft:score",
+            "target": {
+              "type": "minecraft:fixed",
+              "name": "$item_count"
+            },
+            "score": "patchwreck.variables",
+            "scale": 1
+          }
+        }
+      ]
+    }
+  ]
+}

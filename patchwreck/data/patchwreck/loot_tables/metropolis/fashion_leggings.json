@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_leggings",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display: {Name: '{\"text\":\"Fashion Leggings\",\"color\":\"light_purple\",\"bold\":true,\"italic\":false}', Lore: ['{\"text\":\"$14.99 USD\",\"color\":\"gray\",\"italic\":false}']}, Damage: 0, Enchantments: [{id: \"minecraft:protection\", lvl: 3s}, {id: \"minecraft:thorns\", lvl: 2s}], AttributeModifiers: [{AttributeName: \"generic.max_health\", Name: \"generic.max_health\", Amount: 4, Operation: 0, UUID: [I; 2004281757, -994951045, -2095346466, 1335267239], Slot: \"legs\"}, {AttributeName: \"generic.armor\", Name: \"generic.armor\", Amount: 6, Operation: 0, UUID: [I; -1547443204, -1243198788, -1451463729, -272503263], Slot: \"legs\"}]}"
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_count",
+          "count": {
+            "type": "minecraft:score",
+            "target": {
+              "type": "minecraft:fixed",
+              "name": "$item_count"
+            },
+            "score": "patchwreck.variables",
+            "scale": 1
+          }
+        }
+      ]
+    }
+  ]
+}

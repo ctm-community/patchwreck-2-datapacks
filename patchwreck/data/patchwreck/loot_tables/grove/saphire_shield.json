@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:shield",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display: {Name: '{\"text\":\"Sapphire Shield\",\"color\":\"#0F52BA\",\"italic\":false}'}, HideFlags: 32, Damage: 0, Enchantments: [{id: \"minecraft:fire_aspect\", lvl: 2s}, {id: \"minecraft:knockback\", lvl: 2s}], AttributeModifiers: [{AttributeName: \"generic.armor\", Name: \"generic.armor\", Amount: 2, Operation: 0, UUID: [I; 2088724577, -951827065, -2100764975, 558099094], Slot: \"mainhand\"}, {AttributeName: \"generic.armor\", Name: \"generic.armor\", Amount: -2, Operation: 0, UUID: [I; 284876529, 627723908, -1904277401, 1936187633], Slot: \"offhand\"}], BlockEntityTag: {Base: 9, Patterns: [{Color: 11, Pattern: \"cs\"}, {Color: 9, Pattern: \"rud\"}, {Color: 11, Pattern: \"gra\"}]}}"
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_count",
+          "count": {
+            "type": "minecraft:score",
+            "target": {
+              "type": "minecraft:fixed",
+              "name": "$item_count"
+            },
+            "score": "patchwreck.variables",
+            "scale": 1
+          }
+        }
+      ]
+    }
+  ]
+}

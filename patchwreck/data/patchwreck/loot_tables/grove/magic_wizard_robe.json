@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display: {Name: '{\"text\":\"Magic Wizard Robe\",\"color\":\"dark_aqua\",\"bold\":true,\"italic\":false}', Lore: ['{\"text\":\"Not cleaned for a hundred years.\",\"color\":\"dark_gray\",\"italic\":false}'], color: 16711901}, HideFlags: 224, Unbreakable: 1b, Damage: 0, Enchantments: [{id: \"minecraft:blast_protection\", lvl: 3s}, {id: \"minecraft:protection\", lvl: 2s}], AttributeModifiers: [{AttributeName: \"generic.movement_speed\", Name: \"generic.movement_speed\", Amount: 0.12d, Operation: 1, UUID: [I; -921208987, -696237877, -1764530112, -1935896168], Slot: \"chest\"}, {AttributeName: \"generic.armor\", Name: \"generic.armor\", Amount: 8, Operation: 0, UUID: [I; -1720158717, 1064911483, -1087615906, 1777598473], Slot: \"chest\"}, {AttributeName: \"generic.armor_toughness\", Name: \"generic.armor_toughness\", Amount: 3, Operation: 0, UUID: [I; 2115099038, 968705964, -1760896537, -970777060], Slot: \"chest\"}], Trim: {material: \"minecraft:gold\", pattern: \"minecraft:silence\"}}"
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_count",
+          "count": {
+            "type": "minecraft:score",
+            "target": {
+              "type": "minecraft:fixed",
+              "name": "$item_count"
+            },
+            "score": "patchwreck.variables",
+            "scale": 1
+          }
+        }
+      ]
+    }
+  ]
+}

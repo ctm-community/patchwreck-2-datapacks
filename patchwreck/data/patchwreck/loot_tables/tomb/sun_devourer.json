@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_sword",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display: {Name: '{\"text\":\"Sun Devourer\",\"color\":\"gold\",\"italic\":false}', Lore: ['{\"text\":\"Fire Aspect X\",\"color\":\"gray\",\"italic\":false}', '{\"text\":\"Unbreaking II\",\"color\":\"gray\",\"italic\":false}', '{\"text\":\" \"}', '{\"text\":\"When in Main Hand:\",\"color\":\"gray\",\"italic\":false}', '{\"text\":\" 2 Attack Damage\",\"color\":\"dark_green\",\"italic\":false}', '{\"text\":\" ∞ Attack Speed\",\"color\":\"dark_green\",\"italic\":false}']}, HideFlags: 35, Damage: 0, Enchantments: [{id: \"minecraft:fire_aspect\", lvl: 10s}, {id: \"minecraft:unbreaking\", lvl: 2s}], AttributeModifiers: [{AttributeName: \"generic.attack_damage\", Name: \"generic.attack_damage\", Amount: 1.0d, Operation: 0, UUID: [I; -1618862353, -1103215132, -1890240356, 395406935], Slot: \"mainhand\"}, {AttributeName: \"generic.attack_speed\", Name: \"generic.attack_speed\", Amount: 5.0d, Operation: 0, UUID: [I; -93723699, -1600696704, -1428672800, -1584032854], Slot: \"mainhand\"}]}"
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_count",
+          "count": {
+            "type": "minecraft:score",
+            "target": {
+              "type": "minecraft:fixed",
+              "name": "$item_count"
+            },
+            "score": "patchwreck.variables",
+            "scale": 1
+          }
+        }
+      ]
+    }
+  ]
+}

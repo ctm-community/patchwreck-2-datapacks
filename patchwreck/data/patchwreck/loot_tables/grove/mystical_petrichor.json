@@ -6,11 +6,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:axolotl_bucket",
+          "name": "minecraft:splash_potion",
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display: {Name: '{\"text\":\"Bucket of Pixie\",\"color\":\"#FF5CD3\",\"bold\":true,\"italic\":false}', Lore: ['{\"text\":\"Contains an axolotl that gives\",\"color\":\"gray\",\"bold\":false,\"italic\":false}', '{\"text\":\"Regeneration to nearby players.\",\"color\":\"gray\",\"bold\":false,\"italic\":false}']}, EntityTag: {Invulnerable: 1b, UUID: [I; 351684, 97982, 186684, 83881], CustomNameVisible: 1b, Variant: 0, Tags: [\"enderayo.pixie\"], CustomName: '{\"text\":\"Lil\\' Pixie\",\"color\":\"#FF80C3\",\"bold\":true}'}}"
+              "tag": "{display: {Name: '{\"text\":\"Mystical Petrichor\",\"color\":\"light_purple\",\"italic\":false}'}, Enchantments: [{}], custom_potion_effects: [{id: \"minecraft:regeneration\", amplifier: 0b, duration: 1200}, {id: \"minecraft:resistance\", amplifier: 0b, duration: 12000}], CustomPotionColor: 15632622}"
             }
           ]
         }

@@ -6,4 +6,4 @@ data modify entity @s Motion set from storage manoloesmanolo:macro entity.Motion
 data modify entity @s Pos set from storage manoloesmanolo:macro entity.Pos
 
 # NOTE: Set $item_count score in patchwreck.variables objective before calling this function to set the amount of items to loot into the mob
-loot replace entity @s armor.head loot patchwreck:grove/bloodthirsty_beet
+loot replace entity @s armor.head loot patchwreck:gothic/bloodthirsty_beet

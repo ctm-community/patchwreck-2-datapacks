@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:fermented_spider_eye",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display: {Name: '{\"text\":\"The Old Blood\",\"color\":\"red\",\"bold\":true,\"italic\":false}', Lore: ['{\"text\":\" \",\"italic\":false}', '{\"text\":\"When in Off Hand: \",\"color\":\"gray\",\"italic\":false}', '{\"text\":\"+30% Attack Damage\",\"color\":\"blue\",\"italic\":false}', '{\"text\":\"+20% Attack Speed\",\"color\":\"blue\",\"italic\":false}', '{\"text\":\"-100% Armor\",\"color\":\"red\",\"italic\":false}', '{\"text\":\" \"}', '{\"text\":\"We are born of the blood,\",\"color\":\"#80796A\",\"italic\":false}', '{\"text\":\"made men by the blood,\",\"color\":\"#80796A\",\"italic\":false}', '{\"text\":\"undone by the blood.\",\"color\":\"#80796A\",\"italic\":false}', '{\"text\":\"Our eyes are yet to open...\",\"color\":\"#80796A\",\"italic\":false}', '{\"text\":\"Fear the old blood.\",\"color\":\"#80796A\",\"italic\":false}']}, HideFlags: 255, Enchantments: [{}], AttributeModifiers: [{AttributeName: \"generic.armor\", Name: \"generic.armor\", Amount: -100, Operation: 1, UUID: [I; -2005655791, 1139491590, -1275404161, 285844141], Slot: \"offhand\"}, {AttributeName: \"generic.attack_damage\", Name: \"generic.attack_damage\", Amount: 0.3d, Operation: 1, UUID: [I; -2126544312, 1283607657, -1157614376, -1190993375], Slot: \"offhand\"}, {AttributeName: \"generic.attack_speed\", Name: \"generic.attack_speed\", Amount: 0.2d, Operation: 1, UUID: [I; -1424017263, -156546854, -1286339273, -1736358306], Slot: \"offhand\"}]}"
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_count",
+          "count": {
+            "type": "minecraft:score",
+            "target": {
+              "type": "minecraft:fixed",
+              "name": "$item_count"
+            },
+            "score": "patchwreck.variables",
+            "scale": 1
+          }
+        }
+      ]
+    }
+  ]
+}

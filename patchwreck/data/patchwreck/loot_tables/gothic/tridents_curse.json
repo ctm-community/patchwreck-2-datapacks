@@ -6,11 +6,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:axolotl_bucket",
+          "name": "minecraft:trident",
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display: {Name: '{\"text\":\"Bucket of Pixie\",\"color\":\"#FF5CD3\",\"bold\":true,\"italic\":false}', Lore: ['{\"text\":\"Contains an axolotl that gives\",\"color\":\"gray\",\"bold\":false,\"italic\":false}', '{\"text\":\"Regeneration to nearby players.\",\"color\":\"gray\",\"bold\":false,\"italic\":false}']}, EntityTag: {Invulnerable: 1b, UUID: [I; 351684, 97982, 186684, 83881], CustomNameVisible: 1b, Variant: 0, Tags: [\"enderayo.pixie\"], CustomName: '{\"text\":\"Lil\\' Pixie\",\"color\":\"#FF80C3\",\"bold\":true}'}}"
+              "tag": "{display: {Name: '{\"text\":\"Trident\\'s Curse\",\"color\":\"dark_red\",\"italic\":false}'}, Damage: 0, Enchantments: [{id: \"minecraft:loyalty\", lvl: 2s}], AttributeModifiers: [{AttributeName: \"generic.attack_damage\", Name: \"generic.attack_damage\", Amount: 0.42d, Operation: 1, UUID: [I; -1732093135, -445625016, -1179484689, -1155250553], Slot: \"offhand\"}, {AttributeName: \"generic.max_health\", Name: \"generic.max_health\", Amount: -0.666d, Operation: 1, UUID: [I; -1941742046, -692957879, -1266206714, -1030223767], Slot: \"offhand\"}]}"
             }
           ]
         }

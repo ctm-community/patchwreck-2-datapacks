@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display: {Name: '{\"text\":\"Overabundance of Bandages\",\"color\":\"#FFDC7D\",\"bold\":true,\"italic\":false}', Lore: ['{\"text\":\" \"}', '{\"text\":\"When on Body: \",\"color\":\"gray\",\"italic\":false}', '{\"text\":\"+10 Health\",\"color\":\"blue\",\"italic\":false}', '{\"text\":\"-20% Speed\",\"color\":\"red\",\"italic\":false}', '{\"text\":\"0 Armor\",\"color\":\"red\",\"italic\":false}', '{\"text\":\"Unbreakable\",\"color\":\"blue\",\"italic\":false}', '{\"text\":\" \"}', '{\"text\":\"You cover yourself in\",\"color\":\"#80796A\",\"italic\":false}', '{\"text\":\"many many wrappings.\",\"color\":\"#80796A\",\"italic\":false}', '{\"text\":\"Surprisingly, it feels\",\"color\":\"#80796A\",\"italic\":false}', '{\"text\":\"quite cozy.\",\"color\":\"#80796A\",\"italic\":false}'], color: 16768125}, HideFlags: 254, Unbreakable: 1b, Damage: 0, Enchantments: [{id: \"minecraft:blast_protection\", lvl: 3s}, {id: \"minecraft:protection\", lvl: 1s}], AttributeModifiers: [{AttributeName: \"generic.max_health\", Name: \"generic.max_health\", Amount: 10, Operation: 0, UUID: [I; 150218641, 69553166, -1574043237, -1987417708], Slot: \"chest\"}, {AttributeName: \"generic.movement_speed\", Name: \"generic.movement_speed\", Amount: -0.2d, Operation: 1, UUID: [I; -2098449538, -1462417606, -1295700459, 1185116722], Slot: \"chest\"}], Trim: {material: \"minecraft:copper\", pattern: \"minecraft:rib\"}}"
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_count",
+          "count": {
+            "type": "minecraft:score",
+            "target": {
+              "type": "minecraft:fixed",
+              "name": "$item_count"
+            },
+            "score": "patchwreck.variables",
+            "scale": 1
+          }
+        }
+      ]
+    }
+  ]
+}
