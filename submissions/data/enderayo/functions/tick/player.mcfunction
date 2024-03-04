@@ -1,15 +1,5 @@
 #> enderayo:tick/player
 
-# Demononicon
-execute as @s[nbt={Inventory: [{tag: {Demonomicon: 1b}}]}] run scoreboard players enable @s enderayo.demonomicon
-execute as @s[scores={enderayo.demonomicon=1..}] if score $cooldown enderayo.demonomicon matches 0 at @s run function enderayo:items/demonomicon
-execute as @s[scores={enderayo.demonomicon=1..}] if score $cooldown enderayo.demonomicon matches 1.. at @s run title @s actionbar {"text":"Demonomicon's ability is on cooldown.","color":"gray","bold":false,"italic":false}
-execute if score $cooldown enderayo.demonomicon matches 1.. run scoreboard players remove $cooldown enderayo.demonomicon 1
-execute as @s[nbt={Inventory: [{tag: {Demonomicon: 1b}}]}] if score $cooldown enderayo.demonomicon matches 1 run title @s actionbar {"text":"Demonomicon's ability is Ready !","color":"#A10000","bold":false,"italic":false}
-execute as @s[scores={enderayo.demonomicon=1..}] run scoreboard players set @s enderayo.demonomicon 0
-
-execute as 00000000-0001-44ef-0000-00000000002c at @s run tag @e[type=!player,distance=..5.5] add enderayo.incircle
-execute as 00000000-0001-44ef-0000-00000000002c at @s run tag @e[type=!player,distance=5.51..] remove enderayo.incircle
 
 # Hyperdrift
 execute as @s[nbt={Inventory: [{Slot: 103b, tag: {hyperdrift: 1b}}]}] run item replace entity @s armor.head with light_blue_stained_glass{display: {Name: '[{"text":"Hyper","color":"#F238FF","bold":true,"italic":false},{"text":"drift ","color":"#FF8A14","bold":true,"italic":false},{"text":"Helmet","color":"#0AA5FF","bold":true,"italic":false}]', Lore: ['{"text":"When worn, cycle between two states :","color":"gray","bold":false,"italic":false}', '[{"text":"•","color":"aqua","bold":false,"italic":false},{"text":" +3 armor","color":"gray","bold":false,"italic":false}]', '[{"text":"•","color":"#FF05B4","bold":false,"italic":false},{"text":" +3 damage & -3 armor","color":"gray","bold":false,"italic":false}]']}, HideFlags: 5, hyperdrift: {glass: 1b, light_blue: 1b}, Enchantments: [{id: "minecraft:silk_touch", lvl: 1s}], AttributeModifiers: [{AttributeName: "generic.armor", Name: "generic.armor", Amount: 3, Operation: 0, UUID: [I; 622958059, -1765456493, -1580124987, -2006602031], Slot: "head"}]} 1

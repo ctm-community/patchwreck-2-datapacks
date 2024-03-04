@@ -73,6 +73,7 @@
     "zombie_horse",
     "zombie_villager",
     "zombified_piglin",
-    "player"
+    "player",
+    "sniffer"
   ]
 }

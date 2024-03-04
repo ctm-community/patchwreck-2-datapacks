@@ -25,3 +25,6 @@ execute if data storage link:temp Player.inventory[{Slot:-106b,id:"minecraft:axo
 execute if data storage link:temp Player.inventory[{Slot:-106b,id: "minecraft:shield",tag:{enderayo.shieldability:1b}}] run tag @s add enderayo.shieldability
 execute if data storage link:temp Player.selected{id:"minecraft:shield",tag:{enderayo.shieldability:1b}} run tag @s add enderayo.shieldability
 execute if data storage link:temp Player.inventory[{id: "minecraft:shield",tag:{enderayo.shieldability:1b}}] run tag @s add enderayo.shield_has
+
+# Demonomicon
+execute if data storage link:temp Player.inventory[{tag:{Demonomicon: 1b}}] run tag @s add enderayo.demonomicon
