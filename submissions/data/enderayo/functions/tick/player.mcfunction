@@ -20,14 +20,3 @@ execute store result score $item_slot enderayo.variables run data get storage en
 execute if score $item_slot enderayo.variables matches -106 run loot replace entity @s weapon.offhand loot patchwreck:metropolis/hyperdrift_helmet
 execute unless score $item_slot enderayo.variables matches -106 if data storage enderayo:storage item run function enderayo:hyperdrift_helmet/replace_item with storage enderayo:storage item
 
-# Ghoulguts
-effect clear @s[scores={enderayo.hunger=1..}] hunger
-scoreboard players set @s[scores={enderayo.hunger=1..}] enderayo.hunger 0
-
-
-# Blue-Eyes White Dragon
-execute as @s[predicate=enderayo:is_sneaking,scores={enderayo.shieldability=1..},nbt={SelectedItem: {id: "minecraft:shield", tag: {enderayo.shieldability: 1b}}}] if score $cooldown enderayo.shieldability matches 0 at @s run function enderayo:items/shieldability
-execute as @s[predicate=enderayo:is_sneaking,scores={enderayo.shieldability=1..},nbt={Inventory: [{Slot: -106b, id: "minecraft:shield", tag: {enderayo.shieldability: 1b}}]}] if score $cooldown enderayo.shieldability matches 0 at @s run function enderayo:items/shieldability
-execute as @s[scores={enderayo.shieldability=1..}] run scoreboard players set @s enderayo.shieldability 0
-execute if score $cooldown enderayo.shieldability matches 1.. run scoreboard players remove $cooldown enderayo.shieldability 1
-execute as @s[nbt={Inventory: [{id: "minecraft:shield", tag: {enderayo.shieldability: 1b}}]}] if score $cooldown enderayo.shieldability matches 1 run title @s actionbar {"text":"Blue-Eyes White Dragon Ability Ready !","color":"#0FB7FF","bold":false,"italic":false}

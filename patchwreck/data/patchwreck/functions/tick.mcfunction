@@ -15,8 +15,11 @@ execute as @e[type=minecraft:item,tag=!bloodbeet.checked] run function manoloesm
 execute as @e run function safeliquids:tick/entity
 execute as @e[type=!minecraft:player] run function qqruzka:tick/entity
 
-# Branch player ticking events
-# Commented out lines have been moved to> patchwreck:player/player_tick
+#Cooldowns, flags, etc.
+execute if score $cooldown enderayo.shieldability matches 1.. run scoreboard players remove $cooldown enderayo.shieldability 1
+execute if score $cooldown enderayo.shieldability matches 1 run title @a[tag=enderayo.shield_has] actionbar {"text":"Blue-Eyes White Dragon Ability Ready!","color":"#0FB7FF","bold":false,"italic":false}
+
+# OLD Branch player ticking events, moved to> patchwreck:player/player_tick
 
 execute as @a run function enderayo:tick/player
 #execute as @a run function manoloesmanolo:tick/player
