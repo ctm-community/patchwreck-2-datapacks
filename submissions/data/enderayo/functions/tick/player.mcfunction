@@ -24,9 +24,6 @@ execute unless score $item_slot enderayo.variables matches -106 if data storage 
 effect clear @s[scores={enderayo.hunger=1..}] hunger
 scoreboard players set @s[scores={enderayo.hunger=1..}] enderayo.hunger 0
 
-# Pixie Bucket
-execute as @s[nbt={SelectedItem: {id: "minecraft:axolotl_bucket", tag: {display: {Name: '{"text":"Lil\' Pixie","color":"#FF80C3","bold":true}'}}}}] run item replace entity @s weapon.mainhand with axolotl_bucket{display: {Name: '{"text":"Bucket of Pixie","color":"#FF5CD3","bold":true,"italic":false}', Lore: ['{"text":"Contains an axolotl that gives","color":"gray","bold":false,"italic":false}', '{"text":"regeneration to nearby players.","color":"gray","bold":false,"italic":false}']}, EntityTag: {Invulnerable: 1b, UUID: [I; 351684, 97982, 186684, 83881], CustomNameVisible: 1b, Variant: 0, Tags: ["enderayo.pixie"], CustomName: '{"text":"Lil\' Pixie","color":"#FF80C3","bold":true}'}} 1
-execute as @s[nbt={Inventory: [{Slot: -106b, id: "minecraft:axolotl_bucket", tag: {display: {Name: '{"text":"Lil\' Pixie","color":"#FF80C3","bold":true}'}}}]}] run item replace entity @s weapon.offhand with axolotl_bucket{display: {Name: '{"text":"Bucket of Pixie","color":"#FF5CD3","bold":true,"italic":false}', Lore: ['{"text":"Contains an axolotl that gives","color":"gray","bold":false,"italic":false}', '{"text":"regeneration to nearby players.","color":"gray","bold":false,"italic":false}']}, EntityTag: {Invulnerable: 1b, UUID: [I; 351684, 97982, 186684, 83881], CustomNameVisible: 1b, Variant: 0, Tags: ["enderayo.pixie"], CustomName: '{"text":"Lil\' Pixie","color":"#FF80C3","bold":true}'}} 1
 
 # Blue-Eyes White Dragon
 execute as @s[predicate=enderayo:is_sneaking,scores={enderayo.shieldability=1..},nbt={SelectedItem: {id: "minecraft:shield", tag: {enderayo.shieldability: 1b}}}] if score $cooldown enderayo.shieldability matches 0 at @s run function enderayo:items/shieldability
