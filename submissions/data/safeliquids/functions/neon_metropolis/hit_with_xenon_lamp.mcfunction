@@ -16,3 +16,4 @@ execute if entity @s[advancements={safeliquids:neon_metropolis/hit_with_xenon_la
 execute if entity @s[advancements={safeliquids:neon_metropolis/hit_with_xenon_lamp={iframes_1=true}}] as @e[type=#safeliquids:hostile_mobs,distance=..6,tag=!xenon_lamp_decay,nbt={HurtTime: 1s},sort=nearest,limit=1] at @s run function safeliquids:neon_metropolis/decay_mob
 
 advancement revoke @s only safeliquids:neon_metropolis/hit_with_xenon_lamp
+scoreboard players set $remove_xenon_tag temp 1
