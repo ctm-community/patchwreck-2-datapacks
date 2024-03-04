@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:wooden_sword",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"🍃 Magic Sword 🍃\",\"color\":\"green\",\"bold\":true,\"italic\":false}',Lore:['{\"text\":\" \"}','{\"text\":\"✧ Permutation ✧\",\"color\":\"dark_gray\",\"italic\":false}','{\"text\":\"Transforms when dropped\",\"color\":\"gray\",\"italic\":false}','{\"text\":\" \"}','{\"text\":\"When in Main Hand:\",\"color\":\"gray\",\"italic\":false}','{\"text\":\" +5 Attack Damage\",\"color\":\"dark_green\",\"italic\":false}','{\"text\":\" +1.6 Attack Speed\",\"color\":\"dark_green\",\"italic\":false}','{\"text\":\" +60% Attack Damage\",\"color\":\"dark_green\",\"italic\":false}']},HideFlags:2,Unbreakable:1b,Damage:0,permutation:1,permuter:1,Enchantments:[{id:\"minecraft:fire_aspect\",lvl:1s},{id:\"minecraft:smite\",lvl:1s}],AttributeModifiers:[{AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:4,Operation:0,UUID:[I;-1272172299,271860757,-1526427605,1325597117],Slot:\"mainhand\"},{AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:0.6,Operation:2,UUID:[I;-703701581,1248348881,-1565885936,-1231641437],Slot:\"mainhand\"},{AttributeName:\"generic.attack_speed\",Name:\"generic.attack_speed\",Amount:-2.4,Operation:0,UUID:[I;991836431,439764010,-2007638973,-1617971658],Slot:\"mainhand\"}]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

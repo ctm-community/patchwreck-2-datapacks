@@ -22,3 +22,5 @@ scoreboard players set @s bloodbeet.kills 0
 advancement revoke @s only patchwreck:invchange
 advancement revoke @s only qqruzka:hurt
 
+# Fire permuter
+execute if score 1hz gremloop matches 13 if entity @s[tag=fire_permuter] as @e[distance=..10,type=#minecraft:hasai,type=!axolotl,type=!player] at @s run function patchwreck:item/permuter/apply_fire

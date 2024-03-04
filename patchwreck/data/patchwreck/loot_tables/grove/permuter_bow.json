@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bow",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"🍃 Magic Bow 🍃\",\"color\":\"green\",\"bold\":true,\"italic\":false}',Lore:['{\"text\":\" \"}','{\"text\":\"✧ Permutation ✧\",\"color\":\"dark_gray\",\"italic\":false}','{\"text\":\"Transforms when dropped\",\"color\":\"gray\",\"italic\":false}','{\"text\":\" \"}']},Unbreakable:1b,Damage:0,permutation:1,permuter:2,Enchantments:[{id:\"minecraft:flame\",lvl:1s},{id:\"minecraft:infinity\",lvl:1s},{id:\"minecraft:power\",lvl:2s},{id:\"minecraft:punch\",lvl:2s}]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

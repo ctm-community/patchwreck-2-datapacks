@@ -4,6 +4,9 @@
 tag @s remove beetrooter
 tag @s remove enderayo.shieldability
 tag @s remove hyperdrifter
+tag @s remove enderayo.demonomicon
+tag @s remove enderayo.shield_has
+tag @s remove fire_permuter
 
 #Store data
 data modify storage link:temp Player.inventory set value []
@@ -36,7 +39,16 @@ execute if entity @s[tag=hyperdrifter] run loot replace entity @s armor.head loo
 execute if data storage link:temp Player.inventory[{Slot:103b,tag:{hyperdrift:{glass:1b}}}] run tag @s add hyperdrifter
 
 data remove storage enderayo:storage item
-execute unless data storage link:temp Player.inventory[{Slot:103b,tag:{hyperdrift:{glass:1b}}}] run data modify storage enderayo:storage item set from storage link:temp Player.inventory[{tag:{hyperdrift:{glass:1b}}}]
+execute unless entity @s[tag=hyperdrifter] run data modify storage enderayo:storage item set from storage link:temp Player.inventory[{tag:{hyperdrift:{glass:1b}}}]
 execute store result score $item_slot enderayo.variables run data get storage enderayo:storage item.Slot
 execute if score $item_slot enderayo.variables matches -106 run loot replace entity @s weapon.offhand loot patchwreck:metropolis/hyperdrift_helmet
 execute unless score $item_slot enderayo.variables matches -106 if data storage enderayo:storage item run function enderayo:hyperdrift_helmet/replace_item with storage enderayo:storage item
+
+#Permuter code
+scoreboard players set add_permuter temp 0
+execute unless data storage link:temp Player.inventory[{tag:{permutation:1}}] if entity @s[tag=permuter] run function patchwreck:player/permutation_check
+tag @s remove permuter
+execute if data storage link:temp Player.inventory[{tag:{permutation:1}}] run tag @s add permuter
+execute if score add_permuter temp matches 1.. run tag @s add permuter
+
+execute if data storage link:temp Player.inventory[{Slot:-106b,tag:{permutation:1,permuter:3}}] run tag @s add fire_permuter
