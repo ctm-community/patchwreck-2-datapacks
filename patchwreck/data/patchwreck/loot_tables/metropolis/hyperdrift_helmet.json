@@ -10,23 +10,9 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display: {Name: '[{\"text\":\"Hyper\",\"color\":\"#F238FF\",\"bold\":true,\"italic\":false},{\"text\":\"drift \",\"color\":\"#FF8A14\",\"bold\":true,\"italic\":false},{\"text\":\"Helmet\",\"color\":\"#0AA5FF\",\"bold\":true,\"italic\":false}]', Lore: ['{\"text\":\"When worn, cycle between two states :\",\"color\":\"gray\",\"bold\":false,\"italic\":false}', '[{\"text\":\"•\",\"color\":\"aqua\",\"bold\":false,\"italic\":false},{\"text\":\" +3 armor\",\"color\":\"gray\",\"bold\":false,\"italic\":false}]', '[{\"text\":\"•\",\"color\":\"#FF05B4\",\"bold\":false,\"italic\":false},{\"text\":\" +3 damage & -3 armor\",\"color\":\"gray\",\"bold\":false,\"italic\":false}]']}, HideFlags: 7, Unbreakable: 1b, hyperdrift: 1b, Enchantments: [{id: \"minecraft:silk_touch\", lvl: 1s}], AttributeModifiers: [{AttributeName: \"generic.armor\", Name: \"generic.armor\", Amount: 0, Operation: 0, UUID: [I; 1610460575, 1494173373, -1600987168, -1598109680], Slot: \"head\"}]}"
+              "tag": "{display:{Name:'[{\"text\":\"Hyper\",\"color\":\"#F238FF\",\"bold\":true,\"italic\":false},{\"text\":\"drift \",\"color\":\"#FF8A14\",\"bold\":true,\"italic\":false},{\"text\":\"Helmet\",\"color\":\"#0AA5FF\",\"bold\":true,\"italic\":false}]',Lore:['{\"text\":\"When worn, cycle between two states :\",\"color\":\"gray\",\"bold\":false,\"italic\":false}','[{\"text\":\"•\",\"color\":\"aqua\",\"bold\":false,\"italic\":false},{\"text\":\" +4 armor & 3 toughness\",\"color\":\"gray\",\"bold\":false,\"italic\":false}]','[{\"text\":\"•\",\"color\":\"#FF05B4\",\"bold\":false,\"italic\":false},{\"text\":\" +4 damage\",\"color\":\"gray\",\"bold\":false,\"italic\":false}]']},HideFlags:7,Unbreakable:1b,Damage:0,hyperdrift:1b,Enchantments:[{id:\"minecraft:silk_touch\",lvl:1s}],AttributeModifiers:[{AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:0,Operation:0,UUID:[I;239797959,1204242824,-1968621418,-2102247986],Slot:\"head\"}]}"
             }
           ]
-        }
-      ],
-      "functions": [
-        {
-          "function": "minecraft:set_count",
-          "count": {
-            "type": "minecraft:score",
-            "target": {
-              "type": "minecraft:fixed",
-              "name": "$item_count"
-            },
-            "score": "patchwreck.variables",
-            "scale": 1
-          }
         }
       ]
     }

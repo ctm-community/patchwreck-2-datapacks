@@ -28,8 +28,6 @@ execute if score $cooldown enderayo.demonomicon matches 1.. run scoreboard playe
 execute if score $cooldown enderayo.demonomicon matches 1 run title @a[tag=enderayo.demonomicon] actionbar {"text":"Demonomicon's ability is Ready!","color":"#A10000","bold":false,"italic":false}
 scoreboard players set $remove_xenon_tag temp 0
 
-
-
 # OLD Branch player ticking events, moved to> patchwreck:player/player_tick
 execute as @a run function enderayo:tick/player
 #execute as @a run function manoloesmanolo:tick/player
