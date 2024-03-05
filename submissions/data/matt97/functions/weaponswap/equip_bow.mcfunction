@@ -3,3 +3,5 @@
 playsound minecraft:item.armor.equip_gold hostile @a ~ ~ ~ 1 0.9
 
 item replace entity @s weapon.mainhand with bow 1
+
+tag @s remove equip_sword
