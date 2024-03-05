@@ -1,0 +1,15 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "type": "minecraft:trident",
+    "nbt": "{item: {tag: {Enchantments: [{id: \"minecraft:loyalty\"}]}}, DealtDamage: 0b}",
+    "location": {
+      "position": {
+        "y": {
+          "max": -64
+        }
+      }
+    }
+  }
+}
