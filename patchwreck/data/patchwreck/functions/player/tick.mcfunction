@@ -28,7 +28,7 @@ scoreboard players set @s enderayo.demonomicon 0
 
 # Remove advancements and flags
 scoreboard players set @s bloodbeet.kills 0
-advancement revoke @s only patchwreck:invchange
+advancement revoke @s only patchwreck:inventory_changed
 advancement revoke @s only qqruzka:hurt
 
 # Fire permuter
