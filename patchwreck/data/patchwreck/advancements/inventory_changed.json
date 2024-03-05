@@ -5,6 +5,6 @@
     }
   },
   "rewards": {
-    "function": "patchwreck:player/inventory_changes"
+    "function": "patchwreck:player/inventory_changed"
   }
 }

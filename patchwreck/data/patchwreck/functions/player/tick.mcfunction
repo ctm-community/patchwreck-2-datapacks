@@ -1,4 +1,5 @@
-#20hz on all players
+#> patchwreck:player/tick
+# 20hz on all players
 
 # Beetroot offshoot
 execute if entity @s[tag=beetrooter] run function patchwreck:player/beetroot_tick
