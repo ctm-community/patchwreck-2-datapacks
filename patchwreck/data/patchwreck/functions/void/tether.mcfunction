@@ -1,0 +1,15 @@
+#> patchwreck:void/tether
+# Tether the player to a position when trying to return them from the void
+
+# Tether player to this position
+execute store result score @s patchwreck.void_tether.x run data get entity @s Pos[0] 1
+execute store result score @s patchwreck.void_tether.y run data get entity @s Pos[1] 1
+execute store result score @s patchwreck.void_tether.z run data get entity @s Pos[2] 1
+
+# Create backup tether if additional conditions are true
+execute if block ~ ~-0.1 ~ #patchwreck:stable run scoreboard players operation @s patchwreck.void_tether_backup.x = @s patchwreck.void_tether.x
+execute if block ~ ~-0.1 ~ #patchwreck:stable run scoreboard players operation @s patchwreck.void_tether_backup.y = @s patchwreck.void_tether.y
+execute if block ~ ~-0.1 ~ #patchwreck:stable run scoreboard players operation @s patchwreck.void_tether_backup.z = @s patchwreck.void_tether.z
+
+# Reset scoreboard tracking distance from last stable position
+scoreboard players set @s patchwreck.position.dy 0

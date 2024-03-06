@@ -1,11 +1,17 @@
 #> patchwreck:void/tick
 
-stopsound @s[tag=patchwreck.void_return] master minecraft:block.portal.ambient
-playsound minecraft:entity.player.teleport master @s[tag=patchwreck.void_return] ~ ~ ~ 100 0.5
-tag @s[tag=patchwreck.void_return] remove patchwreck.void_return
+# Run void return procedure if return sequence was initiated
+execute as @s[tag=patchwreck.void_return] run return run function patchwreck:void/return/tick
 
-execute if score @s patchwreck.falling matches 10 run playsound minecraft:block.portal.ambient master @s ~ ~ ~ 100 2 1
-execute if score @s patchwreck.falling matches 10 run effect give @s minecraft:darkness 4 0 true
-execute if score @s patchwreck.falling matches 20 run effect give @s minecraft:levitation 1 0 true
-execute if score @s patchwreck.falling matches 40.. run spreadplayers ~ ~ 1 2 true @s
-execute if score @s patchwreck.falling matches 40.. run tag @s add patchwreck.void_return
+# If player is on stable ground, update tether
+execute as @s[nbt={OnGround: 1b}] run function patchwreck:void/tether
+
+# TODO: Remove actionbar debugging
+execute if block ~ ~-0.1 ~ #patchwreck:stable run title @s actionbar [{"score":{"objective": "patchwreck.void_tether.x", "name": "@s"}},{"text": " "},{"score":{"objective": "patchwreck.void_tether.y", "name": "@s"}},{"text": " "},{"score":{"objective": "patchwreck.void_tether.z", "name": "@s"}}]
+execute unless block ~ ~-0.1 ~ #patchwreck:stable run title @s actionbar " "
+
+# If player isn't falling, we can return with success value 1
+execute if score @s patchwreck.falling matches 0 run return 1
+
+# If player is falling, update tracking information
+function patchwreck:void/falling

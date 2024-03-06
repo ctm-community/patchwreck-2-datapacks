@@ -7,7 +7,7 @@ execute if score @s patchwreck.motion.y matches ..-5 run scoreboard players add 
 execute unless score @s patchwreck.motion.y matches ..-5 run scoreboard players set @s patchwreck.falling 0
 
 # Void return
-# function patchwreck:void/tick
+function patchwreck:void/tick
 
 # Beetroot offshoot
 execute if entity @s[tag=beetrooter] run function patchwreck:player/beetroot_tick
