@@ -15,7 +15,7 @@ scoreboard players operation #targetY enderayo.pos -= #playerY enderayo.pos
 scoreboard players operation #targetZ enderayo.pos -= #playerZ enderayo.pos
 
 # summon the projectile entity
-execute as @s at @s facing entity @p feet run summon fireball ^ ^ ^2 {Tags:["enderayo.projectile"],Invulnerable:1b,ExplosionPower:1b}
+execute as @s at @s facing entity @p feet run summon fireball ^ ^ ^2 {Tags:["enderayo.projectile"],Invulnerable:0b,ExplosionPower:1b}
 
 # sound and particles
 execute as @s at @s run particle falling_dripstone_lava ^ ^ ^1.5 2 4 2 1 100 normal
