@@ -17,6 +17,7 @@ execute if score 5hz gremloop matches 3 as @e[tag=m97_weaponswap] at @s run func
 execute if score 10hz gremloop matches 1 as @e[type=skeleton_horse,tag=enderayo.tron] at @s run function enderayo:mobs/trail
 execute if score 10hz gremloop matches 1 as @e[type=interaction,tag=enderayo.curse] at @s run function patchwreck:mobs/pharoh_curse/tick
 execute if score 10hz gremloop matches 0 as @e[type=bat,tag=enderayo.true] at @s run function patchwreck:mobs/vamire_spawn/true_bat_tick
+execute if score 10hz gremloop matches 0 as @e[type=slime,tag=!slime] at @s run function tools:helper/entity/voidkill
 execute as @e[tag=m97_create] at @s run function matt97:chain_creation
 execute as @e[tag=m97_hoverbot] at @s run function matt97:hoverbot/tick
 execute as @e[tag=m97_model] run function matt97:model
