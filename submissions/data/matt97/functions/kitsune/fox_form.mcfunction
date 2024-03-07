@@ -2,7 +2,7 @@
 
 execute store result score m97_dummyPlayer m97_expected_health run data get entity @s Health
 
-summon minecraft:fox ~ ~ ~ {CustomNameVisible: 0b, Health: 20f, Type: "red", Tags: ["m97_kitsune"], CustomName: '{"text":"Druid"}', Attributes: [{Name: "generic.max_health", Base: 20}, {Name: "generic.movement_speed", Base: 0.4d}]}
+summon minecraft:fox ~ ~ ~ {CustomNameVisible: 0b, Health: 39f, Type: "red", Tags: ["m97_kitsune"], CustomName: '{"text":"Druid"}', Attributes: [{Name: "generic.max_health", Base: 39}, {Name: "generic.movement_speed", Base: 0.4d}]}
 
 particle minecraft:cloud ~ ~1.2 ~ 0.3 0.3 0.3 0.1 10 force
 playsound minecraft:block.lava.extinguish hostile @a ~ ~ ~ 1 0.7
