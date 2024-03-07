@@ -69,7 +69,7 @@ execute if score $success patchwreck.variables matches 1 run return 1
 $execute store success score $success patchwreck.variables run spreadplayers $(x) $(z) 0 1 under $(y) true @s
 execute if score $success patchwreck.variables matches 1 store result score $marker.y patchwreck.variables run data get entity @s Pos[1]
 execute if score $success patchwreck.variables matches 1 unless score $marker.y patchwreck.variables >= $marker.y.min patchwreck.variables run scoreboard players set $success patchwreck.variables 0
-tellraw @a [{"text": "Convert to Anchor 1 (Supported): "}, {"score":{"objective": "patchwreck.variables", "name": "$success"}}]
+tellraw @a [{"text": "Convert to Anchor 2 (Supported): "}, {"score":{"objective": "patchwreck.variables", "name": "$success"}}]
 execute if score $success patchwreck.variables matches 1 store result storage patchwreck:void void_anchor.x double 1 run data get entity @s Pos[0] 1
 execute if score $success patchwreck.variables matches 1 store result storage patchwreck:void void_anchor.y double 1 run data get entity @s Pos[1] 1
 execute if score $success patchwreck.variables matches 1 store result storage patchwreck:void void_anchor.z double 1 run data get entity @s Pos[2] 1
@@ -79,7 +79,7 @@ execute if score $success patchwreck.variables matches 1 run return 1
 $execute store success score $success patchwreck.variables run spreadplayers $(x) $(z) 0 1 under $(y) true @s
 execute if score $success patchwreck.variables matches 1 store result score $marker.y patchwreck.variables run data get entity @s Pos[1]
 execute if score $success patchwreck.variables matches 1 unless score $marker.y patchwreck.variables >= $marker.y.min patchwreck.variables run scoreboard players set $success patchwreck.variables 0
-tellraw @a [{"text": "Convert to Anchor 1 (Supported): "}, {"score":{"objective": "patchwreck.variables", "name": "$success"}}]
+tellraw @a [{"text": "Convert to Anchor 3 (Supported): "}, {"score":{"objective": "patchwreck.variables", "name": "$success"}}]
 execute if score $success patchwreck.variables matches 1 store result storage patchwreck:void void_anchor.x double 1 run data get entity @s Pos[0] 1
 execute if score $success patchwreck.variables matches 1 store result storage patchwreck:void void_anchor.y double 1 run data get entity @s Pos[1] 1
 execute if score $success patchwreck.variables matches 1 store result storage patchwreck:void void_anchor.z double 1 run data get entity @s Pos[2] 1
@@ -89,7 +89,7 @@ execute if score $success patchwreck.variables matches 1 run return 1
 $execute store success score $success patchwreck.variables run spreadplayers $(x) $(z) 0 1 under $(y) true @s
 execute if score $success patchwreck.variables matches 1 store result score $marker.y patchwreck.variables run data get entity @s Pos[1]
 execute if score $success patchwreck.variables matches 1 unless score $marker.y patchwreck.variables >= $marker.y.min patchwreck.variables run scoreboard players set $success patchwreck.variables 0
-tellraw @a [{"text": "Convert to Anchor 1 (Supported): "}, {"score":{"objective": "patchwreck.variables", "name": "$success"}}]
+tellraw @a [{"text": "Convert to Anchor 4 (Supported): "}, {"score":{"objective": "patchwreck.variables", "name": "$success"}}]
 execute if score $success patchwreck.variables matches 1 store result storage patchwreck:void void_anchor.x double 1 run data get entity @s Pos[0] 1
 execute if score $success patchwreck.variables matches 1 store result storage patchwreck:void void_anchor.y double 1 run data get entity @s Pos[1] 1
 execute if score $success patchwreck.variables matches 1 store result storage patchwreck:void void_anchor.z double 1 run data get entity @s Pos[2] 1
