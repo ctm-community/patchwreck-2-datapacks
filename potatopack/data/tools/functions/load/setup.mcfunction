@@ -71,6 +71,7 @@ gamerule spectatorsGenerateChunks true
 gamerule doWardenSpawning false
 gamerule doDaylightCycle false
 gamerule doTraderSpawning false
+gamerule doWeatherCycle false
 
 #rng setup
 scoreboard objectives add constant dummy

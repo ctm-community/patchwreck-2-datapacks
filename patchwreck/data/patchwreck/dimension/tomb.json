@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:overworld",
+  "type": "patchwreck:tomb",
   "generator": {
     "type": "minecraft:flat",
     "settings": {

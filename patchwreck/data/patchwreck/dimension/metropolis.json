@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:overworld",
+  "type": "patchwreck:metropolis",
   "generator": {
     "type": "minecraft:flat",
     "settings": {

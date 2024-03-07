@@ -43,3 +43,9 @@ scoreboard players set @a patchwreck.dead 0
 # Patchwreck timers
 scoreboard players add 5t patchwreck.timers 1
 execute if score 5t patchwreck.timers matches 5 run scoreboard players set 5t patchwreck.timers 0
+
+# Time setting branch
+#execute if score 1hz gremloop matches 13 run function patchwreck:set_time
+
+#particle for nuclear wasteland
+execute in patchwreck:wasteland as @a[distance=..999] at @s run function patchwreck:wateland_particle/player
