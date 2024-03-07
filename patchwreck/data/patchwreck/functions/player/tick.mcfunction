@@ -21,6 +21,9 @@ execute if score @s enderayo.demonomicon matches 1.. if score $cooldown enderayo
 execute if score @s enderayo.demonomicon matches 1.. if score $cooldown enderayo.demonomicon matches 1.. at @s run title @s actionbar {"text":"Demonomicon's ability is on cooldown.","color":"gray","bold":false,"italic":false}
 scoreboard players set @s enderayo.demonomicon 0
 
+#Special effects when hit by shulkers
+execute unless entity @s[advancements={patchwreck:shulker_hits_you=false,patchwreck:bullet_hits_you=false}] run function patchwreck:player/hit_by_bulker
+
 # Remove advancements and flags
 scoreboard players set @s bloodbeet.kills 0
 advancement revoke @s only patchwreck:inventory_changed
@@ -28,3 +31,4 @@ advancement revoke @s only qqruzka:hurt
 
 # Fire permuter
 execute if score 1hz gremloop matches 13 if entity @s[tag=fire_permuter] as @e[distance=..10,type=#minecraft:hasai,type=!axolotl,type=!player] at @s run function patchwreck:item/permuter/apply_fire
+

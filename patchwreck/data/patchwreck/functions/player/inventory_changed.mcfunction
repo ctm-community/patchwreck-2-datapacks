@@ -53,3 +53,8 @@ execute if data storage link:temp Player.inventory[{tag: {permutation: 1}}] run 
 execute if score add_permuter temp matches 1.. run tag @s add permuter
 
 execute if data storage link:temp Player.inventory[{Slot: -106b, tag: {permutation: 1, permuter: 3}}] run tag @s add fire_permuter
+
+#Clearing certain items
+execute if data storage link:temp Player.inventory[{id: "minecraft:bamboo_raft"}] run clear @s bamboo_raft
+execute if data storage link:temp Player.inventory[{id: "minecraft:minecart"}] run clear @s minecart
+execute if data storage link:temp Player.inventory[{id: "minecraft:glass_bottle"}] run clear @s glass_bottle

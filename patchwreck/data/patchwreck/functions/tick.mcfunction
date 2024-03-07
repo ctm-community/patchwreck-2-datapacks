@@ -14,6 +14,7 @@ execute if score 5hz gremloop matches 0 as @e[tag=m97_antenna] at @s run functio
 execute if score 5hz gremloop matches 1 as @e[tag=m97_kitsune] at @s run function matt97:kitsune/tick
 execute if score 5hz gremloop matches 2 as @e[type=bee,tag=enderayo.angry] at @s run function patchwreck:mobs/bee_battlement/bee_tick
 execute if score 5hz gremloop matches 3 as @e[tag=m97_weaponswap] at @s run function matt97:weaponswap/tick
+execute if score 5hz gremloop matches 3 as @e[type=shulker,tag=bushker] at @s positioned ~-0.5 ~-2 ~-0.5 unless entity @e[dx=0,dy=3,dz=0,type=sniffer] run function patchwreck:mobs/bush/kill with entity @s
 execute if score 10hz gremloop matches 1 as @e[type=skeleton_horse,tag=enderayo.tron] at @s run function enderayo:mobs/trail
 execute if score 10hz gremloop matches 1 as @e[type=interaction,tag=enderayo.curse] at @s run function patchwreck:mobs/pharoh_curse/tick
 execute if score 10hz gremloop matches 0 as @e[type=bat,tag=enderayo.true] at @s run function patchwreck:mobs/vamire_spawn/true_bat_tick
