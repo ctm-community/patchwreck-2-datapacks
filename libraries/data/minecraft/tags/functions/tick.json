@@ -1,3 +1,8 @@
 {
-    "values": ["clm:main", "entityid:tick", "spawner_tweaker:main_tick"]
+  "values": [
+    "clm:main",
+    "entityid:tick",
+    "spawner_tweaker:main_tick",
+    "sd:loop"
+  ]
 }

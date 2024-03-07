@@ -1,3 +1,8 @@
 {
-    "values": ["clm:init", "entityid:load", "gu:load"]
+  "values": [
+    "clm:init",
+    "entityid:load",
+    "gu:load",
+    "sd:load"
+  ]
 }
