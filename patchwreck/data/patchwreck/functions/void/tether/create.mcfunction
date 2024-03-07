@@ -1,4 +1,4 @@
-#> patchwreck:void/tether
+#> patchwreck:void/tether/create
 # Tether the player to a position when trying to return them from the void
 
 # Tether player to this position
@@ -11,5 +11,9 @@ execute if block ~ ~-0.1 ~ #patchwreck:stable run scoreboard players operation @
 execute if block ~ ~-0.1 ~ #patchwreck:stable run scoreboard players operation @s patchwreck.void_tether_backup.y = @s patchwreck.void_tether.y
 execute if block ~ ~-0.1 ~ #patchwreck:stable run scoreboard players operation @s patchwreck.void_tether_backup.z = @s patchwreck.void_tether.z
 
+# Tag player if they have a valid tether and backup tether
+execute if block ~ ~-0.1 ~ #patchwreck:stable run tag @s add patchwreck.valid_void_tether
+
 # Reset scoreboard tracking distance from last stable position
+scoreboard players set @s patchwreck.falling 0
 scoreboard players set @s patchwreck.position.dy 0

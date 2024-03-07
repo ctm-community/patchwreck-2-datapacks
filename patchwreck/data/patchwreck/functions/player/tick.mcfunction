@@ -1,11 +1,6 @@
 #> patchwreck:player/tick
 # 20hz on all players
 
-# Update scoreboards
-execute store result score @s patchwreck.motion.y run data get entity @s Motion[1] 10
-execute if score @s patchwreck.motion.y matches ..-5 run scoreboard players add @s patchwreck.falling 1
-execute unless score @s patchwreck.motion.y matches ..-5 run scoreboard players set @s patchwreck.falling 0
-
 # Void return
 function patchwreck:void/tick
 
