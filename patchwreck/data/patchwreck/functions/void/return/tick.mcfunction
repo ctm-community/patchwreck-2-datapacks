@@ -13,11 +13,11 @@ execute if score @s patchwreck.void_return matches 1 run playsound minecraft:blo
 
 # Use tether to create anchor point for returning player
 execute if score @s patchwreck.void_return matches 50 if function patchwreck:void/anchor/create run function patchwreck:void/anchor/teleport with storage patchwreck:void void_anchor
-execute if score @s patchwreck.void_return matches 50 unless entity @s[tag=patchwreck.used_void_tether] run damage @s 1024 minecraft:out_of_world
-execute if score @s patchwreck.void_return matches 50 unless entity @s[tag=patchwreck.used_void_tether] run function patchwreck:void/return/reset
 
-# Run final effects after player is returned so they are processed at the player's new location
-execute if score @s patchwreck.void_return matches 51 run playsound minecraft:entity.player.teleport player @s ~ ~ ~ 100 0.5
+# Run final effects after using tether
+execute if score @s patchwreck.void_return matches 51 run playsound minecraft:entity.player.teleport player @s[tag=patchwreck.used_void_tether] ~ ~ ~ 100 0.5
+execute if score @s patchwreck.void_return matches 51 run playsound minecraft:entity.ender_eye.death player @s[tag=!patchwreck.used_void_tether] ~ ~ ~ 100 0.1
+execute if score @s patchwreck.void_return matches 51 run playsound minecraft:block.glass.break player @s[tag=!patchwreck.used_void_tether] ~ ~ ~ 100 0.1
 execute if score @s patchwreck.void_return matches 51 run stopsound @s player minecraft:block.portal.ambient
 execute if score @s patchwreck.void_return matches 51 run effect clear @s minecraft:darkness
 

@@ -1,8 +1,11 @@
-#> patchwreck:void/tick_slow
+#> patchwreck:void/update_player_data
 # Run some void return operations at less than 20hz for better game performance
 
 # If player is on stable ground, update tether and exit
 execute as @s[nbt={OnGround: 1b}] run return run function patchwreck:void/tether/create
+
+# If player doesn't have a valid tether, there isn't a need to run any additional checks
+execute if entity @s[tag=!patchwreck.valid_void_tether] run return fail
 
 # Update scoreboards
 execute store result score @s patchwreck.motion.y run data get entity @s Motion[1] 10
