@@ -45,7 +45,7 @@ execute store result score $item_slot enderayo.variables run data get storage en
 execute if score $item_slot enderayo.variables matches -106 run loot replace entity @s weapon.offhand loot patchwreck:metropolis/hyperdrift_helmet
 execute unless score $item_slot enderayo.variables matches -106 if data storage enderayo:storage item run function enderayo:hyperdrift_helmet/replace_item with storage enderayo:storage item
 
-#Permuter code
+# Permuter code
 scoreboard players set add_permuter temp 0
 execute unless data storage link:temp Player.inventory[{tag: {permutation: 1}}] if entity @s[tag=permuter] run function patchwreck:player/permutation_check
 tag @s remove permuter
@@ -54,7 +54,7 @@ execute if score add_permuter temp matches 1.. run tag @s add permuter
 
 execute if data storage link:temp Player.inventory[{Slot: -106b, tag: {permutation: 1, permuter: 3}}] run tag @s add fire_permuter
 
-#Clearing certain items
+# Clearing certain items
 execute if data storage link:temp Player.inventory[{id: "minecraft:bamboo_raft"}] run clear @s bamboo_raft
 execute if data storage link:temp Player.inventory[{id: "minecraft:minecart"}] run clear @s minecart
 execute if data storage link:temp Player.inventory[{id: "minecraft:glass_bottle"}] run clear @s glass_bottle

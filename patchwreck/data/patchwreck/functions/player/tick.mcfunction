@@ -24,6 +24,9 @@ scoreboard players set @s enderayo.demonomicon 0
 #Special effects when hit by shulkers
 execute unless entity @s[advancements={patchwreck:shulker_hits_you=false,patchwreck:bullet_hits_you=false}] run function patchwreck:player/hit_by_bulker
 
+# Check inventory changes
+execute as @s[advancements={patchwreck:inventory_changed=true}] run function patchwreck:player/inventory_changed
+
 # Remove advancements and flags
 scoreboard players set @s bloodbeet.kills 0
 advancement revoke @s only patchwreck:inventory_changed
