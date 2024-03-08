@@ -44,6 +44,12 @@ scoreboard players set @a patchwreck.dead 0
 scoreboard players add 5t patchwreck.timers 1
 execute if score 5t patchwreck.timers matches 5 run scoreboard players set 5t patchwreck.timers 0
 
+execute if score $light_blue enderayo.hyperdrift matches 0.. run scoreboard players remove $light_blue enderayo.hyperdrift 1
+execute if score $magenta enderayo.hyperdrift matches 0.. run scoreboard players remove $magenta enderayo.hyperdrift 1
+
+# Handle hyperdrift helmet transition display
+function enderayo:hyperdrift_helmet/tick
+
 # Time setting branch
 #execute if score 1hz gremloop matches 13 run function patchwreck:set_time
 

@@ -36,7 +36,8 @@ execute if data storage link:temp Player.inventory[{tag: {Demonomicon: 1b}}] run
 
 # Hyperdrift Helmet
 execute if data storage link:temp Player.inventory[{Slot: 103b, tag: {hyperdrift: 1b}}] run tag @s add hyperdrifter
-execute if entity @s[tag=hyperdrifter] run loot replace entity @s armor.head loot patchwreck:metropolis/hyperdrift_light_blue
+execute if score $light_blue enderayo.hyperdrift matches 1.. if entity @s[tag=hyperdrifter] run function enderayo:hyperdrift_helmet/equip_light_blue
+execute if score $magenta enderayo.hyperdrift matches 1.. if entity @s[tag=hyperdrifter] run function enderayo:hyperdrift_helmet/equip_magenta
 execute if data storage link:temp Player.inventory[{Slot: 103b, tag: {hyperdrift: {glass: 1b}}}] run tag @s add hyperdrifter
 
 data remove storage enderayo:storage item
