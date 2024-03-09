@@ -32,8 +32,8 @@ execute unless entity d364a92f-4534-48b0-bf64-6da74289be62 run summon text_displ
 ride d364a92f-4534-48b0-bf64-6da74289be62 mount cc96b0f1-bdd5-498c-9e6d-64daba58daa8
 
 #Player interactions
-execute unless entity 267e6e48-4a17-42b3-bf89-dd2b69b0818d run summon interaction ~ ~ ~ {width:2.0f,height:2.0f,response:0b,Tags:["spawner_interaction"],UUID:[I;645819976,1243038387,-1081483989,1773175181]}
-execute unless entity 603e1c72-9632-43e3-8ad2-aa6d803f9a8b run summon interaction ~ ~ ~ {width:2.0f,height:2.0f,response:0b,Tags:["spawner_interaction"],UUID:[I;1614683250,-1775090717,-1965905299,-2143315317]}
+execute unless entity 267e6e48-4a17-42b3-bf89-dd2b69b0818d run summon interaction ~ ~ ~ {width:5.0f,height:2.0f,response:0b,Tags:["spawner_interaction"],UUID:[I;645819976,1243038387,-1081483989,1773175181]}
+execute unless entity 603e1c72-9632-43e3-8ad2-aa6d803f9a8b run summon interaction ~ ~ ~ {width:5.0f,height:2.0f,response:0b,Tags:["spawner_interaction"],UUID:[I;1614683250,-1775090717,-1965905299,-2143315317]}
 
 #sound
 execute at @s run playsound minecraft:block.note_block.hat player @s ~ ~ ~ 1 1
