@@ -6,21 +6,37 @@ data modify storage spawner_tweaker:temp spawner set from block ~ ~ ~
 #Rotatation+color
 execute at @s run tp @s ~ ~ ~ ~10 ~
 team join spawner_tweaker_red @s
-$execute if entity @a[distance=..$(RequiredPlayerRange)] run team join spawner_tweaker_green @s
+$execute if entity @a[distance=..$(RequiredPlayerRange),tag=holding_spawner] run team join spawner_tweaker_green @s
 
 #Player range color
-$execute positioned ^ ^ ^$(RequiredPlayerRange) positioned ~ ~0.4 ~ run particle angry_villager ~ ~ ~ 0 0 0 0 1 force
-$execute positioned ^ ^ ^-$(RequiredPlayerRange) positioned ~ ~0.4 ~ run particle angry_villager ~ ~ ~ 0 0 0 0 1 force
-$execute positioned ^$(RequiredPlayerRange) ^ ^ positioned ~ ~0.4 ~ run particle angry_villager ~ ~ ~ 0 0 0 0 1 force
-$execute positioned ^-$(RequiredPlayerRange) ^ ^ positioned ~ ~0.4 ~ run particle angry_villager ~ ~ ~ 0 0 0 0 1 force
+#$execute positioned ^ ^ ^$(RequiredPlayerRange) positioned ~ ~0.4 ~ run particle angry_villager ~ ~ ~ 0 0 0 0 1 force
+#$execute positioned ^ ^ ^-$(RequiredPlayerRange) positioned ~ ~0.4 ~ run particle angry_villager ~ ~ ~ 0 0 0 0 1 force
+#$execute positioned ^$(RequiredPlayerRange) ^ ^ positioned ~ ~0.4 ~ run particle angry_villager ~ ~ ~ 0 0 0 0 1 force
+#$execute positioned ^-$(RequiredPlayerRange) ^ ^ positioned ~ ~0.4 ~ run particle angry_villager ~ ~ ~ 0 0 0 0 1 force
 
 #Spawn area display
 execute store result score temp temp run data get storage spawner_tweaker:temp spawner.SpawnRange 2
 scoreboard players add temp temp 1
-$execute unless entity @a[distance=..$(RequiredPlayerRange)] run scoreboard players set temp temp 0
 execute store result storage spawner_tweaker:temp spawner.SpawnVolume float 1.001 run scoreboard players get temp temp
 execute store result storage spawner_tweaker:temp spawner.HalfSpawnVolume float 0.5001 run scoreboard players get temp temp
 execute on passengers run function spawner_tweaker:spawner_tweaking/spawn_area with storage spawner_tweaker:temp spawner
+execute on passengers run data merge entity @s {block_state:{Name:"minecraft:gray_stained_glass"}}
+$execute if entity @a[distance=..$(RequiredPlayerRange),tag=holding_spawner] on passengers run data merge entity @s {block_state:{Name:"minecraft:red_stained_glass"}}
+
+#Radius display
+execute store result score temp temp run data get storage spawner_tweaker:temp spawner.RequiredPlayerRange 1200
+execute store result storage spawner_tweaker:temp temp.scale float 0.0103 run scoreboard players get temp temp
+execute store result storage spawner_tweaker:temp temp.x float 0.00019 run scoreboard players get temp temp
+execute store result storage spawner_tweaker:temp temp.y float 0.00161 run scoreboard players get temp temp
+execute as @e[distance=..5,tag=st_radius_x] run function spawner_tweaker:spawner_tweaking/radius with storage spawner_tweaker:temp temp
+execute as @e[distance=..5,tag=st_radius_y] run function spawner_tweaker:spawner_tweaking/radius_v with storage spawner_tweaker:temp temp
+
+
+execute as @e[distance=..5,tag=st_radius_x] run data merge entity @s {text:'{"text":"⭕","color":"red","italic":false}',text_opacity:100}
+$execute if entity @a[distance=..$(RequiredPlayerRange),tag=holding_spawner] as @e[distance=..5,tag=st_radius_x] run data merge entity @s {text:'{"text":"⭕","color":"dark_green","italic":false}',text_opacity:60}
+execute as @e[distance=..5,tag=st_radius_y] run data merge entity @s {text:'{"text":"⭕","color":"red","italic":false}',text_opacity:100}
+$execute if entity @a[distance=..$(RequiredPlayerRange),tag=holding_spawner] as @e[distance=..5,tag=st_radius_y] run data merge entity @s {text:'{"text":"⭕","color":"dark_green","italic":false}',text_opacity:60}
+
 
 #Display the spawner information
 #title @a[limit=1,sort=nearest,tag=holding_spawner] actionbar [{"text":"Count ⁂ ","color":"white","bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false},{"nbt":"spawner.SpawnCount","storage":"spawner_tweaker:temp","color":"gray","bold":false},{"text":" Mob Cap ᛤ ","bold":false},{"nbt":"spawner.MaxNearbyEntities","storage":"spawner_tweaker:temp","color":"gray","bold":false},{"text":" Range ⦿ ","bold":false},{"nbt":"spawner.SpawnRange","storage":"spawner_tweaker:temp","color":"gray","bold":false},{"text":" @p Range ⦾ ","bold":false},{"nbt":"spawner.RequiredPlayerRange","storage":"spawner_tweaker:temp","color":"gray","bold":false},{"text":" Delay ⌚ ","bold":false},{"nbt":"spawner.MinSpawnDelay","storage":"spawner_tweaker:temp","color":"gray","bold":false},{"text":"-","color":"gray","bold":false},{"nbt":"spawner.MaxSpawnDelay","storage":"spawner_tweaker:temp","color":"gray","bold":false},{"text":" Light ᛙ ","bold":false},{"nbt":"spawner.SpawnPotentials[0].data.custom_spawn_rules.block_light_limit[0]","storage":"spawner_tweaker:temp","color":"gray","bold":false},{"text":"-","color":"gray","bold":false},{"nbt":"spawner.SpawnPotentials[0].data.custom_spawn_rules.block_light_limit[1]","storage":"spawner_tweaker:temp","color":"gray","bold":false},{"text":" Light ۞ ","bold":false},{"nbt":"spawner.SpawnPotentials[0].data.custom_spawn_rules.sky_light_limit[0]","storage":"spawner_tweaker:temp","color":"gray","bold":false},{"text":"-","color":"gray","bold":false},{"nbt":"spawner.SpawnPotentials[0].data.custom_spawn_rules.sky_light_limit[1]","storage":"spawner_tweaker:temp","color":"gray","bold":false}]
