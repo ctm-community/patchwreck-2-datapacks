@@ -29,6 +29,7 @@ execute store result storage spawner_tweaker:temp temp.scale float 0.0103 run sc
 execute store result storage spawner_tweaker:temp temp.x float 0.00019 run scoreboard players get temp temp
 execute store result storage spawner_tweaker:temp temp.y float 0.00161 run scoreboard players get temp temp
 execute as @e[distance=..5,tag=st_radius_x] run function spawner_tweaker:spawner_tweaking/radius with storage spawner_tweaker:temp temp
+execute as @e[distance=..5,tag=st_radius_x2] run function spawner_tweaker:spawner_tweaking/radius_under with storage spawner_tweaker:temp temp
 execute as @e[distance=..5,tag=st_radius_y] run function spawner_tweaker:spawner_tweaking/radius_v with storage spawner_tweaker:temp temp
 
 

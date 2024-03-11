@@ -13,5 +13,6 @@ kill aec389bc-e396-41ac-8bef-85ebcf593123
 kill 4ca433fe-64bf-404d-bc76-e09f9f719902
 kill cc96b0f1-bdd5-498c-9e6d-64daba58daa8
 kill d364a92f-4534-48b0-bf64-6da74289be62
+kill e18bf975-d677-435c-9542-d3b0ec6685c5
 scoreboard players set loaded spawner_tweaker 0
 scoreboard players set setting spawner_tweaker 4

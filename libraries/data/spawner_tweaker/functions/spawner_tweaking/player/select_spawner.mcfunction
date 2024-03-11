@@ -31,6 +31,10 @@ ride cc96b0f1-bdd5-498c-9e6d-64daba58daa8 mount 4ca433fe-64bf-404d-bc76-e09f9f71
 execute unless entity d364a92f-4534-48b0-bf64-6da74289be62 run summon text_display ~ ~ ~ {UUID:[I;-748377809,1161054384,-1083937369,1116323426],Glowing:1b,view_range:100f,width:100f,height:100f,billboard:"fixed",interpolation_duration:5,teleport_duration:5,Rotation:[135F,180F],Tags:["st_radius_y","st_radius"],brightness:{sky:15,block:15},transformation:[-0.0000f,0.0000f,1.0000f,0.0000f,0.0000f,1.0000f,0.0000f,0.0000f,-1.0000f,0.0000f,-0.0000f,0.0000f,0.0000f,0.0000f,0.0000f,1.0000f],text:'{"text":"⬤","color":"red","italic":false}',text_opacity:120,background:16711680}
 ride d364a92f-4534-48b0-bf64-6da74289be62 mount cc96b0f1-bdd5-498c-9e6d-64daba58daa8
 
+#Radius under
+execute unless entity e18bf975-d677-435c-9542-d3b0ec6685c5 run summon text_display ~ ~ ~ {UUID:[I;-510920331,-696827044,-1790782544,-328825403],Glowing:1b,view_range:100f,width:100f,height:100f,billboard:"vertical",interpolation_duration:5,teleport_duration:5,Rotation:[0F,90F],Tags:["st_radius_x2","st_radius_x","st_radius"],brightness:{sky:15,block:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,-0.7f,0f],scale:[25f,25f,25f]},text:'{"text":"⬤","color":"red","italic":false}',text_opacity:120,background:16711680}
+ride e18bf975-d677-435c-9542-d3b0ec6685c5 mount d364a92f-4534-48b0-bf64-6da74289be62
+
 #Player interactions
 execute unless entity 267e6e48-4a17-42b3-bf89-dd2b69b0818d run summon interaction ~ ~ ~ {width:5.0f,height:2.0f,response:0b,Tags:["spawner_interaction"],UUID:[I;645819976,1243038387,-1081483989,1773175181]}
 execute unless entity 603e1c72-9632-43e3-8ad2-aa6d803f9a8b run summon interaction ~ ~ ~ {width:5.0f,height:2.0f,response:0b,Tags:["spawner_interaction"],UUID:[I;1614683250,-1775090717,-1965905299,-2143315317]}
