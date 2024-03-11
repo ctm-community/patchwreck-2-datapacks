@@ -1,4 +1,5 @@
-#20hz on markers to make particles
+#> patchwreck:regions/metropolis/particles/marker_tick
+# 20hz on markers to make particles
 
 execute if entity @s[tag=!initiated] facing entity @p eyes facing ^1 ^ ^ run tp @s ~ ~ ~ 0 ~
 tag @s add initiated
@@ -18,9 +19,9 @@ scoreboard players add @s life 1
 kill @s[scores={life=100..}]
 
 
-#Loop
+# Loop
 execute unless entity @s[tag=bloop] run scoreboard players set n temp 10
 scoreboard players remove n temp 1
 tag @s add bloop
-execute if score n temp matches 1.. at @s run function patchwreck:mtro_particle/marker_tick
+execute if score n temp matches 1.. at @s run function patchwreck:regions/metropolis/particles/marker_tick
 

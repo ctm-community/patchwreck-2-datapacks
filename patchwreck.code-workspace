@@ -27,13 +27,15 @@
       "editor.detectIndentation": false,
       "editor.indentSize": 2,
       "editor.tabSize": 2,
-      "editor.formatOnSave": true
+      "editor.formatOnSave": true,
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[jsonc]": {
       "editor.detectIndentation": false,
       "editor.indentSize": 2,
       "editor.tabSize": 2,
-      "editor.formatOnSave": true
+      "editor.formatOnSave": true,
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     // Exclude data packs from main workspace to avoid folder duplication
     "files.exclude": {
