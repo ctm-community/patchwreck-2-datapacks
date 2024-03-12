@@ -12,6 +12,9 @@
         "type": "soul"
       },
       "probability": 0.0005
+    },
+    "ambient_sound": {
+      "sound_id": "minecraft:gothic"
     }
   },
   "spawners": {},

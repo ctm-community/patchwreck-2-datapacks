@@ -8,6 +8,9 @@
     "water_color": 6018033,
     "water_fog_color": 2326644,
     "grass_color": 10801235,
+    "ambient_sound": {
+      "sound_id": "minecraft:grove"
+    },
     "particle": {
       "options": {
         "type": "cherry_leaves"

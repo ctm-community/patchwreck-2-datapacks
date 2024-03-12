@@ -1,14 +1,14 @@
 {
-  "temperature": 0.8,
-  "downfall": 0.4,
+  "temperature": 0.5,
+  "downfall": 0.5,
   "has_precipitation": false,
   "effects": {
-    "sky_color": 7907327,
-    "fog_color": 16777215,
+    "sky_color": 8103167,
+    "fog_color": 1900575,
     "water_color": 4159204,
     "water_fog_color": 329011,
     "ambient_sound": {
-      "sound_id": "minecraft:metropolis"
+      "sound_id": "minecraft:monument"
     }
   },
   "spawners": {},

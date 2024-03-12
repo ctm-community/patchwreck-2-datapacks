@@ -12,6 +12,9 @@
         "type": "white_ash"
       },
       "probability": 0.01
+    },
+    "ambient_sound": {
+      "sound_id": "minecraft:tomb"
     }
   },
   "spawners": {},
