@@ -1,4 +1,4 @@
 #> patchwreck:void/return/damage
 # Damage player upon returning them from the void
 
-$damage @s $(damage) minecraft:out_of_world
+$damage @s $(damage) game:no_scale_no_i_frames_no_knockback

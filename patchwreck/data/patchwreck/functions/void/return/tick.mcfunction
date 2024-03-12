@@ -22,10 +22,13 @@ execute if score @s patchwreck.void_return matches 51 run stopsound @s player mi
 execute if score @s patchwreck.void_return matches 51 run effect clear @s minecraft:darkness
 
 # Damage non-creative mode players by 20% of their max health
-execute if score @s[gamemode=!creative] patchwreck.void_return matches 51 store result score $damage patchwreck.variables run attribute @s generic.max_health get
-execute if score @s[gamemode=!creative] patchwreck.void_return matches 51 run scoreboard players operation $damage patchwreck.variables *= 20 patchwreck.constants
-execute if score @s[gamemode=!creative] patchwreck.void_return matches 51 run scoreboard players operation $damage patchwreck.variables /= 100 patchwreck.constants
-execute if score @s[gamemode=!creative] patchwreck.void_return matches 51 store result storage patchwreck:storage variables.damage float 1 run scoreboard players get $damage patchwreck.variables
+execute if score @s[gamemode=!creative] patchwreck.void_return matches 51 store result score difficulty temp run difficulty
+execute if score @s[gamemode=!creative] patchwreck.void_return matches 51 store result score $damage patchwreck.variables run attribute @s generic.max_health get 10
+execute if score @s[gamemode=!creative] patchwreck.void_return matches 51 if score difficulty temp matches ..1 run scoreboard players operation $damage patchwreck.variables *= 25 numbers
+execute if score @s[gamemode=!creative] patchwreck.void_return matches 51 if score difficulty temp matches 2 run scoreboard players operation $damage patchwreck.variables *= 32 numbers
+execute if score @s[gamemode=!creative] patchwreck.void_return matches 51 if score difficulty temp matches 3.. run scoreboard players operation $damage patchwreck.variables *= 40 numbers
+execute if score @s[gamemode=!creative] patchwreck.void_return matches 51 run scoreboard players operation $damage patchwreck.variables /= 100 numbers
+execute if score @s[gamemode=!creative] patchwreck.void_return matches 51 store result storage patchwreck:storage variables.damage float 0.1 run scoreboard players get $damage patchwreck.variables
 execute if score @s[gamemode=!creative] patchwreck.void_return matches 51 run function patchwreck:void/return/damage with storage patchwreck:storage variables
 
 # Reset void return data if return sequence is complete
