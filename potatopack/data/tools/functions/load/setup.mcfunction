@@ -72,6 +72,7 @@ gamerule doWardenSpawning false
 gamerule doDaylightCycle false
 gamerule doTraderSpawning false
 gamerule doWeatherCycle false
+gamerule keepInventory true
 
 #rng setup
 scoreboard objectives add constant dummy

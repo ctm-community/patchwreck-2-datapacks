@@ -4,6 +4,7 @@ gamemode spectator @a[gamemode=creative,scores={admin=1..},x_rotation=-90]
 gamemode creative @a[gamemode=spectator,scores={admin=1..},x_rotation=90]
 
 #branching
+execute positioned 0 100 0 if entity @a[distance=..20,limit=1] run function game:lobby/lobby_tick
 function game:loop/20hz
 
 #night vision, taken from initially then repurposed. Remove on publishing
