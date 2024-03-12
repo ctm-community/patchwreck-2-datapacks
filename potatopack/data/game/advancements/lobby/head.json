@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:interaction",
+          "nbt": "{Tags:[\"credits_interaction\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "game:lobby/credit_heads/player_selects"
+  }
+}

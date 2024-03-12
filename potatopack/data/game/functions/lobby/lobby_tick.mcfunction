@@ -9,3 +9,4 @@ execute if score 5hz gremloop matches 1 as 2d5e664b-0e80-48c5-9367-beb453330b46 
 
 gamemode adventure @a[distance=..30,gamemode=survival]
 effect give @a[distance=..30] saturation 219 200 true
+execute as @e[distance=..30,type=interaction,tag=credits_interaction] run function game:lobby/credit_heads/interaction_tick

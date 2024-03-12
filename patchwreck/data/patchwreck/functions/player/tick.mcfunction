@@ -38,3 +38,10 @@ execute if score 1hz gremloop matches 13 if entity @s[tag=fire_permuter] as @e[d
 
 # Hyperdrifter
 execute if entity @s[tag=hyperdrifter] run function sd:update_players
+
+# Fixing pixie
+execute if score @s water_used matches 1.. run scoreboard players set @s axol_used 1
+execute if score @s water_used matches 1.. run scoreboard players set @s water_used 0
+execute if score @s axol_used matches 1.. run clear @s bucket 1
+execute if score @s axol_used matches 1.. run give @s water_bucket
+execute if score @s axol_used matches 1.. run scoreboard players set @s axol_used 0

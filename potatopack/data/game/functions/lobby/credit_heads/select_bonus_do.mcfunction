@@ -1,0 +1,3 @@
+$tellraw $(ign) {"text":"Thank you for your help!","color":"white","italic":false}
+$give $(ign) pink_shulker_box{display:{Name:'{"text":"A Thank-You Gift","color":"light_purple","italic":false}'},BlockEntityTag:{Items:[{Slot:13b,id:"minecraft:golden_apple",Count:1b,tag:{display:{Name:'{"text":"+2 Max Health","color":"red","italic":false}'}}},{Slot:22b,id:"minecraft:paper",Count:1b,tag:{display:{Name:'{"text":"Click head again to disable","color":"white","italic":true}'}}}]}} 1
+$attribute $(ign) generic.max_health modifier add 0e6446df-45b5-4460-abf8-9b29ab24bb57 "participation_bonus" 2 add

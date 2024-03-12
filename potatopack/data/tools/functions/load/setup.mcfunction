@@ -30,6 +30,8 @@ scoreboard objectives add crossbowshot minecraft.used:minecraft.crossbow
 scoreboard objectives add carrot minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add life dummy
 scoreboard objectives add adventure dummy
+scoreboard objectives add axol_used minecraft.used:minecraft.axolotl_bucket
+scoreboard objectives add water_used minecraft.used:water_bucket
 
 #Force spawner tweaker to load
 scoreboard players set setup spawner_tweaker 0
