@@ -57,6 +57,7 @@ function enderayo:hyperdrift_helmet/tick
 #particle for nuclear wasteland +metropolis
 execute in patchwreck:wasteland as @a[distance=..999] at @s run function patchwreck:wateland_particle/player
 execute in patchwreck:metropolis as @a[distance=..999,limit=1,sort=random] at @s run function patchwreck:regions/metropolis/particles/player
+execute in patchwreck:metropolis positioned 100 105 100 run function patchwreck:regions/metropolis/particles/exit_portal/animate
 execute if score inmetro temp matches 1.. as @e[type=minecraft:marker,tag=metro_part] at @s run function patchwreck:regions/metropolis/particles/marker_tick
 execute if score inmetro temp matches 1.. run tag @e[type=minecraft:marker,tag=metro_part] remove bloop
 scoreboard players set inmetro temp 0
