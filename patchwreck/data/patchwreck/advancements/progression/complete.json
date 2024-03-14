@@ -1,0 +1,43 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:end_crystal"
+    },
+    "title": "Patchwreck II Complete",
+    "description": "",
+    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "patchwreck:progression/purple_wool",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type_specific": {
+                "type": "player",
+                "advancements": {
+                  "patchwreck:progression/orange_wool": true,
+                  "patchwreck:progression/yellow_wool": true,
+                  "patchwreck:progression/lime_wool": true,
+                  "patchwreck:progression/cyan_wool": true,
+                  "patchwreck:progression/purple_wool": true
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "patchwreck:monument/credits"
+  }
+}

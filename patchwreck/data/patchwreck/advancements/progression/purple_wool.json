@@ -1,9 +1,9 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:yellow_wool"
+      "item": "minecraft:purple_wool"
     },
-    "title": "Yellow Wool",
+    "title": "Purple Wool",
     "description": "",
     "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
     "frame": "goal",
@@ -11,13 +11,13 @@
     "announce_to_chat": false,
     "hidden": false
   },
-  "parent": "patchwreck:progression/orange_wool",
+  "parent": "patchwreck:progression/cyan_wool",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
         "item": {
-          "items": ["minecraft:yellow_wool"],
+          "items": ["minecraft:purple_wool"],
           "nbt": "{objective: 1b}"
         },
         "entity": [
@@ -26,7 +26,7 @@
             "entity": "this",
             "predicate": {
               "type": "minecraft:interaction",
-              "nbt": "{UUID: [I; -299175407, -628667006, -1625075390, 340442330]}"
+              "nbt": "{UUID: [I; -1657603701, 210716560, -1141218797, 1479484754]}"
             }
           }
         ]
@@ -34,6 +34,6 @@
     }
   },
   "rewards": {
-    "function": "patchwreck:monument/placed_yellow_wool"
+    "function": "patchwreck:monument/placed_purple_wool"
   }
 }

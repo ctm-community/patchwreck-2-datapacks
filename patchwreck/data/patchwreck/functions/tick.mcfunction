@@ -1,6 +1,9 @@
 #> patchwreck:tick
 # Handle all Patchwreck ticking events
 
+# Global monument ticking operations
+function patchwreck:monument/tick
+
 # Moved player ticking to central function (these are optimized or optimized enough)
 # Generally, it is best to do player ticking before entities
 execute as @a at @s run function patchwreck:player/tick

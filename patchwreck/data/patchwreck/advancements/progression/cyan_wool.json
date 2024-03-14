@@ -4,20 +4,36 @@
       "item": "minecraft:cyan_wool"
     },
     "title": "Cyan Wool",
-    "description": {
-      "text": "Place the Cyan Wool on the Monument",
-      "color": "white"
-    },
+    "description": "",
     "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
     "frame": "goal",
     "show_toast": true,
     "announce_to_chat": false,
     "hidden": false
   },
-  "parent": "patchwreck:progression/pink_wool",
+  "parent": "patchwreck:progression/lime_wool",
   "criteria": {
     "requirement": {
-      "trigger": "minecraft:impossible"
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "item": {
+          "items": ["minecraft:cyan_wool"],
+          "nbt": "{objective: 1b}"
+        },
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{UUID: [I; -726722545, -1012969818, -1971904113, -1887018966]}"
+            }
+          }
+        ]
+      }
     }
+  },
+  "rewards": {
+    "function": "patchwreck:monument/placed_cyan_wool"
   }
 }

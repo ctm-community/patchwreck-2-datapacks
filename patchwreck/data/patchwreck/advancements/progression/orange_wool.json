@@ -1,9 +1,9 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:yellow_wool"
+      "item": "minecraft:orange_wool"
     },
-    "title": "Yellow Wool",
+    "title": "Orange Wool",
     "description": "",
     "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
     "frame": "goal",
@@ -11,13 +11,13 @@
     "announce_to_chat": false,
     "hidden": false
   },
-  "parent": "patchwreck:progression/orange_wool",
+  "parent": "patchwreck:progression/root",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
         "item": {
-          "items": ["minecraft:yellow_wool"],
+          "items": ["minecraft:orange_wool"],
           "nbt": "{objective: 1b}"
         },
         "entity": [
@@ -26,7 +26,7 @@
             "entity": "this",
             "predicate": {
               "type": "minecraft:interaction",
-              "nbt": "{UUID: [I; -299175407, -628667006, -1625075390, 340442330]}"
+              "nbt": "{UUID: [I; 1741577990, 125127819, -1605857990, -888952633]}"
             }
           }
         ]
@@ -34,6 +34,6 @@
     }
   },
   "rewards": {
-    "function": "patchwreck:monument/placed_yellow_wool"
+    "function": "patchwreck:monument/placed_orange_wool"
   }
 }

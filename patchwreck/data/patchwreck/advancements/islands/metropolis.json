@@ -1,20 +1,17 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:polished_basalt"
+      "item": "minecraft:polished_deepslate"
     },
-    "title": "Nuclear Wasteland",
-    "description": {
-      "text": "Theme 3",
-      "color": "white"
-    },
+    "title": "Neon Metropolis",
+    "description": "",
     "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": false,
     "hidden": false
   },
-  "parent": "patchwreck:progression/yellow_wool",
+  "parent": "patchwreck:islands/grove",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:tick",
@@ -27,7 +24,7 @@
               "type_specific": {
                 "type": "player",
                 "advancements": {
-                  "patchwreck:progression/yellow_wool": true
+                  "patchwreck:progression/cyan_wool": true
                 }
               }
             }

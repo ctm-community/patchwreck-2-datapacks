@@ -4,10 +4,7 @@
       "item": "minecraft:lime_wool"
     },
     "title": "Lime Wool",
-    "description": {
-      "text": "Place the Lime Wool on the Monument",
-      "color": "white"
-    },
+    "description": "",
     "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
     "frame": "goal",
     "show_toast": true,
@@ -17,7 +14,26 @@
   "parent": "patchwreck:progression/yellow_wool",
   "criteria": {
     "requirement": {
-      "trigger": "minecraft:impossible"
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "item": {
+          "items": ["minecraft:lime_wool"],
+          "nbt": "{objective: 1b}"
+        },
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{UUID: [I; -548659850, 368788517, -1800657591, 1494119255]}"
+            }
+          }
+        ]
+      }
     }
+  },
+  "rewards": {
+    "function": "patchwreck:monument/placed_lime_wool"
   }
 }

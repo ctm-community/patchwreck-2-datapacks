@@ -4,17 +4,14 @@
       "item": "minecraft:chiseled_sandstone"
     },
     "title": "Egyptian Tomb",
-    "description": {
-      "text": "Theme 2",
-      "color": "white"
-    },
+    "description": "",
     "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": false,
     "hidden": false
   },
-  "parent": "patchwreck:progression/gray_wool",
+  "parent": "patchwreck:islands/gothic",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:tick",
@@ -27,7 +24,7 @@
               "type_specific": {
                 "type": "player",
                 "advancements": {
-                  "patchwreck:progression/gray_wool": true
+                  "patchwreck:progression/orange_wool": true
                 }
               }
             }
