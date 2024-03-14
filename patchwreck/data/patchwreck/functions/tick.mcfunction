@@ -57,10 +57,12 @@ function enderayo:hyperdrift_helmet/tick
 # Time setting branch
 #execute if score 1hz gremloop matches 13 run function patchwreck:set_time
 
-#particle for nuclear wasteland +metropolis
+#particle for nuclear wasteland +metropolis + gothic
 execute in patchwreck:wasteland as @a[distance=..999] at @s run function patchwreck:wateland_particle/player
 execute in patchwreck:metropolis as @a[distance=..999,limit=1,sort=random] at @s run function patchwreck:regions/metropolis/particles/player
 execute in patchwreck:metropolis positioned 100 105 100 run function patchwreck:regions/metropolis/particles/exit_portal/animate
 execute if score inmetro temp matches 1.. as @e[type=minecraft:marker,tag=metro_part] at @s run function patchwreck:regions/metropolis/particles/marker_tick
 execute if score inmetro temp matches 1.. run tag @e[type=minecraft:marker,tag=metro_part] remove bloop
 scoreboard players set inmetro temp 0
+execute in patchwreck:gothic positioned 99 0 95 if loaded ~ ~ ~ as @e[distance=..10,type=minecraft:block_display,limit=1,sort=random] at @s align xyz positioned ~0.5 ~0.5 ~0.5 run particle block suspicious_gravel ~ ~0.5 ~ 0.25 0 0.25 0 1 force
+
