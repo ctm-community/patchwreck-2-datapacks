@@ -47,17 +47,19 @@ scoreboard players set @a patchwreck.dead 0
 # Patchwreck timers
 scoreboard players add 5t patchwreck.timers 1
 execute if score 5t patchwreck.timers matches 5 run scoreboard players set 5t patchwreck.timers 0
+scoreboard players add 1s patchwreck.timers 1
+execute if score 1s patchwreck.timers matches 20.. run scoreboard players set 1s patchwreck.timers 0
 
 execute if score $light_blue enderayo.hyperdrift matches 0.. run scoreboard players remove $light_blue enderayo.hyperdrift 1
 execute if score $magenta enderayo.hyperdrift matches 0.. run scoreboard players remove $magenta enderayo.hyperdrift 1
 
+# Teleporters check
+execute if score 1s patchwreck.timers matches 2 run function patchwreck:monument/unlock_teleporters
+
 # Handle hyperdrift helmet transition display
 function enderayo:hyperdrift_helmet/tick
 
-# Time setting branch
-#execute if score 1hz gremloop matches 13 run function patchwreck:set_time
-
-#particle for nuclear wasteland +metropolis + gothic
+# particle for nuclear wasteland +metropolis + gothic
 execute in patchwreck:wasteland as @a[distance=..999] at @s run function patchwreck:wateland_particle/player
 execute in patchwreck:metropolis as @a[distance=..999,limit=1,sort=random] at @s run function patchwreck:regions/metropolis/particles/player
 execute in patchwreck:metropolis positioned 100 105 100 run function patchwreck:regions/metropolis/particles/exit_portal/animate
