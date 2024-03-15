@@ -1,0 +1,72 @@
+General
+[ ] Unlock all recipes from start, or at least the important ones + chain
+[ ] Pot loot table
+[ ] Remove pink flower drop table
+[ ] Kill item frames around player without items when player grabbs something from an item frame
+[ ] Add gibbs no attack cooldown on miss datapack
+[ ] Make haybales drop bread directly
+[ ] Set spawnpoints inside the dimension but be sure to fix ambient issues
+[ ] Add back the item repair recipe
+[ ] Add functionality to left click monument interaction
+[ ] Remove coco bean loot table
+[ ] Gamerule mobgriefing true
+[ ] In general there needs to be more loot for equipment for multiplayer
+[ ] Clear curse of vanishing items on death
+
+Lobby/Monument
+[ ] Softlock with void return and lobby (if you fall off side and go under)
+[ ] Something to indicate you can click heads
+[ ] Replace signs in monument for areas with text displays
+
+Area 1
+[ ] Transforming vamire just dies after transforming often
+[ ] Light level of swarm spawner in intersection not calibrated
+[ ] Better demonomocon marker death sys (bugs if unloaded)
+[ ] Add a shortcut back
+[ ] Think about chaning demonomocon (normal book when cooldown or fungus)
+
+Area 2
+[ ] Slightly quieter music
+[ ] Swap music order tbh (first and second tracks that play)
+[ ] Empty chest at 115 110 78
+[ ] Remove chest at 109 99 43
+[ ] Reduce range of sand trap spawner a bit
+[ ] Remove (bring back vanilla) melon drop table
+[ ] Increase count of skele spawns at final bridge as they fall into void
+[ ] Sphinx trap isn't deadly enough, also command blocks did not get removed. Just make a dispensed creeper tbh.
+
+Area 3
+[ ] Apocolapse crocs typo (second line is indeted :thonk:)
+[ ] Remove netherite blocks in final island? - technically useless without templates
+
+Area 4
+[ ] First kitsune spawner is broken :(
+[ ] Add a sign to first water shortcut
+[ ] 172 104 63 chest is too weak
+[ ] Permuter item broken in both chest and in /loot
+[ ] Kitsune spawner at tall tree borken
+[ ] Fairy offhand speed really broken
+
+Area 5
+[ ] Replace ambience
+[ ] Alien spaceship sounds play in other dimensions
+[ ] Neon urn spawners seems broken (at least at robot shop)
+[ ] Add hole to get down water in arcade
+[ ] 222 99 54 empty chest
+[ ] 211 89 77 missing spawner
+[ ] 161 91 69 missing spawner
+
+Compiling
+[ ] Remove backup wool chest
+[ ] Ensure wool is in all woolboxes!
+[ ] Make sure all heads are working in the lobby
+[ ] Add resource pack name, icon, and description
+[ ] Adjust file name, level name, and icon
+[ ] Trim the world
+
+Other things from the todo list
+[ ] Add a system for dead players to tp to one another
+[ ] Finish item advancements
+[ ] Finish mob advancements
+[ ] Finish island advancements
+[ ] Refine + finish credits
