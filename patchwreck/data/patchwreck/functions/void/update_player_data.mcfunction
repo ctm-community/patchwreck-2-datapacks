@@ -4,6 +4,10 @@
 # If player is on stable ground, update tether and exit
 execute as @s[nbt={OnGround: 1b}] run return run function patchwreck:void/tether/create
 
+# If the player is in a custom region, set predefined void tether points and exit
+execute positioned 0 100 0 as @s[distance=..250] run function patchwreck:void/tether/setpoint {x: 0, y: 100, z: 0}
+execute positioned 1000 100 1000 as @s[distance=..250] run function patchwreck:void/tether/setpoint {x: 1000, y: 100, z: 1000}
+
 # If player doesn't have a valid tether, there isn't a need to run any additional checks
 execute if entity @s[tag=!patchwreck.valid_void_tether] run return fail
 
