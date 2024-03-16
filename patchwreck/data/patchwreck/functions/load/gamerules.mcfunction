@@ -2,7 +2,6 @@
 # Set expected gamerules
 
 # Configure worldspawn
-setworldspawn 0 100 0
 gamerule spawnRadius 0
 
 # Configure spawning rules
@@ -17,4 +16,7 @@ gamerule doWardenSpawning false
 gamerule commandBlockOutput false
 gamerule doFireTick false
 gamerule doVinesSpread false
+gamerule doWeatherCycle false
 gamerule keepInventory true
+gamerule mobGriefing true
+gamerule sendCommandFeedback false

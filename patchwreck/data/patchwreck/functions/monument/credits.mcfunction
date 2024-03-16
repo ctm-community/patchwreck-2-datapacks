@@ -286,12 +286,12 @@ execute if score $credits patchwreck.timers matches 200..3100 run gamemode spect
 execute if score $credits patchwreck.timers matches 205..3100 as @a[gamemode=spectator] at @s run spectate e2fd7a71-6b0d-4012-b126-a0b021afdcca
 
 # Player has to stop spectating and re-spectate display entity when crossing dimensions
-execute if score $credits patchwreck.timers matches 200..205 as @a[gamemode=spectator] at @s run spectate
-execute if score $credits patchwreck.timers matches 700..705 as @a[gamemode=spectator] at @s run spectate
-execute if score $credits patchwreck.timers matches 1240..1245 as @a[gamemode=spectator] at @s run spectate
-execute if score $credits patchwreck.timers matches 1840..1845 as @a[gamemode=spectator] at @s run spectate
-execute if score $credits patchwreck.timers matches 2460..2465 as @a[gamemode=spectator] at @s run spectate
-execute if score $credits patchwreck.timers matches 3040..3045 as @a[gamemode=spectator] at @s run spectate
+execute if score $credits patchwreck.timers matches 195..205 as @a[gamemode=spectator] at @s run spectate
+execute if score $credits patchwreck.timers matches 695..705 as @a[gamemode=spectator] at @s run spectate
+execute if score $credits patchwreck.timers matches 1235..1245 as @a[gamemode=spectator] at @s run spectate
+execute if score $credits patchwreck.timers matches 1835..1845 as @a[gamemode=spectator] at @s run spectate
+execute if score $credits patchwreck.timers matches 2455..2465 as @a[gamemode=spectator] at @s run spectate
+execute if score $credits patchwreck.timers matches 3035..3045 as @a[gamemode=spectator] at @s run spectate
 
 # Initialize credits timer
 execute if score $credits patchwreck.timers matches 0 run scoreboard players set $credits patchwreck.timers 1
