@@ -15,7 +15,7 @@ General
 
 Lobby/Monument
 [x] Softlock with void return and lobby (if you fall off side and go under)
-[ ] Something to indicate you can click heads
+[x] Something to indicate you can click heads
 [x] Replace signs in monument for areas with text displays
 [ ] Add functionality to left click monument interaction
 [ ] Finish new monument display system
@@ -29,8 +29,8 @@ Area 1
 [ ] Think about changing demonomocon (normal book when cooldown or fungus)
 
 Area 2
-[ ] Slightly quieter music
-[ ] Swap music order tbh (first and second tracks that play)
+[x] Slightly quieter music
+[x] Swap music order tbh (first and second tracks that play)
 [x] Empty chest at 115 110 78
 [x] Remove chest at 109 99 43
 [x] Reduce range of sand trap spawner a bit
