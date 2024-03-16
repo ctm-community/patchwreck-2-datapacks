@@ -1,43 +1,45 @@
 General
-[ ] Unlock all recipes from start, or at least the important ones + chain
-[ ] Pot loot table
+[x] Unlock all recipes from start, or at least the important ones + chain
+[x] Pot loot table
 [x] Flower pot loot table
-[ ] Remove pink flower drop table
+[x] Remove pink flower drop table
 [ ] Kill item frames around player without items when player grabbs something from an item frame
 [x] Add gibbs no attack cooldown on miss datapack
-[ ] Make haybales drop bread directly
+[x] Make haybales drop bread directly
 [ ] Set spawnpoints inside the dimension but be sure to fix ambient issues
 [x] Add back the item repair recipe
-[ ] Add functionality to left click monument interaction
-[ ] Remove coco bean loot table
+[x] Remove coco bean loot table
 [x] Gamerule mobgriefing true
 [ ] In general there needs to be more loot for equipment for multiplayer
-[ ] Clear curse of vanishing items on death
+[z] Clear curse of vanishing items on death
 
 Lobby/Monument
 [x] Softlock with void return and lobby (if you fall off side and go under)
-[ ] Something to indicate you can click heads
+[x] Something to indicate you can click heads
 [x] Replace signs in monument for areas with text displays
+[ ] Add functionality to left click monument interaction
+[ ] Finish new monument display system
+[x] Add enchantment table to gothic
 
 Area 1
-[ ] Transforming vamire just dies after transforming often
+[x] Transforming vamire just dies after transforming often
 [x] Light level of swarm spawner in intersection not calibrated
-[ ] Better demonomocon marker death sys (bugs if unloaded)
+[x] Better demonomocon marker death sys (bugs if unloaded)
 [x] Add a shortcut back
 [ ] Think about changing demonomocon (normal book when cooldown or fungus)
 
 Area 2
-[ ] Slightly quieter music
-[ ] Swap music order tbh (first and second tracks that play)
+[x] Slightly quieter music
+[x] Swap music order tbh (first and second tracks that play)
 [x] Empty chest at 115 110 78
 [x] Remove chest at 109 99 43
 [x] Reduce range of sand trap spawner a bit
-[ ] Remove (bring back vanilla) melon drop table
+[x] Remove (bring back vanilla) melon drop table
 [x] Increase count of skele spawns at final bridge as they fall into void
 [x] Sphinx trap isn't deadly enough, also command blocks did not get removed. Just make a dispensed creeper tbh.
 
 Area 3
-[ ] Apocolapse crocs typo (second line is indeted :thonk:)
+[x] Apocolapse crocs typo (second line is indeted :thonk:)
 [-] Remove netherite blocks in final island? - technically useless without templates
 [x] Fix double ghast not spawning
 
@@ -45,13 +47,13 @@ Area 4
 [x] First kitsune spawner is broken :(
 [x] Add a sign to first water shortcut
 [x] 172 104 63 chest is too weak
-[ ] Permuter item broken in both chest and in /loot
+[?] Permuter item broken in both chest and in /loot
 [x] Kitsune spawner at tall tree borken
 [x] Fairy offhand speed really broken
 
 Area 5
 [ ] Replace ambience
-[ ] Alien spaceship sounds play in other dimensions
+[x] Alien spaceship sounds play in other dimensions
 [?] Neon urn spawners seems broken (at least at robot shop)
 [x] Add hole to get down water in arcade
 [x] 222 99 54 empty chest
