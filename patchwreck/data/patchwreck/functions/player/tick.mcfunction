@@ -4,6 +4,9 @@
 # Void return
 function patchwreck:void/tick
 
+# Region ticking functions
+function patchwreck:regions/tick
+
 # Beetroot offshoot
 execute if entity @s[tag=beetrooter] run function patchwreck:player/beetroot_tick
 
