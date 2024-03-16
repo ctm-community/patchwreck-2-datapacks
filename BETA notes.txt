@@ -24,7 +24,7 @@ Lobby/Monument
 Area 1
 [ ] Transforming vamire just dies after transforming often
 [x] Light level of swarm spawner in intersection not calibrated
-[ ] Better demonomocon marker death sys (bugs if unloaded)
+[x] Better demonomocon marker death sys (bugs if unloaded)
 [x] Add a shortcut back
 [ ] Think about changing demonomocon (normal book when cooldown or fungus)
 
@@ -47,7 +47,7 @@ Area 4
 [x] First kitsune spawner is broken :(
 [x] Add a sign to first water shortcut
 [x] 172 104 63 chest is too weak
-[ ] Permuter item broken in both chest and in /loot
+[?] Permuter item broken in both chest and in /loot
 [x] Kitsune spawner at tall tree borken
 [x] Fairy offhand speed really broken
 
