@@ -3,6 +3,7 @@
     "clm:init",
     "entityid:load",
     "gu:load",
-    "sd:load"
+    "sd:load",
+    "rat:load"
   ]
 }

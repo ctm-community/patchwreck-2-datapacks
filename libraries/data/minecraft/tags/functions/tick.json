@@ -3,6 +3,8 @@
     "clm:main",
     "entityid:tick",
     "spawner_tweaker:main_tick",
-    "sd:loop"
+    "sd:loop",
+    "rat:loop"
+
   ]
 }

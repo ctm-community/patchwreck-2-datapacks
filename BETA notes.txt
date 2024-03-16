@@ -3,7 +3,7 @@ General
 [ ] Pot loot table
 [ ] Remove pink flower drop table
 [ ] Kill item frames around player without items when player grabbs something from an item frame
-[ ] Add gibbs no attack cooldown on miss datapack
+[x] Add gibbs no attack cooldown on miss datapack
 [ ] Make haybales drop bread directly
 [ ] Set spawnpoints inside the dimension but be sure to fix ambient issues
 [ ] Add back the item repair recipe
@@ -62,6 +62,7 @@ Compiling
 [ ] Make sure all heads are working in the lobby
 [ ] Add resource pack name, icon, and description
 [ ] Adjust file name, level name, and icon
+[ ] Delete nether
 [ ] Trim the world
 
 Other things from the todo list
