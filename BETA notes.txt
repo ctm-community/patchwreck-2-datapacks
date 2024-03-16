@@ -1,12 +1,13 @@
 General
 [ ] Unlock all recipes from start, or at least the important ones + chain
 [ ] Pot loot table
+[x] Flower pot loot table
 [ ] Remove pink flower drop table
 [ ] Kill item frames around player without items when player grabbs something from an item frame
 [x] Add gibbs no attack cooldown on miss datapack
 [ ] Make haybales drop bread directly
 [ ] Set spawnpoints inside the dimension but be sure to fix ambient issues
-[ ] Add back the item repair recipe
+[x] Add back the item repair recipe
 [ ] Add functionality to left click monument interaction
 [ ] Remove coco bean loot table
 [x] Gamerule mobgriefing true
