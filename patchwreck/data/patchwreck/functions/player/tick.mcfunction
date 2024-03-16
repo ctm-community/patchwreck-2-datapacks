@@ -30,6 +30,7 @@ execute unless entity @s[advancements={patchwreck:utility/shulker_hits_you=false
 # Check inventory changes
 execute as @s[advancements={patchwreck:utility/inventory_changed=true}] run function patchwreck:player/inventory_changed
 execute if score @s patchwreck.dead matches 1 run clear @s #wool
+execute if score @s patchwreck.dead matches 1 run clear @s #all{Enchantments:[{id:"minecraft:vanishing_curse",lvl:1s}]}
 
 # Remove advancements and flags
 scoreboard players set @s bloodbeet.kills 0

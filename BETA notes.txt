@@ -11,7 +11,7 @@ General
 [x] Remove coco bean loot table
 [x] Gamerule mobgriefing true
 [ ] In general there needs to be more loot for equipment for multiplayer
-[ ] Clear curse of vanishing items on death
+[z] Clear curse of vanishing items on death
 
 Lobby/Monument
 [x] Softlock with void return and lobby (if you fall off side and go under)
@@ -22,7 +22,7 @@ Lobby/Monument
 [x] Add enchantment table to gothic
 
 Area 1
-[ ] Transforming vamire just dies after transforming often
+[x] Transforming vamire just dies after transforming often
 [x] Light level of swarm spawner in intersection not calibrated
 [x] Better demonomocon marker death sys (bugs if unloaded)
 [x] Add a shortcut back

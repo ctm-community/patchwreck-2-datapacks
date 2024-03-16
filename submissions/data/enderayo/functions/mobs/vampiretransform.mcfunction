@@ -1,3 +1,7 @@
+scoreboard players set temp temp 0
+execute store result score temp temp run data get entity @s Health
+execute if score temp temp matches ..0 run return 1
+
 execute as @s[tag=enderayo.transform] at @s run summon bat ~ ~ ~ {Tags:["enderayo.true","this"],Attributes:[{Name:"generic.max_health",Base:20}]}
 execute as @s[tag=enderayo.transform] at @s run summon bat ~ ~ ~ {Tags:["m97_swarm"],Health:3f,Attributes:[{Name:"generic.max_health",Base:3}]}
 execute as @s[tag=enderayo.transform] at @s run summon bat ~ ~ ~ {Tags:["m97_swarm"],Health:3f,Attributes:[{Name:"generic.max_health",Base:3}]}
