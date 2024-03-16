@@ -20,3 +20,6 @@ gamerule doWeatherCycle false
 gamerule keepInventory true
 gamerule mobGriefing true
 gamerule sendCommandFeedback false
+
+# Re-enable command feedback if any player is not in survival or adventure mode
+execute if entity @a[gamemode=!survival,gamemode=!adventure] run gamerule sendCommandFeedback true
