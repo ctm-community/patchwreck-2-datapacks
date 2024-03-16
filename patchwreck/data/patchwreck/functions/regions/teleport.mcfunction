@@ -26,4 +26,4 @@ tag @s remove patchwreck.teleport
 execute at @s run playsound minecraft:teleport ambient @s ~ ~ ~ 1 1
 execute at @s run particle flash ~ ~ ~ 0 0 0 0 1 force
 execute at @s run particle minecraft:reverse_portal ~ ~1 ~ 0 0 0 0.5 30
-effect give @s blindness 2 0 true
+effect give @s minecraft:blindness 2 0 true

@@ -4,6 +4,9 @@
 # Global monument ticking operations
 function patchwreck:monument/tick
 
+# Region ticking functions
+function patchwreck:regions/tick
+
 # Moved player ticking to central function (these are optimized or optimized enough)
 # Generally, it is best to do player ticking before entities
 execute as @a at @s run function patchwreck:player/tick
