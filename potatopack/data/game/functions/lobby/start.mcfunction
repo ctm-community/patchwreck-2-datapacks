@@ -7,5 +7,7 @@ gamemode survival @s[gamemode=adventure]
 execute at @s run playsound minecraft:teleport player @s ~ ~ ~ 1 0.7
 spawnpoint @a 1000 100 1000
 
-advancement revoke @a only game:lobby/start
-advancement revoke @a only game:lobby/start2
+advancement revoke @s only game:lobby/start
+advancement revoke @s only game:lobby/start2
+
+gamerule mobGriefing true
