@@ -12,6 +12,7 @@ scoreboard objectives add patchwreck.motion.y dummy
 scoreboard objectives add patchwreck.position.dy dummy
 scoreboard objectives add patchwreck.timers dummy
 scoreboard objectives add patchwreck.variables dummy
+scoreboard objectives add patchwreck.void_guard dummy
 scoreboard objectives add patchwreck.void_return dummy
 scoreboard objectives add patchwreck.void_tether.x dummy
 scoreboard objectives add patchwreck.void_tether.y dummy

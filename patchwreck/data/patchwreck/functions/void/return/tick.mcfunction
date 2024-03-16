@@ -18,18 +18,13 @@ execute if score @s patchwreck.void_return matches 50 if function patchwreck:voi
 execute if score @s patchwreck.void_return matches 51 run playsound minecraft:entity.player.teleport player @s[tag=patchwreck.used_void_tether] ~ ~ ~ 100 0.5
 execute if score @s patchwreck.void_return matches 51 run playsound minecraft:entity.ender_eye.death player @s[tag=!patchwreck.used_void_tether] ~ ~ ~ 100 0.1
 execute if score @s patchwreck.void_return matches 51 run playsound minecraft:block.glass.break player @s[tag=!patchwreck.used_void_tether] ~ ~ ~ 100 0.1
+execute if score @s patchwreck.void_return matches 51 run tag @s[tag=!patchwreck.used_void_tether] remove patchwreck.valid_void_tether
 execute if score @s patchwreck.void_return matches 51 run stopsound @s player minecraft:block.portal.ambient
 execute if score @s patchwreck.void_return matches 51 run effect clear @s minecraft:darkness
 
-# Damage non-creative mode players by 20% of their max health
-execute if score @s[gamemode=!creative] patchwreck.void_return matches 51 store result score difficulty temp run difficulty
-execute if score @s[gamemode=!creative] patchwreck.void_return matches 51 store result score $damage patchwreck.variables run attribute @s generic.max_health get 10
-execute if score @s[gamemode=!creative] patchwreck.void_return matches 51 if score difficulty temp matches ..1 run scoreboard players operation $damage patchwreck.variables *= 25 numbers
-execute if score @s[gamemode=!creative] patchwreck.void_return matches 51 if score difficulty temp matches 2 run scoreboard players operation $damage patchwreck.variables *= 32 numbers
-execute if score @s[gamemode=!creative] patchwreck.void_return matches 51 if score difficulty temp matches 3.. run scoreboard players operation $damage patchwreck.variables *= 40 numbers
-execute if score @s[gamemode=!creative] patchwreck.void_return matches 51 run scoreboard players operation $damage patchwreck.variables /= 100 numbers
-execute if score @s[gamemode=!creative] patchwreck.void_return matches 51 store result storage patchwreck:storage variables.damage float 0.1 run scoreboard players get $damage patchwreck.variables
-execute if score @s[gamemode=!creative] patchwreck.void_return matches 51 run function patchwreck:void/return/damage with storage patchwreck:storage variables
+# Damage non-creative mode players by 25-40% of their max health based on global difficulty
+execute if score @s[gamemode=!creative] patchwreck.void_return matches 51 store result score @s patchwreck.void_guard run clear @s minecraft:ender_eye{void_guard: 1b} 1
+execute if score @s[gamemode=!creative] patchwreck.void_return matches 51 unless score @s patchwreck.void_guard matches 1.. run function patchwreck:void/return/damage
 
 # Reset void return data if return sequence is complete
 execute if score @s patchwreck.void_return matches 52 run function patchwreck:void/return/reset
