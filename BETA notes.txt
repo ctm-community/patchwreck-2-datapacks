@@ -11,7 +11,11 @@ General
 [x] Remove coco bean loot table
 [x] Gamerule mobgriefing true
 [ ] In general there needs to be more loot for equipment for multiplayer
+[ ] There needs to be more blocks
 [z] Clear curse of vanishing items on death
+[ ] Difficulty problems
+[ ] Remove i-frames from arrow shot damage
+[ ] Make lapis blocks not drop lapis
 
 Lobby/Monument
 [x] Softlock with void return and lobby (if you fall off side and go under)
@@ -20,6 +24,9 @@ Lobby/Monument
 [ ] Add functionality to left click monument interaction
 [ ] Finish new monument display system
 [x] Add enchantment table to gothic
+[ ] Target block in town light
+[ ] Nerf beedroot slightly
+[ ] Add basic monument loot (wood + wooden tools ubreakable unenchantable)
 
 Area 1
 [x] Transforming vamire just dies after transforming often
@@ -27,6 +34,8 @@ Area 1
 [x] Better demonomocon marker death sys (bugs if unloaded)
 [x] Add a shortcut back
 [ ] Think about changing demonomocon (normal book when cooldown or fungus)
+[ ] Check beetroot throwing transform
+[ ] Anubis weapon bugged - not triggering at all, initialize rngTornado dummy
 
 Area 2
 [x] Slightly quieter music
@@ -37,11 +46,14 @@ Area 2
 [x] Remove (bring back vanilla) melon drop table
 [x] Increase count of skele spawns at final bridge as they fall into void
 [x] Sphinx trap isn't deadly enough, also command blocks did not get removed. Just make a dispensed creeper tbh.
+[ ] Funny x with dead bushes change
 
 Area 3
 [x] Apocolapse crocs typo (second line is indeted :thonk:)
 [-] Remove netherite blocks in final island? - technically useless without templates
 [x] Fix double ghast not spawning
+[ ] Structure void at water stream down
+[ ] Golden apples in bookshelf
 
 Area 4
 [x] First kitsune spawner is broken :(
@@ -50,6 +62,7 @@ Area 4
 [?] Permuter item broken in both chest and in /loot
 [x] Kitsune spawner at tall tree borken
 [x] Fairy offhand speed really broken
+[ ] Kitsune spawner by big tree still BROKEN
 
 Area 5
 [ ] Replace ambience
