@@ -1,6 +1,6 @@
 #20hz on credit head heads
 
-#Face the player gradually
+#Face the player gradually, second positioned determines how fast
 execute at @s positioned ^ ^ ^0.01 facing entity @p feet positioned ^ ^ ^0.001 rotated ~ ~ run summon marker ~ ~ ~ {UUID:[I;-247325762,1375816113,-1974990415,-1875787867]}
 execute at @s facing entity f1421bbe-5201-49b1-8a48-09b19031bfa5 feet run tp @s ~ ~ ~ ~ ~
 kill f1421bbe-5201-49b1-8a48-09b19031bfa5

@@ -16,6 +16,9 @@ General
 [ ]* Difficulty problems
 [ ]* Remove i-frames from arrow shot damage
 [ ]* Make lapis blocks not drop lapis
+[ ]* Check kill and health scoreboards
+[ ] Crafting recipe for shulker box simpler
+[ ] Add more torches + coal please (maybe some to mine near monument??)
 
 Lobby/Monument
 [x] Softlock with void return and lobby (if you fall off side and go under)
@@ -36,6 +39,8 @@ Area 1
 [ ] Change demonomocon (normal book when cooldown or fungus)
 [x] Check beetroot throwing transform
 [ ]* Anubis weapon bugged - not triggering at all, initialize rngTornado dummy
+[ ] Nerf wither mask
+[ ] Make beetroots weak for 1s when spawning
 
 Area 2
 [x] Slightly quieter music
@@ -55,6 +60,7 @@ Area 3
 [x] Fix double ghast not spawning
 [ ]* Structure void at water stream down
 [ ]* Golden apples in bookshelf
+[ ] Ghoul guts make sure "unbreakable" is seen
 
 Area 4
 [x] First kitsune spawner is broken :(
