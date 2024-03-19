@@ -32,6 +32,11 @@ scoreboard objectives add life dummy
 scoreboard objectives add adventure dummy
 scoreboard objectives add axol_used minecraft.used:minecraft.axolotl_bucket
 scoreboard objectives add water_used minecraft.used:water_bucket
+scoreboard objectives add rngTornado dummy
+
+#display
+scoreboard objectives setdisplay below_name health
+scoreboard objectives setdisplay list deaths
 
 #Force spawner tweaker to load
 scoreboard players set setup spawner_tweaker 0
