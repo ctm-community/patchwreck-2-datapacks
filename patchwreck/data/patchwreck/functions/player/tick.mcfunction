@@ -7,6 +7,9 @@ function patchwreck:void/tick
 # Region ticking functions
 function patchwreck:regions/tick
 
+# Check nearby players (nearby should typically be 2.. when spectating another player)
+execute at @s store result score @s patchwreck.nearby run execute if entity @a[dx=0]
+
 # Beetroot offshoot
 execute if entity @s[tag=beetrooter] run function patchwreck:player/beetroot_tick
 
@@ -29,8 +32,8 @@ execute unless entity @s[advancements={patchwreck:utility/shulker_hits_you=false
 
 # Check inventory changes
 execute as @s[advancements={patchwreck:utility/inventory_changed=true}] run function patchwreck:player/inventory_changed
-execute if score @s patchwreck.dead matches 1 run clear @s #wool
-execute if score @s patchwreck.dead matches 1 run clear @s #all{Enchantments:[{id:"minecraft:vanishing_curse",lvl:1s}]}
+execute if score @s patchwreck.dead matches 1 run clear @s #minecraft:wool
+execute if score @s patchwreck.dead matches 1 run clear @s #minecraft:all{Enchantments: [{id: "minecraft:vanishing_curse", lvl: 1s}]}
 
 # Remove advancements and flags
 scoreboard players set @s bloodbeet.kills 0
@@ -38,7 +41,7 @@ advancement revoke @s only patchwreck:utility/inventory_changed
 advancement revoke @s only qqruzka:hurt
 
 # Fire permuter
-execute if score 1hz gremloop matches 13 if entity @s[tag=fire_permuter] as @e[distance=..10,type=#minecraft:hasai,type=!axolotl,type=!player] at @s run function patchwreck:item/permuter/apply_fire
+execute if score 1hz gremloop matches 13 if entity @s[tag=fire_permuter] as @e[distance=..10,type=#minecraft:hasai,type=!minecraft:axolotl,type=!minecraft:player] at @s run function patchwreck:item/permuter/apply_fire
 
 # Hyperdrifter
 execute if entity @s[tag=hyperdrifter] run function sd:update_players
@@ -46,6 +49,6 @@ execute if entity @s[tag=hyperdrifter] run function sd:update_players
 # Fixing pixie
 execute if score @s water_used matches 1.. run scoreboard players set @s axol_used 1
 execute if score @s water_used matches 1.. run scoreboard players set @s water_used 0
-execute if score @s axol_used matches 1.. run clear @s bucket 1
-execute if score @s axol_used matches 1.. run give @s water_bucket
+execute if score @s axol_used matches 1.. run clear @s minecraft:bucket 1
+execute if score @s axol_used matches 1.. run give @s minecraft:water_bucket
 execute if score @s axol_used matches 1.. run scoreboard players set @s axol_used 0

@@ -9,6 +9,7 @@ scoreboard objectives add patchwreck.dead deathCount
 scoreboard objectives add patchwreck.events dummy
 scoreboard objectives add patchwreck.falling dummy
 scoreboard objectives add patchwreck.motion.y dummy
+scoreboard objectives add patchwreck.nearby dummy
 scoreboard objectives add patchwreck.position.dy dummy
 scoreboard objectives add patchwreck.timers dummy
 scoreboard objectives add patchwreck.variables dummy
