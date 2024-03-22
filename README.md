@@ -23,7 +23,7 @@
 - [x] Crafting recipe for shulker box simpler
 - [ ] Add more torches + coal (maybe some to mine near monument?)
 
-Lobby/Monument
+### Lobby/Monument
 - [x] Softlock with void return and lobby (if you fall off side and go under)
 - [x] Something to indicate you can click heads
 - [x] Replace signs in monument for areas with text displays
@@ -34,7 +34,7 @@ Lobby/Monument
 - [x] Nerf beedroot slightly
 - [x] Add basic monument loot (wood + wooden tools ubreakable unenchantable)
 
-Area 1
+### Grim and Gothic
 - [x] Transforming vamire just dies after transforming often
 - [x] Light level of swarm spawner in intersection not calibrated
 - [x] Better demonomocon marker death sys (does not despawn if unloaded when timer expires)
@@ -45,7 +45,7 @@ Area 1
 - [ ] Nerf wither mask
 - [x] Make beetroots weak for 1s when spawning
 
-Area 2
+### Egyptian Tomb
 - [x] Slightly quieter music
 - [x] Swap music order tbh (first and second tracks that play)
 - [x] Empty chest at 115 110 78
@@ -57,7 +57,7 @@ Area 2
 - [x] Funny x with dead bushes change
 - [ ] Most likely need to change ambience (YouTube Content ID despite permission)
 
-Area 3
+### Nuclear Wasteland
 - [x] Apocolapse crocs typo (second line is indeted)
 - [ ] ~~Remove netherite blocks in final island? (technically useless without templates~~)
 - [x] Fix double ghast not spawning
@@ -65,7 +65,7 @@ Area 3
 - [x] Golden apples in bookshelf
 - [x] Ghoul guts make sure "unbreakable" is seen
 
-Area 4
+### Enchanted Grove
 - [x] First kitsune spawner is broken
 - [x] Add a sign to first water shortcut
 - [x] 172 104 63 chest is too weak
@@ -74,7 +74,7 @@ Area 4
 - [x] Fairy offhand speed really broken
 - [x] Kitsune spawner by big tree still BROKEN
 
-Area 5
+### Neon Metropolis
 - [ ] Replace ambience
 - [x] Alien spaceship sounds play in other dimensions
 - [ ] Neon urn spawners seems broken? (at least at robot shop)
@@ -83,7 +83,7 @@ Area 5
 - [x] 211 89 77 missing spawner
 - [x] 161 91 69 missing spawner
 
-Final Compiling
+### Final Compiling
 - [ ] Remove backup wool chest
 - [x] Ensure wool is in all woolboxes!
 - [ ] Make sure all heads are working in the lobby
@@ -92,7 +92,7 @@ Final Compiling
 - [ ] Delete nether
 - [ ] Trim the world
 
-Other things from the todo list
+### Miscellaneous
 - [ ] Add a system for dead players to teleport to one another
 - [ ] Finish item advancements
 - [ ] ~~Finish mob advancements~~
