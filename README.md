@@ -27,8 +27,8 @@
 - [x] Softlock with void return and lobby (if you fall off side and go under)
 - [x] Something to indicate you can click heads
 - [x] Replace signs in monument for areas with text displays
-- [ ] Add functionality to left click monument interaction
-- [ ] Finish new monument display system
+- [x] Add functionality to left click monument interaction
+- [x] Finish new monument display system
 - [x] Add enchantment table to gothic
 - [x] Target block in town light
 - [x] Nerf beedroot slightly
@@ -59,7 +59,7 @@
 
 ### Nuclear Wasteland
 - [x] Apocolapse crocs typo (second line is indeted)
-- [ ] ~~Remove netherite blocks in final island? (technically useless without templates~~)
+- [x] ~~Remove netherite blocks in final island? (technically useless without templates~~)
 - [x] Fix double ghast not spawning
 - [x] Structure void at water stream down
 - [x] Golden apples in bookshelf
