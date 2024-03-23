@@ -1,5 +1,4 @@
 {
-  "parent": "patchwreck:progression/orange_wool_check",
   "criteria": {
     "hurt_entity": {
       "trigger": "minecraft:player_hurt_entity",
