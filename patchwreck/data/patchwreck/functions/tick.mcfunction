@@ -9,6 +9,9 @@ function patchwreck:monument/tick
 execute as @a at @s run function patchwreck:player/tick
 execute if score 1hz gremloop matches 13 run function game:lobby/apply_difficulty
 
+# Update player checkpoint
+execute as @e[tag=patchwreck.checkpoint] at @s if entity @a[distance=..3] run function patchwreck:regions/checkpoint
+
 ## Mob ticking below
 execute if score $remove_xenon_tag temp matches 1.. run tag @e[tag=xenon_lamp_decay] remove xenon_lamp_decay
 execute as 00000000-0001-44ef-0000-00000000002c at @s run tag @e[type=#minecraft:hasai,type=!minecraft:player,distance=..5.5] add enderayo.incircle
@@ -59,12 +62,11 @@ execute if score 1s patchwreck.timers matches 2 run function patchwreck:monument
 # Handle hyperdrift helmet transition display
 function enderayo:hyperdrift_helmet/tick
 
-# particle for nuclear wasteland +metropolis + gothic
+# particle for nuclear wasteland + metropolis + gothic
 execute in patchwreck:wasteland as @a[distance=..999] at @s run function patchwreck:wateland_particle/player
 execute in patchwreck:metropolis as @a[distance=..999,limit=1,sort=random] at @s run function patchwreck:regions/metropolis/particles/player
 execute in patchwreck:metropolis positioned 100 105 100 run function patchwreck:regions/metropolis/particles/exit_portal/animate
 execute if score inmetro temp matches 1.. as @e[type=minecraft:marker,tag=metro_part] at @s run function patchwreck:regions/metropolis/particles/marker_tick
 execute if score inmetro temp matches 1.. run tag @e[type=minecraft:marker,tag=metro_part] remove bloop
 scoreboard players set inmetro temp 0
-execute in patchwreck:gothic positioned 99 0 95 if loaded ~ ~ ~ as @e[distance=..10,type=minecraft:block_display,limit=1,sort=random] at @s align xyz positioned ~0.5 ~0.5 ~0.5 run particle block suspicious_gravel ~ ~0.5 ~ 0.25 0 0.25 0 1 force
-
+execute in patchwreck:gothic positioned 100 0 97 if loaded ~ ~ ~ as @e[distance=..2,type=minecraft:block_display,limit=1,sort=random] at @s align xyz positioned ~0.5 ~0.5 ~0.5 run particle block minecraft:suspicious_gravel ~ ~0.5 ~ 0.25 0 0.25 0 1 force

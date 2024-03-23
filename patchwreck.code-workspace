@@ -37,14 +37,25 @@
       "editor.formatOnSave": true,
       "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
+    "[python]": {
+      "editor.codeActionsOnSave": {
+        "source.organizeImports": "explicit"
+      },
+      "editor.formatOnSave": true,
+      "editor.defaultFormatter": "charliermarsh.ruff"
+    },
     // Exclude data packs from main workspace to avoid folder duplication
     "files.exclude": {
+      "**/__pycache__": true,
       "libraries": true,
       "submissions": true,
       "patchwreck": true,
       "potatopack": true
     },
-    "prettier.tabWidth": 2
+    "prettier.tabWidth": 2,
+    "python.analysis.addImport.exactMatchOnly": true,
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.typeCheckingMode": "strict"
   },
   "extensions": {
     "recommendations": [

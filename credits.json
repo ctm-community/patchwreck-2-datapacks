@@ -1,0 +1,40 @@
+{
+  "patchwreck:gothic": [
+    {
+      "camera": {
+        "coordinates": [10, 10, 10],
+        "rotation": [90, -45]
+      },
+      "displays": [
+        {
+          "text": "Island 1",
+          "coordinates": [1, 1, 1]
+        },
+        {
+          "text": "Island 2",
+          "coordinates": [2, 2, 2]
+        },
+        {
+          "text": "Island 3",
+          "coordinates": [3, 3, 3]
+        }
+      ]
+    },
+    {
+      "camera": {
+        "coordinates": [20, 20, 20],
+        "rotation": [0, 0]
+      },
+      "displays": [
+        {
+          "text": "Island 4",
+          "coordinates": [4, 4, 4]
+        },
+        {
+          "text": "Island 5",
+          "coordinates": [5, 5, 5]
+        }
+      ]
+    }
+  ]
+}

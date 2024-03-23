@@ -4,6 +4,7 @@
 # Create Patchwreck scoreboards
 scoreboard objectives add patchwreck.abduction dummy
 scoreboard objectives add patchwreck.constants dummy
+scoreboard objectives add patchwreck.checkpoint dummy
 scoreboard objectives add patchwreck.creative dummy
 scoreboard objectives add patchwreck.dead deathCount
 scoreboard objectives add patchwreck.events dummy

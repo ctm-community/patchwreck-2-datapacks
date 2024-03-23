@@ -29,3 +29,11 @@ summon minecraft:interaction 995.5 105.0 1030.5 {UUID: [I; -726722545, -10129698
 summon minecraft:block_display 995.5 105.5 1028.5 {UUID: [I; 1544375697, 1882474145, -1633301292, -1391701644], brightness: {sky: 10, block: 7}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [-0.502f, -0.502f, -0.502f], scale: [1.0f, 1.0f, 1.0f]}, block_state: {Name: "minecraft:purple_stained_glass"}}
 # 9d32f98b-0c8f-4790-bbfa-6213582f2552
 summon minecraft:interaction 995.5 105.0 1028.5 {UUID: [I; -1657603701, 210716560, -1141218797, 1479484754]}
+
+# Grim and Gothic graveyard gravel
+execute in patchwreck:gothic positioned 100.0 -0.8 96.0 if loaded ~ ~ ~ run summon minecraft:block_display ~ ~ ~ {UUID: [I; -1602182666, 1650084308, -1855190540, 82633513], block_state: {Name: "minecraft:suspicious_gravel"}}
+execute in patchwreck:gothic positioned 99.0 -0.8 96.0 if loaded ~ ~ ~ run summon minecraft:block_display ~ ~ ~ {UUID: [I; 976465665, -317307164, -1730926381, -239428739], block_state: {Name: "minecraft:suspicious_gravel"}}
+execute in patchwreck:gothic positioned 100.0 -0.8 97.0 if loaded ~ ~ ~ run summon minecraft:block_display ~ ~ ~ {UUID: [I; -322615351, 648366722, -1518628528, 728256545], block_state: {Name: "minecraft:suspicious_gravel"}}
+execute in patchwreck:gothic positioned 99.0 -0.8 97.0 if loaded ~ ~ ~ run summon minecraft:block_display ~ ~ ~ {UUID: [I; 1431390347, -1891548895, -1404529502, 295407826], block_state: {Name: "minecraft:suspicious_gravel"}}
+execute in patchwreck:gothic positioned 100.0 -0.8 98.0 if loaded ~ ~ ~ run summon minecraft:block_display ~ ~ ~ {UUID: [I; -1197042128, -1113897964, -2117336609, -1961111294], block_state: {Name: "minecraft:suspicious_gravel"}}
+execute in patchwreck:gothic positioned 99.0 -0.8 98.0 if loaded ~ ~ ~ run summon minecraft:block_display ~ ~ ~ {UUID: [I; -331830717, -698596405, -1745148202, 1564052711], block_state: {Name: "minecraft:suspicious_gravel"}}

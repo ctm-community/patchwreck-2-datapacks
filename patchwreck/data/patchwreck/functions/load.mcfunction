@@ -11,6 +11,7 @@ execute in patchwreck:tomb run function patchwreck:load/gamerules
 execute in patchwreck:wasteland run function patchwreck:load/gamerules
 execute in patchwreck:grove run function patchwreck:load/gamerules
 execute in patchwreck:metropolis run function patchwreck:load/gamerules
+function patchwreck:load/checkpoints
 function patchwreck:load/scoreboards
 function patchwreck:load/summon
 

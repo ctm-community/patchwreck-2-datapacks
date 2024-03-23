@@ -1,0 +1,114 @@
+{
+  "minecraft:overworld": [
+    {
+      "name": "The Monument",
+      "coordinates": [1000, 100, 1000],
+      "rotation": [0, 0]
+    }
+  ],
+  "patchwreck:gothic": [
+    {
+      "name": "Grim and Gothic - Checkpoint 1",
+      "coordinates": [97, 0, 97],
+      "rotation": [-90, 0]
+    },
+    {
+      "name": "Grim and Gothic - Checkpoint 2",
+      "coordinates": [153, 13, 118],
+      "rotation": [0, 0]
+    },
+    {
+      "name": "Grim and Gothic - Checkpoint 3",
+      "coordinates": [218, 42, 126],
+      "rotation": [90, 0]
+    },
+    {
+      "name": "Grim and Gothic - Checkpoint 4",
+      "coordinates": [156, 49, 43],
+      "rotation": [-90, 0]
+    }
+  ],
+  "patchwreck:tomb": [
+    {
+      "name": "Egyptian Tomb - Checkpoint 1",
+      "coordinates": [100, 175, 100],
+      "rotation": [-90, 0]
+    },
+    {
+      "name": "Egyptian Tomb - Checkpoint 2",
+      "coordinates": [101, 103, 48],
+      "rotation": [0, 0]
+    },
+    {
+      "name": "Egyptian Tomb - Checkpoint 3",
+      "coordinates": [130, 105, -3],
+      "rotation": [0, 0]
+    },
+    {
+      "name": "Egyptian Tomb - Checkpoint 4",
+      "coordinates": [98, 27, 6],
+      "rotation": [-90, 0]
+    }
+  ],
+  "patchwreck:wasteland": [
+    {
+      "name": "Nuclear Wasteland - Checkpoint 1",
+      "coordinates": [100, 0, 100],
+      "rotation": [-90, 0]
+    },
+    {
+      "name": "Nuclear Wasteland - Checkpoint 2",
+      "coordinates": [178, 12, 124],
+      "rotation": [0, 0]
+    },
+    {
+      "name": "Nuclear Wasteland - Checkpoint 3",
+      "coordinates": [128, 3, 179],
+      "rotation": [-180, 0]
+    },
+    {
+      "name": "Nuclear Wasteland - Checkpoint 4",
+      "coordinates": [192, -32, 181],
+      "rotation": [90, 0]
+    }
+  ],
+  "patchwreck:grove": [
+    {
+      "name": "Enchanted Grove - Checkpoint 1",
+      "coordinates": [100, 100, 100],
+      "rotation": [-180, 0]
+    },
+    {
+      "name": "Enchanted Grove - Checkpoint 2",
+      "coordinates": [205, 106, 79],
+      "rotation": [-180, 0]
+    },
+    {
+      "name": "Enchanted Grove - Checkpoint 3",
+      "coordinates": [128, 122, 48],
+      "rotation": [90, 0]
+    }
+  ],
+  "patchwreck:metropolis": [
+    {
+      "name": "Neon Metropolis - Checkpoint 1",
+      "coordinates": [105, 106, 100],
+      "rotation": [-90, 0]
+    },
+    {
+      "name": "Neon Metropolis - Checkpoint 2",
+      "coordinates": [156, 70, 119],
+      "rotation": [90, 0]
+    },
+    {
+      "name": "Neon Metropolis - Checkpoint 3",
+      "coordinates": [212, 104, 82],
+      "rotation": [125, 0]
+    },
+    {
+      "name": "Neon Metropolis - Checkpoint 4",
+      "coordinates": [301, 120, 81],
+      "rotation": [90, 0]
+    }
+  ]
+}
