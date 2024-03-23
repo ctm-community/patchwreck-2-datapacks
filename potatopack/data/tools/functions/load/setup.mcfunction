@@ -14,6 +14,7 @@ execute as @a[gamemode=!creative,gamemode=!spectator] run scoreboard objectives 
 #scoreboard objectives add sidebar dummy [{"text":"7","font":"loading","color":"aqua","italic":false},{"translate":"intro.2","font":"default","color":"aqua","italic":false},{"text":"7","font":"loading","color":"aqua"}]
 execute as @a[gamemode=!creative,gamemode=!spectator] run scoreboard objectives setdisplay sidebar sidebar
 scoreboard objectives add deaths deathCount {"translate":"scoreboard.deaths","color":"white"}
+scoreboard objectives add ambience_death deathCount
 scoreboard objectives add temp dummy
 scoreboard objectives add music dummy
 scoreboard objectives add area dummy
