@@ -9,7 +9,7 @@
 - [x] Kill item frames around player without items when player grabbs something from an item frame
 - [x] Add gibbs no attack cooldown on miss datapack
 - [x] Make haybales drop bread directly
-- [ ] Set spawnpoints inside the dimension but be sure to fix ambient issues
+- [x] Set spawnpoints inside the dimension but be sure to fix ambient issues
 - [x] Add back the item repair recipe
 - [x] Remove coco bean loot table
 - [x] Gamerule mobgriefing true
@@ -21,7 +21,7 @@
 - [x] Make lapis blocks not drop lapis
 - [x] Check kill and health scoreboards
 - [x] Crafting recipe for shulker box simpler
-- [ ] Add more torches + coal (maybe some to mine near monument?)
+
 
 ### Lobby/Monument
 - [x] Softlock with void return and lobby (if you fall off side and go under)
@@ -39,7 +39,6 @@
 - [x] Light level of swarm spawner in intersection not calibrated
 - [x] Better demonomocon marker death sys (does not despawn if unloaded when timer expires)
 - [x] Add a shortcut back
-- [ ] Change demonomocon (normal book when on cooldown or change to Warped Fungus on a Stick)
 - [x] Check beetroot throwing transform
 - [x] Anubis weapon bugged - not triggering at all, initialize rngTornado dummy
 - [ ] Nerf wither mask
@@ -55,7 +54,7 @@
 - [x] Increase count of skele spawns at final bridge as they fall into void
 - [x] Sphinx trap isn't deadly enough, also command blocks did not get removed. Just make a dispensed creeper tbh.
 - [x] Funny x with dead bushes change
-- [ ] Most likely need to change ambience (YouTube Content ID despite permission)
+- [x] Most likely need to change ambience (YouTube Content ID despite permission)
 
 ### Nuclear Wasteland
 - [x] Apocolapse crocs typo (second line is indeted)
@@ -69,15 +68,15 @@
 - [x] First kitsune spawner is broken
 - [x] Add a sign to first water shortcut
 - [x] 172 104 63 chest is too weak
-- [ ] Permuter item broken in both chest and in `/loot`
+- [x] Permuter item broken in both chest and in `/loot`
 - [x] Kitsune spawner at tall tree borken
 - [x] Fairy offhand speed really broken
 - [x] Kitsune spawner by big tree still BROKEN
 
 ### Neon Metropolis
-- [ ] Replace ambience
+- [x] Replace ambience
 - [x] Alien spaceship sounds play in other dimensions
-- [ ] Neon urn spawners seems broken? (at least at robot shop)
+- [x] Neon urn spawners seems broken? (at least at robot shop)
 - [x] Add hole to get down water in arcade
 - [x] 222 99 54 empty chest
 - [x] 211 89 77 missing spawner
@@ -94,7 +93,11 @@
 
 ### Miscellaneous
 - [ ] Add a system for dead players to teleport to one another
-- [ ] Finish item advancements
-- [ ] ~~Finish mob advancements~~
-- [ ] ~~Finish island advancements~~
 - [ ] Refine and finish credits
+
+### We didn't do it in the end
+- [ ] Add more torches + coal (maybe some to mine near monument?)
+- [ ] Change demonomocon (normal book when on cooldown or change to Warped Fungus on a Stick)
+- [ ] Finish mob advancements
+- [ ] Finish island advancements
+- [ ] Finish item advancements
