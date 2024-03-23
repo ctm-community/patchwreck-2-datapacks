@@ -11,7 +11,7 @@
     "announce_to_chat": false,
     "hidden": false
   },
-  "parent": "patchwreck:enemies/root",
+  "parent": "patchwreck:progression/root",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:location",

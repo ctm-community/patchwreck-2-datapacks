@@ -1,9 +1,9 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:chiseled_sandstone"
+      "item": "minecraft:stripped_crimson_hyphae"
     },
-    "title": "Egyptian Tomb",
+    "title": "Enchanted Grove",
     "description": "",
     "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
     "frame": "task",
@@ -11,7 +11,7 @@
     "announce_to_chat": false,
     "hidden": false
   },
-  "parent": "patchwreck:items/gothic",
+  "parent": "patchwreck:progression/wasteland",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:tick",
@@ -24,7 +24,7 @@
               "type_specific": {
                 "type": "player",
                 "advancements": {
-                  "patchwreck:progression/orange_wool": true
+                  "patchwreck:progression/lime_wool": true
                 }
               }
             }
