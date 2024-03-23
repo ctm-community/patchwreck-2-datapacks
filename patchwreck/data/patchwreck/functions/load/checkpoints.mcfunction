@@ -148,7 +148,7 @@ execute in patchwreck:metropolis run fillbiome 211 103 81 213 105 83 patchwreck:
 execute in patchwreck:metropolis run setblock 212 104 82 minecraft:light[level=12,waterlogged=false]
 execute in patchwreck:metropolis run setblock 212 103 82 minecraft:barrier[waterlogged=false]
 execute in patchwreck:metropolis positioned 212.0 103.0 82.0 if loaded ~ ~ ~ run summon minecraft:block_display ~ ~ ~ {UUID: [I; 2142058343, 459688514, -1880031619, -1056899854]}
-data merge entity 7fad3767-1b66-4a42-8ff0-fe7dc100fcf2 {Tags: ["patchwreck.checkpoint"], CustomName: '{"text":"Neon Metropolis - Checkpoint 3","color":"green"}', Pos: [212.0d, 103.0d, 82.0d], Rotation: [125.0f, 0.0f], transformation: {translation: [0.0f, 0.0f, -1.0f]}, block_state: {Name: "minecraft:respawn_anchor", Properties: {charges: "4"}}}
+data merge entity 7fad3767-1b66-4a42-8ff0-fe7dc100fcf2 {Tags: ["patchwreck.checkpoint"], CustomName: '{"text":"Neon Metropolis - Checkpoint 3","color":"green"}', Pos: [212.0d, 103.0d, 82.0d], Rotation: [-90.0f, 0.0f], transformation: {translation: [-1.0f, 0.0f, 0.0f]}, block_state: {Name: "minecraft:respawn_anchor", Properties: {charges: "4"}}}
 scoreboard players set 7fad3767-1b66-4a42-8ff0-fe7dc100fcf2 patchwreck.checkpoint 53
 scoreboard players display name 7fad3767-1b66-4a42-8ff0-fe7dc100fcf2 patchwreck.checkpoint {"text":"Neon Metropolis - Checkpoint 3","color":"green"}
 
