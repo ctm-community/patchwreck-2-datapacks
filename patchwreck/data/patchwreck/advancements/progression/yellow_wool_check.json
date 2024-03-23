@@ -1,0 +1,35 @@
+{
+  "criteria": {
+    "hurt_entity": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{UUID: [I; -299175407, -628667006, -1625075390, 340442330]}"
+            }
+          }
+        ]
+      }
+    },
+    "interacted_with_entity": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{UUID: [I; -299175407, -628667006, -1625075390, 340442330]}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [["hurt_entity", "interacted_with_entity"]]
+}

@@ -13,7 +13,36 @@
   },
   "parent": "patchwreck:progression/cyan_wool",
   "criteria": {
-    "requirement": {
+    "hurt_entity": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "items": ["minecraft:purple_wool"],
+                  "nbt": "{objective: 1b}"
+                }
+              }
+            }
+          }
+        ],
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{UUID: [I; -1657603701, 210716560, -1141218797, 1479484754]}"
+            }
+          }
+        ]
+      }
+    },
+    "interacted_with_entity": {
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
         "item": {
@@ -33,6 +62,7 @@
       }
     }
   },
+  "requirements": [["hurt_entity", "interacted_with_entity"]],
   "rewards": {
     "function": "patchwreck:monument/placed_purple_wool"
   }
