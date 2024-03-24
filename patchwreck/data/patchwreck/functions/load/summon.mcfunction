@@ -2,7 +2,12 @@
 # Summon game entities
 
 # Marker entity for credits positioning
-summon minecraft:item_display 1000 0 1000 {UUID: [I; -486704527, 1796030482, -1322868560, 565173450], view_range: 0f, teleport_duration: 10, Tags: ["camera"], item: {id: "minecraft:air", Count: 1b}, Rotation: [0f, 0f]}
+execute in minecraft:overworld run summon minecraft:item_display 1000 0 1000 {UUID: [I; -486704527, 1796030482, -1322868560, 565173450], view_range: 0f, teleport_duration: 10, Tags: ["camera"], item: {id: "minecraft:air", Count: 1b}, Rotation: [0f, 0f]}
+execute in patchwreck:gothic run summon minecraft:item_display 100 0 100 {UUID: [I; -1391021754, 1617513160, -1185776694, -1526954475], view_range: 0f, teleport_duration: 10, Tags: ["camera"], item: {id: "minecraft:air", Count: 1b}, Rotation: [0f, 0f]}
+execute in patchwreck:tomb run summon minecraft:item_display 100 0 100 {UUID: [I; -1731217196, 47402729, -1294842851, -2127192223], view_range: 0f, teleport_duration: 10, Tags: ["camera"], item: {id: "minecraft:air", Count: 1b}, Rotation: [0f, 0f]}
+execute in patchwreck:wasteland run summon minecraft:item_display 100 0 100 {UUID: [I; 297230948, -1568585169, -1430015719, -730184558], view_range: 0f, teleport_duration: 10, Tags: ["camera"], item: {id: "minecraft:air", Count: 1b}, Rotation: [0f, 0f]}
+execute in patchwreck:grove run summon minecraft:item_display 100 0 100 {UUID: [I; 1978184431, 1385383270, -1369760413, -1433376237], view_range: 0f, teleport_duration: 10, Tags: ["camera"], item: {id: "minecraft:air", Count: 1b}, Rotation: [0f, 0f]}
+execute in patchwreck:metropolis run summon minecraft:item_display 100 0 100 {UUID: [I; -754562821, 623330287, -1524001685, -880552857], view_range: 0f, teleport_duration: 10, Tags: ["camera"], item: {id: "minecraft:air", Count: 1b}, Rotation: [0f, 0f]}
 
 # Monument objective cases
 # 0736387d-f4db-4e61-b5e2-31bbbc5651cc

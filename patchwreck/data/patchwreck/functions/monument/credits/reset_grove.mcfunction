@@ -1,0 +1,26 @@
+#> patchwreck:monument/credits/reset_grove
+
+kill ac892af1-e4fc-4a6d-b65e-bfa62c1cff6c
+kill 0adc6edc-d955-43d5-b68c-116a52d750a8
+kill 87dccd0f-a2d3-4a33-9c6f-73a9e0006866
+kill 4278fd5f-7af9-421f-bbb2-a0668aed1c6b
+kill 21aaf46b-694d-472f-b27c-940dc325fe06
+kill ce823c57-c4ed-4227-9b06-1bc6a4670350
+kill 0a10c288-f4ea-4b5b-9bec-c6db2f15250a
+kill 222d6a7c-f90f-4ac0-a783-7ff60bb2eb21
+kill 76b5d231-e709-44fb-9df0-4b6be447114e
+kill fe6fb2cd-4d31-42cf-828f-20084847760c
+kill f532c895-3c47-4fe8-b759-de11f06bed1c
+kill 7eb6fb00-b6af-4e8e-834d-69895da98ecb
+kill 9aa0e22b-99cd-4ab3-be9d-b365235ce7b3
+kill 509a68c0-9733-4962-b3c3-04046d038227
+kill 63dfbac4-f225-4f99-b072-b628ee6ae657
+kill be01ab97-73f6-4957-a0e8-be1efe2f6a0f
+kill 8dace559-42ef-495b-b6bf-d72dc6223217
+kill b08510ae-68c7-46ac-a268-91ac1e0762a7
+kill 2bd08b70-8ccd-4749-9346-1e58f94cee02
+kill 4f8b2ded-c8a9-4713-bbd4-bf460b507eca
+kill 1e5d71de-4c59-4401-9613-36a4acb2b020
+kill 0ffc7cc0-ee15-4a4b-af3e-2feb1024c5b6
+kill 5d454fd1-e486-4275-9e85-e609c2367f43
+kill 5af38661-63f4-45b9-b237-efaa9a2d989a

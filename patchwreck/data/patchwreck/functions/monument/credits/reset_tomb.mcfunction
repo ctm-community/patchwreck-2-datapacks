@@ -1,0 +1,24 @@
+#> patchwreck:monument/credits/reset_tomb
+
+kill 5e3f0b22-6cbe-4cbb-8a07-652461b7d391
+kill 02b13a77-9ff8-49cd-ab2f-ec43167f3cda
+kill 920dee88-9013-4113-82d3-46774c38f9fe
+kill 6f1a05c2-8ca4-4a56-8664-f95f57c2572c
+kill a9474ef0-3608-4b30-a8c8-584f5d6ef6b4
+kill 4a42acac-9b34-4639-bbb1-abae2e0bcc4a
+kill 7a23a78b-8b28-47fd-baac-081b9bd367f3
+kill 80bc5cb1-5022-4ca6-833e-a0e9c4521c63
+kill b83753ad-dc72-43e7-9420-c25ace4560b7
+kill a8dc5eb7-1ee8-4bec-8218-cb030cb69cf5
+kill 962d6a59-5726-4b57-b09e-03aef7577ecc
+kill d7fe4ea2-4ea9-46f6-ae22-c91b19fb3096
+kill 4aa73b5b-da06-463e-bf9b-061754fd5eca
+kill ad499cea-8d78-4618-af9d-45b6990505d9
+kill aff62d26-9f10-4835-9c46-048cc75ed25d
+kill a39ada93-aa48-4cbd-9d8b-4ffdbc9dee42
+kill d506c92d-e99f-412e-a58d-c83f568e94b0
+kill e1e112b4-e338-4de9-a1f7-4a89eab81539
+kill 555e602a-30e2-49ed-bf67-28652d21d38f
+kill c4fe4655-fef6-4364-8870-06434b8b2afa
+kill 3d97afec-8525-484f-8731-d638ac286592
+kill 27bf0cac-9de8-4bd6-981f-84f818ccb1f7

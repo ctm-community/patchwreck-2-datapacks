@@ -492,13 +492,13 @@
   "patchwreck:grove": [
     {
       "camera": {
-        "coordinates": [99, 89, 151],
-        "rotation": [-159, 1]
+        "coordinates": [101, 97, 152],
+        "rotation": [-170, 21]
       },
       "displays": [
         {
           "text": "KyKyPy3Ka",
-          "coordinates": [98, 107, 115]
+          "coordinates": [98, 106, 118]
         },
         {
           "text": "Enderayo",

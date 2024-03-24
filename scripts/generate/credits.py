@@ -8,7 +8,7 @@ from typing import Any, Self, cast
 
 from scripts.mcuuid import MCUUID2
 
-CAMERA_UUID = "e2fd7a71-6b0d-4012-b126-a0b021afdcca"
+# dimension_camera[dimension] = "e2fd7a71-6b0d-4012-b126-a0b021afdcca"
 
 
 class Coordinates(tuple[int, int, int]):
@@ -67,6 +67,8 @@ def generate_credits(
     mcfunction: Path,
     data: dict[Dimension, list[dict[str, CameraPosition | TextDisplays]]],
 ) -> None:
+    mcfunction.parent.joinpath("credits").mkdir(exist_ok=True)
+
     with mcfunction.open("w") as file:
         file.write(
             textwrap.dedent(
@@ -94,10 +96,17 @@ def generate_credits(
             "patchwreck:grove": "184.20 131.22 142.45 -212.31 11.13",
             "patchwreck:metropolis": "104.89 110.82 107.65 616.33 15.09",
         }
+        dimension_camera = {
+            "patchwreck:gothic": "ad16b146-6069-4ac8-b952-7bcaa4fc8615",
+            "patchwreck:tomb": "98cfb8d4-02d3-4ee9-b2d2-441d81359f61",
+            "patchwreck:wasteland": "11b76264-a281-4a2f-aac3-b119d47a4492",
+            "patchwreck:grove": "75e8b2ef-5293-4566-ae5b-1d63aa906a13",
+            "patchwreck:metropolis": "d30648fb-2527-43ef-a529-946bcb83d467",
+        }
         init_dimension = textwrap.dedent(
             """
-            execute if score $credits patchwreck.timers matches {timer} in {dimension} run teleport {mcuuid} {view}
             execute if score $credits patchwreck.timers matches {timer} in {dimension} run teleport @a {view}
+            execute if score $credits patchwreck.timers matches {timer} in {dimension} run teleport {mcuuid} {view}
             execute if score $credits patchwreck.timers matches {timer} run title @a times 10t 80t 10t
             execute if score $credits patchwreck.timers matches {timer} run title @a title {{"text":""}}
             execute if score $credits patchwreck.timers matches {timer} run title @a subtitle {{"text":"{dimension_name}"}}
@@ -109,6 +118,16 @@ def generate_credits(
             "# Player has to stop spectating and re-spectate display entity when crossing dimensions\n"
         ]
         for dimension, camera_angles in data.items():
+            dimension_start_timer = timer + 5
+            dimension_short = dimension.removeprefix("patchwreck:")
+            reset_credits = mcfunction.parent.joinpath(
+                "credits", f"reset_{dimension_short}.mcfunction"
+            )
+            with reset_credits.open("w") as reset_file:
+                reset_file.write(
+                    f"#> patchwreck:monument/credits/reset_{dimension_short}\n\n"
+                )
+
             cross_dimension_fixes.append(
                 f"execute if score $credits patchwreck.timers matches {timer-5}..{timer+5} as @a[gamemode=spectator] at @s run spectate\n"
             )
@@ -117,7 +136,7 @@ def generate_credits(
                     timer=timer,
                     dimension=dimension,
                     dimension_name=dimension_name[dimension],
-                    mcuuid=CAMERA_UUID,
+                    mcuuid=dimension_camera[dimension],
                     view=dimension_view[dimension],
                 )
             )
@@ -130,23 +149,30 @@ def generate_credits(
 
                 file.write(
                     f"\nexecute if score $credits patchwreck.timers matches {timer} in {dimension} "
-                    f"run teleport {CAMERA_UUID} {camera.coordinates.x} {camera.coordinates.y} {camera.coordinates.z} {camera.rotation.yaw} {camera.rotation.pitch}\n"
+                    f"run teleport {dimension_camera[dimension]} {camera.coordinates.x} {camera.coordinates.y} {camera.coordinates.z} {camera.rotation.yaw} {camera.rotation.pitch}\n"
                 )
                 timer += 20
                 for display in displays:
+                    display_uuid = MCUUID2()
+                    with reset_credits.open("a") as reset_file:
+                        reset_file.write(f"kill {display_uuid}\n")
+
                     file.write(
                         f"execute if score $credits patchwreck.timers matches {timer} in {dimension} "
                         f"run summon minecraft:text_display {display.coordinates.x} {display.coordinates.y} {display.coordinates.z} "
-                        f'{{UUID: {MCUUID2().nbt}, billboard: "center", transformation: {{left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [10f, 10f, 10f]}}, text: \'{{"text": "{display.text}"}}\'}}\n'
+                        f'{{UUID: {display_uuid.nbt}, billboard: "center", transformation: {{left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [10f, 10f, 10f]}}, text: \'{{"text": "{display.text}"}}\'}}\n'
                     )
                     timer += 20
+
+            cross_dimension_fixes.append(
+                f"execute if score $credits patchwreck.timers matches {dimension_start_timer}..{timer-5} as @a[gamemode=spectator] at @s run spectate {dimension_camera[dimension]}\n"
+            )
 
         file.write(
             textwrap.dedent(
                 f"""
                 # Force player to spectate target
                 execute if score $credits patchwreck.timers matches 200..{timer} run gamemode spectator @a[gamemode=!spectator]
-                execute if score $credits patchwreck.timers matches 205..{timer} as @a[gamemode=spectator] at @s run spectate e2fd7a71-6b0d-4012-b126-a0b021afdcca
 
                 """
             )

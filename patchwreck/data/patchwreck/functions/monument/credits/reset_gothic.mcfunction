@@ -1,0 +1,22 @@
+#> patchwreck:monument/credits/reset_gothic
+
+kill 8dd4d5bf-fd34-4c54-829e-b82608ddd2b7
+kill a5b29328-a594-46d5-9115-437d8d5ed680
+kill e07601ed-d2b5-4213-94de-687542b60b7e
+kill 22b01ff7-e612-4e1a-9487-83a7ec625b66
+kill 0f6f2e34-c720-4d81-8b28-b380f7a3d241
+kill 296a4032-9ac2-49b0-9dd7-29bf5781d973
+kill 851df179-ae0c-496c-86ae-11d239314747
+kill 0828ea83-9ea3-4c9a-92cb-a34d70895dd2
+kill 87ee4190-2054-44f2-94d3-9ccdeafa414c
+kill f833014e-31e8-41f8-b006-5c05f9ed55a9
+kill dc40c3fd-37b3-4d95-8aa8-4016eb189b1a
+kill bfcfeff7-bbf4-41d0-aa6e-9fb4ebe503fc
+kill 47f1dfdc-6682-44ee-b5e7-fe9ad67e0c9e
+kill 3f59559f-8389-454a-acbb-338d5b806103
+kill 14889a52-dfcd-4422-ae95-845ecfa42321
+kill f5b12b8f-18da-41e1-abc6-d87e7a303963
+kill f36bc6d0-40ce-4c5c-8b53-2e0ff5eb3bc1
+kill 8108083f-0ffc-4878-a90e-34fc3b45f820
+kill bcd7524b-894b-4587-807b-784dd0de9313
+kill 7194fcb8-7eb3-49e5-b1cd-d3f9081dd31a
