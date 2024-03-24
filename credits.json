@@ -28,7 +28,7 @@
       "displays": [
         {
           "text": "KyKyPy3Ka",
-          "coordinates": [109, 10, 141]
+          "coordinates": [112, 11, 140]
         },
         {
           "text": "Matt_97",
@@ -52,27 +52,27 @@
         },
         {
           "text": "Cafeslayeur",
-          "coordinates": [187, 36, 99]
+          "coordinates": [187, 42, 104]
         }
       ]
     },
     {
       "camera": {
-        "coordinates": [204, 69, 130],
-        "rotation": [-62, 20]
+        "coordinates": [204, 61, 130],
+        "rotation": [-65, 12]
       },
       "displays": [
         {
           "text": "Lylac",
-          "coordinates": [214, 58, 148]
+          "coordinates": [214, 54, 148]
         },
         {
           "text": "Enderayo",
-          "coordinates": [231, 46, 143]
+          "coordinates": [231, 42, 143]
         },
         {
           "text": "ImSheol",
-          "coordinates": [247, 58, 132]
+          "coordinates": [247, 53, 132]
         }
       ]
     },
@@ -84,7 +84,7 @@
       "displays": [
         {
           "text": "@p",
-          "coordinates": [235, 54, 105]
+          "coordinates": [232, 54, 105]
         },
         {
           "text": "ImSheol",
@@ -98,8 +98,8 @@
     },
     {
       "camera": {
-        "coordinates": [228, 63, 76],
-        "rotation": [134, 20]
+        "coordinates": [228, 51, 76],
+        "rotation": [139, 2]
       },
       "displays": [
         {
@@ -108,7 +108,7 @@
         },
         {
           "text": "safeliquids",
-          "coordinates": [218, 65, 57]
+          "coordinates": [223, 46, 64]
         }
       ]
     },
@@ -120,11 +120,11 @@
       "displays": [
         {
           "text": "Counter_Coffee",
-          "coordinates": [190, 48, 47]
+          "coordinates": [190, 43, 47]
         },
         {
           "text": "Coffee_Cake",
-          "coordinates": [172, 59, 60]
+          "coordinates": [167, 59, 53]
         }
       ]
     },
@@ -140,7 +140,7 @@
         },
         {
           "text": "Lylac",
-          "coordinates": [118, 70, 67]
+          "coordinates": [118, 57, 67]
         }
       ]
     }
@@ -154,7 +154,7 @@
       "displays": [
         {
           "text": "Sandurs",
-          "coordinates": [111, 155, 128]
+          "coordinates": [111, 155, 130]
         },
         {
           "text": "Cango, Kembo, Saihoku Hiroppi",
@@ -162,7 +162,7 @@
         },
         {
           "text": "Cafeslayeur",
-          "coordinates": [116, 127, 130]
+          "coordinates": [124, 133, 132]
         }
       ]
     },
@@ -194,7 +194,7 @@
         },
         {
           "text": "Coffee_Cake",
-          "coordinates": [84, 99, 50]
+          "coordinates": [84, 107, 59]
         }
       ]
     },
@@ -210,11 +210,11 @@
         },
         {
           "text": "Lylac",
-          "coordinates": [92, 124, 30]
+          "coordinates": [94, 124, 32]
         },
         {
           "text": "CatsAreYe",
-          "coordinates": [61, 136, 17]
+          "coordinates": [61, 139, 20]
         }
       ]
     },
@@ -230,7 +230,7 @@
         },
         {
           "text": "Enderayo",
-          "coordinates": [114, 104, 9]
+          "coordinates": [112, 117, 27]
         }
       ]
     },
@@ -250,7 +250,7 @@
         },
         {
           "text": "Cafeslayeur",
-          "coordinates": [124, 58, 65]
+          "coordinates": [123, 58, 65]
         }
       ]
     },
@@ -262,7 +262,7 @@
       "displays": [
         {
           "text": "Counter_Coffee",
-          "coordinates": [129, 50, -4]
+          "coordinates": [142, 49, -4]
         },
         {
           "text": "Lylac",
@@ -282,7 +282,7 @@
       "displays": [
         {
           "text": "Phoraxe",
-          "coordinates": [106, 36, 6]
+          "coordinates": [108, 36, 6]
         }
       ]
     },
@@ -716,11 +716,11 @@
       "displays": [
         {
           "text": "KyKyPy3Ka",
-          "coordinates": [167, 77, 117]
+          "coordinates": [162, 77, 117]
         },
         {
           "text": "Cango, Kembo, Saihoku Hiroppi",
-          "coordinates": [187, 78, 111]
+          "coordinates": [187, 80, 111]
         }
       ]
     },
