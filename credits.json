@@ -16,7 +16,7 @@
         },
         {
           "text": "KyKyPy3Ka",
-          "coordinates": [97, -4, 106]
+          "coordinates": [111, -3, 122]
         }
       ]
     },
@@ -48,7 +48,7 @@
         },
         {
           "text": "Phoraxe",
-          "coordinates": [187, 42, 126]
+          "coordinates": [203, 60, 126]
         },
         {
           "text": "Cafeslayeur",
@@ -130,8 +130,8 @@
     },
     {
       "camera": {
-        "coordinates": [194, 52, 71],
-        "rotation": [142, -3]
+        "coordinates": [139, 69, 81],
+        "rotation": [148, 7]
       },
       "displays": [
         {
@@ -226,7 +226,7 @@
       "displays": [
         {
           "text": "@p",
-          "coordinates": [124, 58, 65]
+          "coordinates": [103, 106, 19]
         },
         {
           "text": "Enderayo",
@@ -270,7 +270,7 @@
         },
         {
           "text": "1954PinaColada",
-          "coordinates": [148, 35, 3]
+          "coordinates": [136, 32, 15]
         }
       ]
     },
@@ -464,7 +464,7 @@
       "displays": [
         {
           "text": "ImSheol",
-          "coordinates": [157, -38, 183]
+          "coordinates": [157, -29, 173]
         },
         {
           "text": "Coffee_Cake",
@@ -536,8 +536,8 @@
     },
     {
       "camera": {
-        "coordinates": [188, 109, 120],
-        "rotation": [168, 16]
+        "coordinates": [214, 123, 29],
+        "rotation": [61, 17]
       },
       "displays": [
         {
@@ -680,7 +680,7 @@
         },
         {
           "text": "1954PinaColada",
-          "coordinates": [100, 125, 91]
+          "coordinates": [90, 94, 83]
         },
         {
           "text": "Lylac",
