@@ -550,7 +550,7 @@
         },
         {
           "text": "@p",
-          "coordinates": [198, 118, 14]
+          "coordinates": [192, 106, 28]
         }
       ]
     },
@@ -578,11 +578,11 @@
       "displays": [
         {
           "text": "CatsAreYe",
-          "coordinates": [177, 105, 65]
+          "coordinates": [170, 105, 68]
         },
         {
           "text": "Enderayo",
-          "coordinates": [182, 102, 61]
+          "coordinates": [182, 103, 61]
         }
       ]
     },
@@ -594,7 +594,7 @@
       "displays": [
         {
           "text": "Lylac",
-          "coordinates": [143, 117, 56]
+          "coordinates": [145, 117, 56]
         },
         {
           "text": "Cafeslayeur",
@@ -620,17 +620,17 @@
     },
     {
       "camera": {
-        "coordinates": [97, 136, 43],
-        "rotation": [-42, 15]
+        "coordinates": [90, 143, 47],
+        "rotation": [-53, 16]
       },
       "displays": [
         {
           "text": "Cango, Kembo, Saihoku Hiroppi",
-          "coordinates": [100, 133, 57]
+          "coordinates": [100, 135, 57]
         },
         {
           "text": "manoloesmanolo",
-          "coordinates": [119, 134, 58]
+          "coordinates": [124, 138, 61]
         }
       ]
     },
