@@ -316,15 +316,15 @@
       "displays": [
         {
           "text": "Enderayo",
-          "coordinates": [111, 7, 111]
+          "coordinates": [111, 7, 114]
         },
         {
           "text": "Coffee_Cake",
-          "coordinates": [129, 10, 104]
+          "coordinates": [128, 10, 107]
         },
         {
           "text": "UndrcoverCactus",
-          "coordinates": [138, 8, 120]
+          "coordinates": [135, 8, 120]
         }
       ]
     },
@@ -336,7 +336,7 @@
       "displays": [
         {
           "text": "Counter_Coffee",
-          "coordinates": [184, -4, 104]
+          "coordinates": [186, -4, 102]
         },
         {
           "text": "Cafeslayeur",
@@ -372,7 +372,7 @@
         },
         {
           "text": "manoloesmanolo",
-          "coordinates": [168, 35, 191]
+          "coordinates": [176, 28, 199]
         }
       ]
     },
@@ -388,7 +388,7 @@
         },
         {
           "text": "UndrcoverCactus",
-          "coordinates": [128, 18, 204]
+          "coordinates": [128, 13, 211]
         }
       ]
     },
@@ -400,11 +400,11 @@
       "displays": [
         {
           "text": "Counter_Coffee",
-          "coordinates": [117, 16, 179]
+          "coordinates": [121, 4, 167]
         },
         {
           "text": "1954PinaColada",
-          "coordinates": [99, 0, 186]
+          "coordinates": [93, 1, 162]
         }
       ]
     },
@@ -416,7 +416,7 @@
       "displays": [
         {
           "text": "Lylac",
-          "coordinates": [79, -22, 209]
+          "coordinates": [81, -17, 192]
         },
         {
           "text": "1954PinaColada",
@@ -452,7 +452,7 @@
         },
         {
           "text": "Enderayo",
-          "coordinates": [157, -38, 183]
+          "coordinates": [160, -29, 193]
         }
       ]
     },
