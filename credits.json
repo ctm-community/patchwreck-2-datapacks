@@ -28,7 +28,7 @@
       "displays": [
         {
           "text": "KyKyPy3Ka",
-          "coordinates": [112, 11, 140]
+          "coordinates": [109, 10, 141]
         },
         {
           "text": "Matt_97",
@@ -52,27 +52,27 @@
         },
         {
           "text": "Cafeslayeur",
-          "coordinates": [187, 42, 104]
+          "coordinates": [187, 36, 99]
         }
       ]
     },
     {
       "camera": {
-        "coordinates": [204, 61, 130],
-        "rotation": [-65, 12]
+        "coordinates": [204, 69, 130],
+        "rotation": [-62, 20]
       },
       "displays": [
         {
           "text": "Lylac",
-          "coordinates": [214, 54, 148]
+          "coordinates": [214, 58, 148]
         },
         {
           "text": "Enderayo",
-          "coordinates": [231, 42, 143]
+          "coordinates": [231, 46, 143]
         },
         {
           "text": "ImSheol",
-          "coordinates": [247, 53, 132]
+          "coordinates": [247, 58, 132]
         }
       ]
     },
@@ -84,7 +84,7 @@
       "displays": [
         {
           "text": "@p",
-          "coordinates": [232, 54, 105]
+          "coordinates": [235, 54, 105]
         },
         {
           "text": "ImSheol",
@@ -98,8 +98,8 @@
     },
     {
       "camera": {
-        "coordinates": [228, 51, 76],
-        "rotation": [139, 2]
+        "coordinates": [228, 63, 76],
+        "rotation": [134, 20]
       },
       "displays": [
         {
@@ -108,7 +108,7 @@
         },
         {
           "text": "safeliquids",
-          "coordinates": [223, 46, 64]
+          "coordinates": [218, 65, 57]
         }
       ]
     },
@@ -120,11 +120,11 @@
       "displays": [
         {
           "text": "Counter_Coffee",
-          "coordinates": [190, 43, 47]
+          "coordinates": [190, 48, 47]
         },
         {
           "text": "Coffee_Cake",
-          "coordinates": [167, 59, 53]
+          "coordinates": [172, 59, 60]
         }
       ]
     },
@@ -140,7 +140,7 @@
         },
         {
           "text": "Lylac",
-          "coordinates": [118, 57, 67]
+          "coordinates": [118, 70, 67]
         }
       ]
     }
@@ -716,11 +716,11 @@
       "displays": [
         {
           "text": "KyKyPy3Ka",
-          "coordinates": [162, 77, 117]
+          "coordinates": [167, 77, 117]
         },
         {
           "text": "Cango, Kembo, Saihoku Hiroppi",
-          "coordinates": [187, 80, 111]
+          "coordinates": [187, 78, 111]
         }
       ]
     },

@@ -68,6 +68,9 @@ def generate_credits(
     data: dict[Dimension, list[dict[str, CameraPosition | TextDisplays]]],
 ) -> None:
     mcfunction.parent.joinpath("credits").mkdir(exist_ok=True)
+    reset_all_credits = mcfunction.parent.joinpath("credits", "reset_all.mcfunction")
+    with reset_all_credits.open("w") as reset_file:
+        reset_file.write("#> patchwreck:monument/credits/reset_all\n\n")
 
     with mcfunction.open("w") as file:
         file.write(
@@ -105,8 +108,8 @@ def generate_credits(
         }
         init_dimension = textwrap.dedent(
             """
-            execute if score $credits patchwreck.timers matches {timer} in {dimension} run teleport @a {view}
-            execute if score $credits patchwreck.timers matches {timer} in {dimension} run teleport {mcuuid} {view}
+            execute if score $credits patchwreck.timers matches {timer}..{timer_end} in {dimension} run teleport @a {view}
+            execute if score $credits patchwreck.timers matches {timer}..{timer_end} in {dimension} run teleport {mcuuid} {view}
             execute if score $credits patchwreck.timers matches {timer} run title @a times 10t 80t 10t
             execute if score $credits patchwreck.timers matches {timer} run title @a title {{"text":""}}
             execute if score $credits patchwreck.timers matches {timer} run title @a subtitle {{"text":"{dimension_name}"}}
@@ -134,6 +137,7 @@ def generate_credits(
             file.write(
                 init_dimension.format(
                     timer=timer,
+                    timer_end=timer + 80,
                     dimension=dimension,
                     dimension_name=dimension_name[dimension],
                     mcuuid=dimension_camera[dimension],
@@ -156,11 +160,13 @@ def generate_credits(
                     display_uuid = MCUUID2()
                     with reset_credits.open("a") as reset_file:
                         reset_file.write(f"kill {display_uuid}\n")
+                    with reset_all_credits.open("a") as reset_file:
+                        reset_file.write(f"kill {display_uuid}\n")
 
                     file.write(
                         f"execute if score $credits patchwreck.timers matches {timer} in {dimension} "
                         f"run summon minecraft:text_display {display.coordinates.x} {display.coordinates.y} {display.coordinates.z} "
-                        f'{{UUID: {display_uuid.nbt}, billboard: "center", transformation: {{left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [10f, 10f, 10f]}}, text: \'{{"text": "{display.text}"}}\'}}\n'
+                        f'{{UUID: {display_uuid.nbt}, billboard: "center", brightness: {{sky: 10, block: 10}}, transformation: {{left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [10f, 10f, 10f]}}, text: \'{{"text": "{display.text}"}}\'}}\n'
                     )
                     timer += 20
 
