@@ -16,6 +16,19 @@ class MCUUID(UUID):
         )
 
 
+class MCUUID2(UUID):
+    rng = random.Random(x="Patchwreck II- Credits")
+
+    def __init__(self) -> None:
+        super().__init__(int=self.rng.getrandbits(128), version=4)
+
+    @property
+    def nbt(self) -> str:
+        return "[I; {}, {}, {}, {}]".format(
+            *struct.unpack(">4i", bytes.fromhex(self.hex))
+        )
+
+
 if __name__ == "__main__":
     mcuuid = MCUUID()
     assert str(mcuuid) == "7583cbbd-c758-432f-b77a-fbf9503597e0"

@@ -669,7 +669,10 @@
   ],
   "patchwreck:metropolis": [
     {
-      "camera": { "coordinates": [84, 96, 48], "rotation": [-44, 1] },
+      "camera": {
+        "coordinates": [84, 96, 48],
+        "rotation": [-44, 1]
+      },
       "displays": [
         {
           "text": "KyKyPy3Ka",
@@ -690,7 +693,10 @@
       ]
     },
     {
-      "camera": { "coordinates": [110, 68, 108], "rotation": [-88, -13] },
+      "camera": {
+        "coordinates": [110, 68, 108],
+        "rotation": [-88, -13]
+      },
       "displays": [
         {
           "text": "CatsAreYe",
@@ -703,7 +709,10 @@
       ]
     },
     {
-      "camera": { "coordinates": [165, 73, 103], "rotation": [-46, -19] },
+      "camera": {
+        "coordinates": [165, 73, 103],
+        "rotation": [-46, -19]
+      },
       "displays": [
         {
           "text": "KyKyPy3Ka",
@@ -716,7 +725,10 @@
       ]
     },
     {
-      "camera": { "coordinates": [169, 86, 94], "rotation": [-174, -3] },
+      "camera": {
+        "coordinates": [169, 86, 94],
+        "rotation": [-174, -3]
+      },
       "displays": [
         {
           "text": "Cafeslayeur",
@@ -729,7 +741,10 @@
       ]
     },
     {
-      "camera": { "coordinates": [193, 104, 92], "rotation": [-66, 6] },
+      "camera": {
+        "coordinates": [193, 104, 92],
+        "rotation": [-66, 6]
+      },
       "displays": [
         {
           "text": "Enderayo",
@@ -742,7 +757,10 @@
       ]
     },
     {
-      "camera": { "coordinates": [209, 108, 76], "rotation": [-125, 17] },
+      "camera": {
+        "coordinates": [209, 108, 76],
+        "rotation": [-125, 17]
+      },
       "displays": [
         {
           "text": "safeliquids",
@@ -755,7 +773,10 @@
       ]
     },
     {
-      "camera": { "coordinates": [259, 129, 51], "rotation": [-110, -1] },
+      "camera": {
+        "coordinates": [259, 129, 51],
+        "rotation": [-110, -1]
+      },
       "displays": [
         {
           "text": "Phoraxe",
@@ -768,7 +789,10 @@
       ]
     },
     {
-      "camera": { "coordinates": [259, 137, 81], "rotation": [-70, 13] },
+      "camera": {
+        "coordinates": [259, 137, 81],
+        "rotation": [-70, 13]
+      },
       "displays": [
         {
           "text": "A_Dumb_Bagel",
@@ -793,7 +817,10 @@
       ]
     },
     {
-      "camera": { "coordinates": [264, 126, 144], "rotation": [-94, -5] },
+      "camera": {
+        "coordinates": [264, 126, 144],
+        "rotation": [-94, -5]
+      },
       "displays": [
         {
           "text": "Coffee_Cake",
