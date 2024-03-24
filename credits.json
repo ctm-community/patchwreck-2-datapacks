@@ -676,7 +676,7 @@
       "displays": [
         {
           "text": "KyKyPy3Ka",
-          "coordinates": [100, 125, 91]
+          "coordinates": [93, 124, 90]
         },
         {
           "text": "1954PinaColada",
@@ -688,7 +688,7 @@
         },
         {
           "text": "KyKyPy3Ka",
-          "coordinates": [126, 98, 54]
+          "coordinates": [116, 98, 54]
         }
       ]
     },
@@ -716,11 +716,11 @@
       "displays": [
         {
           "text": "KyKyPy3Ka",
-          "coordinates": [171, 78, 116]
+          "coordinates": [162, 77, 117]
         },
         {
           "text": "Cango, Kembo, Saihoku Hiroppi",
-          "coordinates": [194, 84, 114]
+          "coordinates": [187, 80, 111]
         }
       ]
     },
@@ -748,11 +748,11 @@
       "displays": [
         {
           "text": "Enderayo",
-          "coordinates": [209, 103, 91]
+          "coordinates": [205, 103, 91]
         },
         {
           "text": "@p",
-          "coordinates": [214, 108, 126]
+          "coordinates": [215, 106, 119]
         }
       ]
     },
@@ -764,11 +764,11 @@
       "displays": [
         {
           "text": "safeliquids",
-          "coordinates": [217, 104, 70]
+          "coordinates": [214, 104, 70]
         },
         {
           "text": "Cafeslayeur",
-          "coordinates": [242, 114, 42]
+          "coordinates": [238, 112, 59]
         }
       ]
     },
@@ -780,7 +780,7 @@
       "displays": [
         {
           "text": "Phoraxe",
-          "coordinates": [278, 123, 43]
+          "coordinates": [276, 123, 43]
         },
         {
           "text": "safeliquids",
@@ -808,11 +808,7 @@
         },
         {
           "text": "1954PinaColada",
-          "coordinates": [277, 122, 96]
-        },
-        {
-          "text": "Coffee_Cake",
-          "coordinates": [273, 123, 111]
+          "coordinates": [275, 127, 96]
         }
       ]
     },
