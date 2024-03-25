@@ -41,7 +41,7 @@
 - [x] Add a shortcut back
 - [x] Check beetroot throwing transform
 - [x] Anubis weapon bugged - not triggering at all, initialize rngTornado dummy
-- [ ] Nerf wither mask
+- [x] Nerf wither mask
 - [x] Make beetroots weak for 1s when spawning
 
 ### Egyptian Tomb
@@ -83,17 +83,16 @@
 - [x] 161 91 69 missing spawner
 
 ### Final Compiling
-- [ ] Remove backup wool chest
+- [x] Remove backup wool chest
 - [x] Ensure wool is in all woolboxes!
-- [ ] Make sure all heads are working in the lobby
-- [ ] Add resource pack name, icon, and description
-- [ ] Adjust file name, level name, and icon
-- [ ] Delete nether
-- [ ] Trim the world
+- [x] Make sure all heads are working in the lobby
+- [x] Add resource pack name, icon, and description
+- [x] Adjust file name, level name, and icon
+- [x] Delete nether+end
+- [x] Trim the world
 
 ### Miscellaneous
-- [ ] Add a system for dead players to teleport to one another
-- [ ] Refine and finish credits
+- [x] Refine and finish credits
 
 ### We didn't do it in the end
 - [ ] Add more torches + coal (maybe some to mine near monument?)
@@ -101,3 +100,4 @@
 - [ ] Finish mob advancements
 - [ ] Finish island advancements
 - [ ] Finish item advancements
+- [ ] Add a system for dead players to teleport to one another
