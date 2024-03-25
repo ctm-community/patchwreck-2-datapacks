@@ -8,8 +8,6 @@ from typing import Any, Self, cast
 
 from scripts.mcuuid import MCUUID2
 
-# dimension_camera[dimension] = "e2fd7a71-6b0d-4012-b126-a0b021afdcca"
-
 
 class Coordinates(tuple[int, int, int]):
     def __new__(cls, x: int, y: int, z: int) -> Self:
@@ -70,13 +68,19 @@ def generate_credits(
     mcfunction.parent.joinpath("credits").mkdir(exist_ok=True)
     reset_all_credits = mcfunction.parent.joinpath("credits", "reset_all.mcfunction")
     with reset_all_credits.open("w") as reset_file:
-        reset_file.write("#> patchwreck:monument/credits/reset_all\n\n")
+        reset_file.write("#> patchwreck:monument/credits/reset_all")
 
     with mcfunction.open("w") as file:
         file.write(
             textwrap.dedent(
                 """
                 #> patchwreck:monument/credits
+
+                stopsound @a ambient minecraft:gothic
+                stopsound @a ambient minecraft:tomb
+                stopsound @a ambient minecraft:wasteland
+                stopsound @a ambient minecraft:grove
+                stopsound @a ambient minecraft:metropolis
 
                 execute if score $credits patchwreck.timers matches 0 run title @a times 20t 160t 20t
                 execute if score $credits patchwreck.timers matches 0 run title @a title {"text":"Congratulations!"}
@@ -86,11 +90,11 @@ def generate_credits(
         )
 
         dimension_name = {
-            "patchwreck:gothic": "Grim and Gothic",
-            "patchwreck:tomb": "Egyptian Tomb",
-            "patchwreck:wasteland": "Nuclear Wasteland",
-            "patchwreck:grove": "Enchanted Grove",
-            "patchwreck:metropolis": "Neon Metropolis",
+            "patchwreck:gothic": '{"text": "Grim and Gothic", "color": "gold"}',
+            "patchwreck:tomb": '{"text": "Egyptian Tomb", "color": "yellow"}',
+            "patchwreck:wasteland": '{"text": "Nuclear Wasteland", "color": "green"}',
+            "patchwreck:grove": '{"text": "Enchanted Grove", "color": "aqua"}',
+            "patchwreck:metropolis": '{"text": "Neon Metropolis", "color": "dark_purple"}',
         }
         dimension_view = {
             "patchwreck:gothic": "75.24 49.37 137.41 -112.11 16.89",
@@ -106,13 +110,20 @@ def generate_credits(
             "patchwreck:grove": "75e8b2ef-5293-4566-ae5b-1d63aa906a13",
             "patchwreck:metropolis": "d30648fb-2527-43ef-a529-946bcb83d467",
         }
+        dimension_music = {
+            "patchwreck:gothic": "minecraft:credits1",
+            "patchwreck:tomb": "minecraft:credits2",
+            "patchwreck:wasteland": "minecraft:credits3",
+            "patchwreck:grove": "minecraft:credits4",
+            "patchwreck:metropolis": "minecraft:credits5",
+        }
         init_dimension = textwrap.dedent(
             """
             execute if score $credits patchwreck.timers matches {timer}..{timer_end} in {dimension} run teleport @a {view}
             execute if score $credits patchwreck.timers matches {timer}..{timer_end} in {dimension} run teleport {mcuuid} {view}
+            execute if score $credits patchwreck.timers matches {timer_delayed} as @a at @s run playsound {dimension_music} ambient @a
             execute if score $credits patchwreck.timers matches {timer} run title @a times 10t 80t 10t
-            execute if score $credits patchwreck.timers matches {timer} run title @a title {{"text":""}}
-            execute if score $credits patchwreck.timers matches {timer} run title @a subtitle {{"text":"{dimension_name}"}}
+            execute if score $credits patchwreck.timers matches {timer} run title @a title {dimension_name}
             """
         )
 
@@ -138,7 +149,9 @@ def generate_credits(
                 init_dimension.format(
                     timer=timer,
                     timer_end=timer + 80,
+                    timer_delayed=timer + 1,
                     dimension=dimension,
+                    dimension_music=dimension_music[dimension],
                     dimension_name=dimension_name[dimension],
                     mcuuid=dimension_camera[dimension],
                     view=dimension_view[dimension],
@@ -177,6 +190,9 @@ def generate_credits(
         file.write(
             textwrap.dedent(
                 f"""
+                # Transition to tree credits
+                execute if score $credits patchwreck.timers matches {timer-5} run function patchwreck:monument/credits_end
+
                 # Force player to spectate target
                 execute if score $credits patchwreck.timers matches 200..{timer} run gamemode spectator @a[gamemode=!spectator]
 

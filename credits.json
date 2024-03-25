@@ -2,7 +2,7 @@
   "patchwreck:gothic": [
     {
       "camera": {
-        "coordinates": [96, -1, 122],
+        "coordinates": [91, -2, 127],
         "rotation": [-133, 1]
       },
       "displays": [
@@ -28,7 +28,7 @@
       "displays": [
         {
           "text": "KyKyPy3Ka",
-          "coordinates": [112, 11, 140]
+          "coordinates": [109, 10, 141]
         },
         {
           "text": "Matt_97",
@@ -52,27 +52,27 @@
         },
         {
           "text": "Cafeslayeur",
-          "coordinates": [187, 42, 104]
+          "coordinates": [187, 36, 99]
         }
       ]
     },
     {
       "camera": {
-        "coordinates": [204, 61, 130],
-        "rotation": [-65, 12]
+        "coordinates": [204, 69, 130],
+        "rotation": [-62, 20]
       },
       "displays": [
         {
           "text": "Lylac",
-          "coordinates": [214, 54, 148]
+          "coordinates": [214, 58, 148]
         },
         {
           "text": "Enderayo",
-          "coordinates": [231, 42, 143]
+          "coordinates": [231, 46, 143]
         },
         {
           "text": "ImSheol",
-          "coordinates": [247, 53, 132]
+          "coordinates": [247, 58, 132]
         }
       ]
     },
@@ -84,7 +84,7 @@
       "displays": [
         {
           "text": "@p",
-          "coordinates": [232, 54, 105]
+          "coordinates": [235, 54, 105]
         },
         {
           "text": "ImSheol",
@@ -98,8 +98,8 @@
     },
     {
       "camera": {
-        "coordinates": [228, 51, 76],
-        "rotation": [139, 2]
+        "coordinates": [228, 63, 76],
+        "rotation": [134, 20]
       },
       "displays": [
         {
@@ -108,7 +108,7 @@
         },
         {
           "text": "safeliquids",
-          "coordinates": [223, 46, 64]
+          "coordinates": [218, 65, 57]
         }
       ]
     },
@@ -120,11 +120,11 @@
       "displays": [
         {
           "text": "Counter_Coffee",
-          "coordinates": [190, 43, 47]
+          "coordinates": [190, 48, 47]
         },
         {
           "text": "Coffee_Cake",
-          "coordinates": [167, 59, 53]
+          "coordinates": [172, 59, 60]
         }
       ]
     },
@@ -140,7 +140,7 @@
         },
         {
           "text": "Lylac",
-          "coordinates": [118, 57, 67]
+          "coordinates": [118, 70, 67]
         }
       ]
     }
@@ -200,8 +200,8 @@
     },
     {
       "camera": {
-        "coordinates": [99, 131, 45],
-        "rotation": [142, 28]
+        "coordinates": [104, 134, 50],
+        "rotation": [135, 20]
       },
       "displays": [
         {
@@ -262,7 +262,7 @@
       "displays": [
         {
           "text": "Counter_Coffee",
-          "coordinates": [142, 49, -4]
+          "coordinates": [142, 48, -4]
         },
         {
           "text": "Lylac",
@@ -310,8 +310,8 @@
   "patchwreck:wasteland": [
     {
       "camera": {
-        "coordinates": [112, 18, 132],
-        "rotation": [-158, 8]
+        "coordinates": [107, 14, 135],
+        "rotation": [-147, -2]
       },
       "displays": [
         {
@@ -492,7 +492,7 @@
   "patchwreck:grove": [
     {
       "camera": {
-        "coordinates": [101, 97, 152],
+        "coordinates": [99, 101, 162],
         "rotation": [-170, 21]
       },
       "displays": [
@@ -516,8 +516,8 @@
     },
     {
       "camera": {
-        "coordinates": [188, 109, 120],
-        "rotation": [168, 16]
+        "coordinates": [183, 106, 127],
+        "rotation": [178, 7]
       },
       "displays": [
         {
@@ -572,17 +572,17 @@
     },
     {
       "camera": {
-        "coordinates": [183, 104, 71],
-        "rotation": [148, 0]
+        "coordinates": [161, 117, 47],
+        "rotation": [-33, 34]
       },
       "displays": [
         {
           "text": "CatsAreYe",
-          "coordinates": [170, 105, 68]
+          "coordinates": [165, 106, 59]
         },
         {
           "text": "Enderayo",
-          "coordinates": [182, 103, 61]
+          "coordinates": [182, 105, 55]
         }
       ]
     },
@@ -627,10 +627,6 @@
         {
           "text": "Cango, Kembo, Saihoku Hiroppi",
           "coordinates": [100, 135, 57]
-        },
-        {
-          "text": "manoloesmanolo",
-          "coordinates": [124, 138, 61]
         }
       ]
     },
@@ -640,6 +636,10 @@
         "rotation": [140, 8]
       },
       "displays": [
+        {
+          "text": "manoloesmanolo",
+          "coordinates": [124, 138, 61]
+        },
         {
           "text": "1954PinaColada",
           "coordinates": [135, 154, 60]
@@ -710,17 +710,17 @@
     },
     {
       "camera": {
-        "coordinates": [165, 73, 103],
-        "rotation": [-46, -19]
+        "coordinates": [158, 80, 97],
+        "rotation": [-54, 3]
       },
       "displays": [
         {
           "text": "KyKyPy3Ka",
-          "coordinates": [162, 77, 117]
+          "coordinates": [167, 77, 117]
         },
         {
           "text": "Cango, Kembo, Saihoku Hiroppi",
-          "coordinates": [187, 80, 111]
+          "coordinates": [187, 78, 111]
         }
       ]
     },
@@ -758,7 +758,7 @@
     },
     {
       "camera": {
-        "coordinates": [209, 108, 76],
+        "coordinates": [203, 109, 80],
         "rotation": [-125, 17]
       },
       "displays": [

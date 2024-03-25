@@ -1,6 +1,4 @@
-#> patchwreck:monument/credits/reset_all
-
-kill 8dd4d5bf-fd34-4c54-829e-b82608ddd2b7
+#> patchwreck:monument/credits/reset_allkill 8dd4d5bf-fd34-4c54-829e-b82608ddd2b7
 kill a5b29328-a594-46d5-9115-437d8d5ed680
 kill e07601ed-d2b5-4213-94de-687542b60b7e
 kill 22b01ff7-e612-4e1a-9487-83a7ec625b66

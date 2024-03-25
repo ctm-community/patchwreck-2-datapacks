@@ -31,4 +31,5 @@ scoreboard players set 80 patchwreck.constants 80
 scoreboard players set 100 patchwreck.constants 100
 scoreboard players add 5t patchwreck.timers 0
 scoreboard players add $credits patchwreck.timers 0
+scoreboard players add $credits_end patchwreck.timers 0
 execute unless score $item_count patchwreck.variables matches 1.. run scoreboard players set $item_count patchwreck.variables 1

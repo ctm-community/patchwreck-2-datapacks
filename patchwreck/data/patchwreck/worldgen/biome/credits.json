@@ -8,7 +8,7 @@
     "water_color": 4159204,
     "water_fog_color": 329011,
     "ambient_sound": {
-      "sound_id": "minecraft:monument"
+      "sound_id": "minecraft:credits"
     }
   },
   "spawners": {},

@@ -1,16 +1,22 @@
 #> patchwreck:monument/credits
 
+stopsound @a ambient minecraft:gothic
+stopsound @a ambient minecraft:tomb
+stopsound @a ambient minecraft:wasteland
+stopsound @a ambient minecraft:grove
+stopsound @a ambient minecraft:metropolis
+
 execute if score $credits patchwreck.timers matches 0 run title @a times 20t 160t 20t
 execute if score $credits patchwreck.timers matches 0 run title @a title {"text":"Congratulations!"}
 execute if score $credits patchwreck.timers matches 0 run title @a subtitle {"text":"Thank you for playing Patchwreck II!"}
 
 execute if score $credits patchwreck.timers matches 200..280 in patchwreck:gothic run teleport @a 75.24 49.37 137.41 -112.11 16.89
 execute if score $credits patchwreck.timers matches 200..280 in patchwreck:gothic run teleport ad16b146-6069-4ac8-b952-7bcaa4fc8615 75.24 49.37 137.41 -112.11 16.89
+execute if score $credits patchwreck.timers matches 201 as @a at @s run playsound minecraft:credits1 ambient @a
 execute if score $credits patchwreck.timers matches 200 run title @a times 10t 80t 10t
-execute if score $credits patchwreck.timers matches 200 run title @a title {"text":""}
-execute if score $credits patchwreck.timers matches 200 run title @a subtitle {"text":"Grim and Gothic"}
+execute if score $credits patchwreck.timers matches 200 run title @a title {"text": "Grim and Gothic", "color": "gold"}
 
-execute if score $credits patchwreck.timers matches 300 in patchwreck:gothic run teleport ad16b146-6069-4ac8-b952-7bcaa4fc8615 96 -1 122 -133 1
+execute if score $credits patchwreck.timers matches 300 in patchwreck:gothic run teleport ad16b146-6069-4ac8-b952-7bcaa4fc8615 91 -2 127 -133 1
 execute if score $credits patchwreck.timers matches 320 in patchwreck:gothic run summon minecraft:text_display 97 -4 106 {UUID: [I; -1915431489, -46904236, -2103527386, 148755127], billboard: "center", brightness: {sky: 10, block: 10}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [10f, 10f, 10f]}, text: '{"text": "Phoraxe"}'}
 execute if score $credits patchwreck.timers matches 340 in patchwreck:gothic run summon minecraft:text_display 112 5 106 {UUID: [I; -1515023576, -1517009195, -1860877443, -1923164544], billboard: "center", brightness: {sky: 10, block: 10}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [10f, 10f, 10f]}, text: '{"text": "Counter_Coffee"}'}
 execute if score $credits patchwreck.timers matches 360 in patchwreck:gothic run summon minecraft:text_display 111 -3 122 {UUID: [I; -529137171, -759873005, -1797363595, 1119226750], billboard: "center", brightness: {sky: 10, block: 10}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [10f, 10f, 10f]}, text: '{"text": "KyKyPy3Ka"}'}
@@ -48,14 +54,14 @@ execute if score $credits patchwreck.timers matches 840 in patchwreck:gothic run
 
 execute if score $credits patchwreck.timers matches 860..940 in patchwreck:tomb run teleport @a 11.63 109.30 72.82 -105.12 3.96
 execute if score $credits patchwreck.timers matches 860..940 in patchwreck:tomb run teleport 98cfb8d4-02d3-4ee9-b2d2-441d81359f61 11.63 109.30 72.82 -105.12 3.96
+execute if score $credits patchwreck.timers matches 861 as @a at @s run playsound minecraft:credits2 ambient @a
 execute if score $credits patchwreck.timers matches 860 run title @a times 10t 80t 10t
-execute if score $credits patchwreck.timers matches 860 run title @a title {"text":""}
-execute if score $credits patchwreck.timers matches 860 run title @a subtitle {"text":"Egyptian Tomb"}
+execute if score $credits patchwreck.timers matches 860 run title @a title {"text": "Egyptian Tomb", "color": "yellow"}
 
 execute if score $credits patchwreck.timers matches 960 in patchwreck:tomb run teleport 98cfb8d4-02d3-4ee9-b2d2-441d81359f61 136 153 165 155 7
-execute if score $credits patchwreck.timers matches 980 in patchwreck:tomb run summon minecraft:text_display 111 155 128 {UUID: [I; 1581189922, 1824410811, -1979226844, 1639437201], billboard: "center", brightness: {sky: 10, block: 10}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [10f, 10f, 10f]}, text: '{"text": "Sandurs"}'}
+execute if score $credits patchwreck.timers matches 980 in patchwreck:tomb run summon minecraft:text_display 111 155 130 {UUID: [I; 1581189922, 1824410811, -1979226844, 1639437201], billboard: "center", brightness: {sky: 10, block: 10}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [10f, 10f, 10f]}, text: '{"text": "Sandurs"}'}
 execute if score $credits patchwreck.timers matches 1000 in patchwreck:tomb run summon minecraft:text_display 141 152 122 {UUID: [I; 45169271, -1611118131, -1422922685, 377437402], billboard: "center", brightness: {sky: 10, block: 10}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [10f, 10f, 10f]}, text: '{"text": "Cango, Kembo, Saihoku Hiroppi"}'}
-execute if score $credits patchwreck.timers matches 1020 in patchwreck:tomb run summon minecraft:text_display 116 127 130 {UUID: [I; -1844580728, -1877786349, -2100083081, 1278802430], billboard: "center", brightness: {sky: 10, block: 10}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [10f, 10f, 10f]}, text: '{"text": "Cafeslayeur"}'}
+execute if score $credits patchwreck.timers matches 1020 in patchwreck:tomb run summon minecraft:text_display 124 133 132 {UUID: [I; -1844580728, -1877786349, -2100083081, 1278802430], billboard: "center", brightness: {sky: 10, block: 10}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [10f, 10f, 10f]}, text: '{"text": "Cafeslayeur"}'}
 
 execute if score $credits patchwreck.timers matches 1040 in patchwreck:tomb run teleport 98cfb8d4-02d3-4ee9-b2d2-441d81359f61 50 127 135 -131 12
 execute if score $credits patchwreck.timers matches 1060 in patchwreck:tomb run summon minecraft:text_display 76 117 120 {UUID: [I; 1863976386, -1935390122, -2040202913, 1472354092], billboard: "center", brightness: {sky: 10, block: 10}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [10f, 10f, 10f]}, text: '{"text": "Counter_Coffee"}'}
@@ -63,29 +69,29 @@ execute if score $credits patchwreck.timers matches 1060 in patchwreck:tomb run 
 execute if score $credits patchwreck.timers matches 1080 in patchwreck:tomb run teleport 98cfb8d4-02d3-4ee9-b2d2-441d81359f61 62 113 89 -109 8
 execute if score $credits patchwreck.timers matches 1100 in patchwreck:tomb run summon minecraft:text_display 93 113 100 {UUID: [I; -1454944528, 906513200, -1463265201, 1567553204], billboard: "center", brightness: {sky: 10, block: 10}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [10f, 10f, 10f]}, text: '{"text": "Enderayo"}'}
 execute if score $credits patchwreck.timers matches 1120 in patchwreck:tomb run summon minecraft:text_display 88 98 78 {UUID: [I; 1245883564, -1691072967, -1145984082, 772525130], billboard: "center", brightness: {sky: 10, block: 10}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [10f, 10f, 10f]}, text: '{"text": "ImSheol"}'}
-execute if score $credits patchwreck.timers matches 1140 in patchwreck:tomb run summon minecraft:text_display 84 99 50 {UUID: [I; 2049157003, -1960294403, -1163130853, -1680644109], billboard: "center", brightness: {sky: 10, block: 10}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [10f, 10f, 10f]}, text: '{"text": "Coffee_Cake"}'}
+execute if score $credits patchwreck.timers matches 1140 in patchwreck:tomb run summon minecraft:text_display 84 107 59 {UUID: [I; 2049157003, -1960294403, -1163130853, -1680644109], billboard: "center", brightness: {sky: 10, block: 10}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [10f, 10f, 10f]}, text: '{"text": "Coffee_Cake"}'}
 
-execute if score $credits patchwreck.timers matches 1160 in patchwreck:tomb run teleport 98cfb8d4-02d3-4ee9-b2d2-441d81359f61 99 131 45 142 28
+execute if score $credits patchwreck.timers matches 1160 in patchwreck:tomb run teleport 98cfb8d4-02d3-4ee9-b2d2-441d81359f61 104 134 50 135 20
 execute if score $credits patchwreck.timers matches 1180 in patchwreck:tomb run summon minecraft:text_display 82 124 42 {UUID: [I; -2135139151, 1344425126, -2093047575, -1001251741], billboard: "center", brightness: {sky: 10, block: 10}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [10f, 10f, 10f]}, text: '{"text": "Coffee_Cake"}'}
-execute if score $credits patchwreck.timers matches 1200 in patchwreck:tomb run summon minecraft:text_display 92 124 30 {UUID: [I; -1204333651, -596491289, -1809792422, -834314057], billboard: "center", brightness: {sky: 10, block: 10}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [10f, 10f, 10f]}, text: '{"text": "Lylac"}'}
-execute if score $credits patchwreck.timers matches 1220 in patchwreck:tomb run summon minecraft:text_display 61 136 17 {UUID: [I; -1461952841, 518540268, -2112304381, 213294325], billboard: "center", brightness: {sky: 10, block: 10}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [10f, 10f, 10f]}, text: '{"text": "CatsAreYe"}'}
+execute if score $credits patchwreck.timers matches 1200 in patchwreck:tomb run summon minecraft:text_display 94 124 32 {UUID: [I; -1204333651, -596491289, -1809792422, -834314057], billboard: "center", brightness: {sky: 10, block: 10}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [10f, 10f, 10f]}, text: '{"text": "Lylac"}'}
+execute if score $credits patchwreck.timers matches 1220 in patchwreck:tomb run summon minecraft:text_display 61 139 20 {UUID: [I; -1461952841, 518540268, -2112304381, 213294325], billboard: "center", brightness: {sky: 10, block: 10}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [10f, 10f, 10f]}, text: '{"text": "CatsAreYe"}'}
 
 execute if score $credits patchwreck.timers matches 1240 in patchwreck:tomb run teleport 98cfb8d4-02d3-4ee9-b2d2-441d81359f61 101 121 29 -123 39
 execute if score $credits patchwreck.timers matches 1260 in patchwreck:tomb run summon minecraft:text_display 103 106 19 {UUID: [I; -1775408551, 1462127447, -1331821650, -145260852], billboard: "center", brightness: {sky: 10, block: 10}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [10f, 10f, 10f]}, text: '{"text": "@p"}'}
-execute if score $credits patchwreck.timers matches 1280 in patchwreck:tomb run summon minecraft:text_display 114 104 9 {UUID: [I; -671199582, 1319716598, -1373452005, 435892374], billboard: "center", brightness: {sky: 10, block: 10}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [10f, 10f, 10f]}, text: '{"text": "Enderayo"}'}
+execute if score $credits patchwreck.timers matches 1280 in patchwreck:tomb run summon minecraft:text_display 112 117 27 {UUID: [I; -671199582, 1319716598, -1373452005, 435892374], billboard: "center", brightness: {sky: 10, block: 10}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [10f, 10f, 10f]}, text: '{"text": "Enderayo"}'}
 
 execute if score $credits patchwreck.timers matches 1300 in patchwreck:tomb run teleport 98cfb8d4-02d3-4ee9-b2d2-441d81359f61 92 57 52 -112 -10
 execute if score $credits patchwreck.timers matches 1320 in patchwreck:tomb run summon minecraft:text_display 110 63 22 {UUID: [I; 1252473691, -637123010, -1080359401, 1425891018], billboard: "center", brightness: {sky: 10, block: 10}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [10f, 10f, 10f]}, text: '{"text": "@p"}'}
 execute if score $credits patchwreck.timers matches 1340 in patchwreck:tomb run summon minecraft:text_display 120 53 44 {UUID: [I; -1387684630, -1921497576, -1348647498, -1727724071], billboard: "center", brightness: {sky: 10, block: 10}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [10f, 10f, 10f]}, text: '{"text": "KyKyPy3Ka"}'}
-execute if score $credits patchwreck.timers matches 1360 in patchwreck:tomb run summon minecraft:text_display 124 58 65 {UUID: [I; -1342821082, -1626322891, -1673132916, -950087075], billboard: "center", brightness: {sky: 10, block: 10}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [10f, 10f, 10f]}, text: '{"text": "Cafeslayeur"}'}
+execute if score $credits patchwreck.timers matches 1360 in patchwreck:tomb run summon minecraft:text_display 123 58 65 {UUID: [I; -1342821082, -1626322891, -1673132916, -950087075], billboard: "center", brightness: {sky: 10, block: 10}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [10f, 10f, 10f]}, text: '{"text": "Cafeslayeur"}'}
 
 execute if score $credits patchwreck.timers matches 1380 in patchwreck:tomb run teleport 98cfb8d4-02d3-4ee9-b2d2-441d81359f61 155 37 16 127 3
-execute if score $credits patchwreck.timers matches 1400 in patchwreck:tomb run summon minecraft:text_display 129 50 -4 {UUID: [I; -1550132589, -1438102339, -1651814403, -1130500542], billboard: "center", brightness: {sky: 10, block: 10}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [10f, 10f, 10f]}, text: '{"text": "Counter_Coffee"}'}
+execute if score $credits patchwreck.timers matches 1400 in patchwreck:tomb run summon minecraft:text_display 142 48 -4 {UUID: [I; -1550132589, -1438102339, -1651814403, -1130500542], billboard: "center", brightness: {sky: 10, block: 10}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [10f, 10f, 10f]}, text: '{"text": "Counter_Coffee"}'}
 execute if score $credits patchwreck.timers matches 1420 in patchwreck:tomb run summon minecraft:text_display 148 35 3 {UUID: [I; -720975571, -375439058, -1517434817, 1452184752], billboard: "center", brightness: {sky: 10, block: 10}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [10f, 10f, 10f]}, text: '{"text": "Lylac"}'}
 execute if score $credits patchwreck.timers matches 1440 in patchwreck:tomb run summon minecraft:text_display 136 32 15 {UUID: [I; -505343308, -482849303, -1577629047, -357034695], billboard: "center", brightness: {sky: 10, block: 10}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [10f, 10f, 10f]}, text: '{"text": "1954PinaColada"}'}
 
 execute if score $credits patchwreck.timers matches 1460 in patchwreck:tomb run teleport 98cfb8d4-02d3-4ee9-b2d2-441d81359f61 127 40 2 98 19
-execute if score $credits patchwreck.timers matches 1480 in patchwreck:tomb run summon minecraft:text_display 106 36 6 {UUID: [I; 1432248362, 820136429, -1083758491, 757191567], billboard: "center", brightness: {sky: 10, block: 10}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [10f, 10f, 10f]}, text: '{"text": "Phoraxe"}'}
+execute if score $credits patchwreck.timers matches 1480 in patchwreck:tomb run summon minecraft:text_display 108 36 6 {UUID: [I; 1432248362, 820136429, -1083758491, 757191567], billboard: "center", brightness: {sky: 10, block: 10}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [10f, 10f, 10f]}, text: '{"text": "Phoraxe"}'}
 
 execute if score $credits patchwreck.timers matches 1500 in patchwreck:tomb run teleport 98cfb8d4-02d3-4ee9-b2d2-441d81359f61 137 34 -25 106 15
 execute if score $credits patchwreck.timers matches 1520 in patchwreck:tomb run summon minecraft:text_display 113 33 -15 {UUID: [I; -989968811, -17415324, -2005924285, 1267411706], billboard: "center", brightness: {sky: 10, block: 10}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [10f, 10f, 10f]}, text: '{"text": "Enderayo"}'}
@@ -94,11 +100,11 @@ execute if score $credits patchwreck.timers matches 1560 in patchwreck:tomb run 
 
 execute if score $credits patchwreck.timers matches 1580..1660 in patchwreck:wasteland run teleport @a 109.32 18.70 99.43 -45.94 13.57
 execute if score $credits patchwreck.timers matches 1580..1660 in patchwreck:wasteland run teleport 11b76264-a281-4a2f-aac3-b119d47a4492 109.32 18.70 99.43 -45.94 13.57
+execute if score $credits patchwreck.timers matches 1581 as @a at @s run playsound minecraft:credits3 ambient @a
 execute if score $credits patchwreck.timers matches 1580 run title @a times 10t 80t 10t
-execute if score $credits patchwreck.timers matches 1580 run title @a title {"text":""}
-execute if score $credits patchwreck.timers matches 1580 run title @a subtitle {"text":"Nuclear Wasteland"}
+execute if score $credits patchwreck.timers matches 1580 run title @a title {"text": "Nuclear Wasteland", "color": "green"}
 
-execute if score $credits patchwreck.timers matches 1680 in patchwreck:wasteland run teleport 11b76264-a281-4a2f-aac3-b119d47a4492 112 18 132 -158 8
+execute if score $credits patchwreck.timers matches 1680 in patchwreck:wasteland run teleport 11b76264-a281-4a2f-aac3-b119d47a4492 107 14 135 -147 -2
 execute if score $credits patchwreck.timers matches 1700 in patchwreck:wasteland run summon minecraft:text_display 111 7 114 {UUID: [I; -1866114898, 124731403, -1539597168, -1155387902], billboard: "center", brightness: {sky: 10, block: 10}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [10f, 10f, 10f]}, text: '{"text": "Enderayo"}'}
 execute if score $credits patchwreck.timers matches 1720 in patchwreck:wasteland run summon minecraft:text_display 128 10 107 {UUID: [I; 1574487612, 1024543697, -2038247509, 1931640408], billboard: "center", brightness: {sky: 10, block: 10}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [10f, 10f, 10f]}, text: '{"text": "Coffee_Cake"}'}
 execute if score $credits patchwreck.timers matches 1740 in patchwreck:wasteland run summon minecraft:text_display 135 8 120 {UUID: [I; 1148790850, -2050800031, -1717277725, -208367011], billboard: "center", brightness: {sky: 10, block: 10}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [10f, 10f, 10f]}, text: '{"text": "UndrcoverCactus"}'}
@@ -145,17 +151,17 @@ execute if score $credits patchwreck.timers matches 2360 in patchwreck:wasteland
 
 execute if score $credits patchwreck.timers matches 2380..2460 in patchwreck:grove run teleport @a 184.20 131.22 142.45 -212.31 11.13
 execute if score $credits patchwreck.timers matches 2380..2460 in patchwreck:grove run teleport 75e8b2ef-5293-4566-ae5b-1d63aa906a13 184.20 131.22 142.45 -212.31 11.13
+execute if score $credits patchwreck.timers matches 2381 as @a at @s run playsound minecraft:credits4 ambient @a
 execute if score $credits patchwreck.timers matches 2380 run title @a times 10t 80t 10t
-execute if score $credits patchwreck.timers matches 2380 run title @a title {"text":""}
-execute if score $credits patchwreck.timers matches 2380 run title @a subtitle {"text":"Enchanted Grove"}
+execute if score $credits patchwreck.timers matches 2380 run title @a title {"text": "Enchanted Grove", "color": "aqua"}
 
-execute if score $credits patchwreck.timers matches 2480 in patchwreck:grove run teleport 75e8b2ef-5293-4566-ae5b-1d63aa906a13 101 97 152 -170 21
+execute if score $credits patchwreck.timers matches 2480 in patchwreck:grove run teleport 75e8b2ef-5293-4566-ae5b-1d63aa906a13 99 101 162 -170 21
 execute if score $credits patchwreck.timers matches 2500 in patchwreck:grove run summon minecraft:text_display 98 106 118 {UUID: [I; -1400296719, -453227923, -1235304538, 740097900], billboard: "center", brightness: {sky: 10, block: 10}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [10f, 10f, 10f]}, text: '{"text": "KyKyPy3Ka"}'}
 execute if score $credits patchwreck.timers matches 2520 in patchwreck:grove run summon minecraft:text_display 103 88 138 {UUID: [I; 182218460, -648723499, -1232334486, 1389842600], billboard: "center", brightness: {sky: 10, block: 10}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [10f, 10f, 10f]}, text: '{"text": "Enderayo"}'}
 execute if score $credits patchwreck.timers matches 2540 in patchwreck:grove run summon minecraft:text_display 131 90 131 {UUID: [I; -2015572721, -1563211213, -1670417495, -536844186], billboard: "center", brightness: {sky: 10, block: 10}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [10f, 10f, 10f]}, text: '{"text": "Counter_Coffee"}'}
 execute if score $credits patchwreck.timers matches 2560 in patchwreck:grove run summon minecraft:text_display 144 111 114 {UUID: [I; 1115225439, 2063155743, -1145921434, -1964172181], billboard: "center", brightness: {sky: 10, block: 10}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [10f, 10f, 10f]}, text: '{"text": "manoloesmanolo"}'}
 
-execute if score $credits patchwreck.timers matches 2580 in patchwreck:grove run teleport 75e8b2ef-5293-4566-ae5b-1d63aa906a13 188 109 120 168 16
+execute if score $credits patchwreck.timers matches 2580 in patchwreck:grove run teleport 75e8b2ef-5293-4566-ae5b-1d63aa906a13 183 106 127 178 7
 execute if score $credits patchwreck.timers matches 2600 in patchwreck:grove run summon minecraft:text_display 163 100 104 {UUID: [I; 564851819, 1766672175, -1300458483, -1020920314], billboard: "center", brightness: {sky: 10, block: 10}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [10f, 10f, 10f]}, text: '{"text": "Counter_Coffee"}'}
 execute if score $credits patchwreck.timers matches 2620 in patchwreck:grove run summon minecraft:text_display 177 107 88 {UUID: [I; -830325673, -991083993, -1694098490, -1536752816], billboard: "center", brightness: {sky: 10, block: 10}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [10f, 10f, 10f]}, text: '{"text": "Phoraxe"}'}
 execute if score $credits patchwreck.timers matches 2640 in patchwreck:grove run summon minecraft:text_display 202 107 101 {UUID: [I; 168870536, -185971877, -1678981413, 789914890], billboard: "center", brightness: {sky: 10, block: 10}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [10f, 10f, 10f]}, text: '{"text": "safeliquids"}'}
@@ -169,9 +175,9 @@ execute if score $credits patchwreck.timers matches 2740 in patchwreck:grove run
 execute if score $credits patchwreck.timers matches 2760 in patchwreck:grove run summon minecraft:text_display 171 129 50 {UUID: [I; -181221227, 1011306472, -1218847215, -261362404], billboard: "center", brightness: {sky: 10, block: 10}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [10f, 10f, 10f]}, text: '{"text": "Matt_97"}'}
 execute if score $credits patchwreck.timers matches 2780 in patchwreck:grove run summon minecraft:text_display 178 125 61 {UUID: [I; 2125921024, -1230025074, -2092078711, 1571393227], billboard: "center", brightness: {sky: 10, block: 10}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [10f, 10f, 10f]}, text: '{"text": "KyKyPy3Ka"}'}
 
-execute if score $credits patchwreck.timers matches 2800 in patchwreck:grove run teleport 75e8b2ef-5293-4566-ae5b-1d63aa906a13 183 104 71 148 0
-execute if score $credits patchwreck.timers matches 2820 in patchwreck:grove run summon minecraft:text_display 170 105 68 {UUID: [I; -1700732373, -1714599245, -1096961179, 593291187], billboard: "center", brightness: {sky: 10, block: 10}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [10f, 10f, 10f]}, text: '{"text": "CatsAreYe"}'}
-execute if score $credits patchwreck.timers matches 2840 in patchwreck:grove run summon minecraft:text_display 182 103 61 {UUID: [I; 1352296640, -1758246558, -1279065084, 1828946471], billboard: "center", brightness: {sky: 10, block: 10}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [10f, 10f, 10f]}, text: '{"text": "Enderayo"}'}
+execute if score $credits patchwreck.timers matches 2800 in patchwreck:grove run teleport 75e8b2ef-5293-4566-ae5b-1d63aa906a13 161 117 47 -33 34
+execute if score $credits patchwreck.timers matches 2820 in patchwreck:grove run summon minecraft:text_display 165 106 59 {UUID: [I; -1700732373, -1714599245, -1096961179, 593291187], billboard: "center", brightness: {sky: 10, block: 10}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [10f, 10f, 10f]}, text: '{"text": "CatsAreYe"}'}
+execute if score $credits patchwreck.timers matches 2840 in patchwreck:grove run summon minecraft:text_display 182 105 55 {UUID: [I; 1352296640, -1758246558, -1279065084, 1828946471], billboard: "center", brightness: {sky: 10, block: 10}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [10f, 10f, 10f]}, text: '{"text": "Enderayo"}'}
 
 execute if score $credits patchwreck.timers matches 2860 in patchwreck:grove run teleport 75e8b2ef-5293-4566-ae5b-1d63aa906a13 162 121 70 110 5
 execute if score $credits patchwreck.timers matches 2880 in patchwreck:grove run summon minecraft:text_display 145 117 56 {UUID: [I; 1675606724, -232435815, -1334659544, -294984105], billboard: "center", brightness: {sky: 10, block: 10}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [10f, 10f, 10f]}, text: '{"text": "Lylac"}'}
@@ -183,9 +189,9 @@ execute if score $credits patchwreck.timers matches 2960 in patchwreck:grove run
 
 execute if score $credits patchwreck.timers matches 2980 in patchwreck:grove run teleport 75e8b2ef-5293-4566-ae5b-1d63aa906a13 90 143 47 -53 16
 execute if score $credits patchwreck.timers matches 3000 in patchwreck:grove run summon minecraft:text_display 100 135 57 {UUID: [I; 735087472, -1932703927, -1824121256, -112398846], billboard: "center", brightness: {sky: 10, block: 10}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [10f, 10f, 10f]}, text: '{"text": "Cango, Kembo, Saihoku Hiroppi"}'}
-execute if score $credits patchwreck.timers matches 3020 in patchwreck:grove run summon minecraft:text_display 124 138 61 {UUID: [I; 1334521325, -928430317, -1143685306, 189824714], billboard: "center", brightness: {sky: 10, block: 10}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [10f, 10f, 10f]}, text: '{"text": "manoloesmanolo"}'}
 
-execute if score $credits patchwreck.timers matches 3040 in patchwreck:grove run teleport 75e8b2ef-5293-4566-ae5b-1d63aa906a13 145 158 82 140 8
+execute if score $credits patchwreck.timers matches 3020 in patchwreck:grove run teleport 75e8b2ef-5293-4566-ae5b-1d63aa906a13 145 158 82 140 8
+execute if score $credits patchwreck.timers matches 3040 in patchwreck:grove run summon minecraft:text_display 124 138 61 {UUID: [I; 1334521325, -928430317, -1143685306, 189824714], billboard: "center", brightness: {sky: 10, block: 10}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [10f, 10f, 10f]}, text: '{"text": "manoloesmanolo"}'}
 execute if score $credits patchwreck.timers matches 3060 in patchwreck:grove run summon minecraft:text_display 135 154 60 {UUID: [I; 509440478, 1280918529, -1777125724, -1397575648], billboard: "center", brightness: {sky: 10, block: 10}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [10f, 10f, 10f]}, text: '{"text": "1954PinaColada"}'}
 execute if score $credits patchwreck.timers matches 3080 in patchwreck:grove run summon minecraft:text_display 116 160 68 {UUID: [I; 268205248, -300594613, -1354878997, 270845366], billboard: "center", brightness: {sky: 10, block: 10}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [10f, 10f, 10f]}, text: '{"text": "Cafeslayeur"}'}
 
@@ -195,9 +201,9 @@ execute if score $credits patchwreck.timers matches 3140 in patchwreck:grove run
 
 execute if score $credits patchwreck.timers matches 3160..3240 in patchwreck:metropolis run teleport @a 104.89 110.82 107.65 616.33 15.09
 execute if score $credits patchwreck.timers matches 3160..3240 in patchwreck:metropolis run teleport d30648fb-2527-43ef-a529-946bcb83d467 104.89 110.82 107.65 616.33 15.09
+execute if score $credits patchwreck.timers matches 3161 as @a at @s run playsound minecraft:credits5 ambient @a
 execute if score $credits patchwreck.timers matches 3160 run title @a times 10t 80t 10t
-execute if score $credits patchwreck.timers matches 3160 run title @a title {"text":""}
-execute if score $credits patchwreck.timers matches 3160 run title @a subtitle {"text":"Neon Metropolis"}
+execute if score $credits patchwreck.timers matches 3160 run title @a title {"text": "Neon Metropolis", "color": "dark_purple"}
 
 execute if score $credits patchwreck.timers matches 3260 in patchwreck:metropolis run teleport d30648fb-2527-43ef-a529-946bcb83d467 84 96 48 -44 1
 execute if score $credits patchwreck.timers matches 3280 in patchwreck:metropolis run summon minecraft:text_display 93 124 90 {UUID: [I; 1800133167, -366460417, -1386856969, -1008315002], billboard: "center", brightness: {sky: 10, block: 10}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [10f, 10f, 10f]}, text: '{"text": "KyKyPy3Ka"}'}
@@ -209,7 +215,7 @@ execute if score $credits patchwreck.timers matches 3360 in patchwreck:metropoli
 execute if score $credits patchwreck.timers matches 3380 in patchwreck:metropolis run summon minecraft:text_display 128 76 95 {UUID: [I; 192322362, 1225605256, -1585641331, -1310017097], billboard: "center", brightness: {sky: 10, block: 10}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [10f, 10f, 10f]}, text: '{"text": "CatsAreYe"}'}
 execute if score $credits patchwreck.timers matches 3400 in patchwreck:metropolis run summon minecraft:text_display 131 75 125 {UUID: [I; -2084880298, -1825486664, -1958770178, -264025211], billboard: "center", brightness: {sky: 10, block: 10}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [10f, 10f, 10f]}, text: '{"text": "Counter_Coffee"}'}
 
-execute if score $credits patchwreck.timers matches 3420 in patchwreck:metropolis run teleport d30648fb-2527-43ef-a529-946bcb83d467 165 73 103 -46 -19
+execute if score $credits patchwreck.timers matches 3420 in patchwreck:metropolis run teleport d30648fb-2527-43ef-a529-946bcb83d467 158 80 97 -54 3
 execute if score $credits patchwreck.timers matches 3440 in patchwreck:metropolis run summon minecraft:text_display 167 77 117 {UUID: [I; 1824257000, -1122285030, -1190612481, 1211625785], billboard: "center", brightness: {sky: 10, block: 10}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [10f, 10f, 10f]}, text: '{"text": "KyKyPy3Ka"}'}
 execute if score $credits patchwreck.timers matches 3460 in patchwreck:metropolis run summon minecraft:text_display 187 78 111 {UUID: [I; 1874967216, -855162418, -2115745675, 1045885994], billboard: "center", brightness: {sky: 10, block: 10}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [10f, 10f, 10f]}, text: '{"text": "Cango, Kembo, Saihoku Hiroppi"}'}
 
@@ -221,7 +227,7 @@ execute if score $credits patchwreck.timers matches 3540 in patchwreck:metropoli
 execute if score $credits patchwreck.timers matches 3560 in patchwreck:metropolis run summon minecraft:text_display 205 103 91 {UUID: [I; 585831485, 1581010730, -1922488417, -1829514078], billboard: "center", brightness: {sky: 10, block: 10}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [10f, 10f, 10f]}, text: '{"text": "Enderayo"}'}
 execute if score $credits patchwreck.timers matches 3580 in patchwreck:metropolis run summon minecraft:text_display 215 106 119 {UUID: [I; -1994046596, 491408507, -1676866142, -1701147895], billboard: "center", brightness: {sky: 10, block: 10}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [10f, 10f, 10f]}, text: '{"text": "@p"}'}
 
-execute if score $credits patchwreck.timers matches 3600 in patchwreck:metropolis run teleport d30648fb-2527-43ef-a529-946bcb83d467 209 108 76 -125 17
+execute if score $credits patchwreck.timers matches 3600 in patchwreck:metropolis run teleport d30648fb-2527-43ef-a529-946bcb83d467 203 109 80 -125 17
 execute if score $credits patchwreck.timers matches 3620 in patchwreck:metropolis run summon minecraft:text_display 214 104 70 {UUID: [I; 810401822, 823738649, -1832035779, 1372856029], billboard: "center", brightness: {sky: 10, block: 10}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [10f, 10f, 10f]}, text: '{"text": "safeliquids"}'}
 execute if score $credits patchwreck.timers matches 3640 in patchwreck:metropolis run summon minecraft:text_display 238 112 59 {UUID: [I; 505607897, 1210859918, -1152584138, -727754158], billboard: "center", brightness: {sky: 10, block: 10}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [10f, 10f, 10f]}, text: '{"text": "Cafeslayeur"}'}
 
@@ -238,6 +244,9 @@ execute if score $credits patchwreck.timers matches 3800 in patchwreck:metropoli
 execute if score $credits patchwreck.timers matches 3820 in patchwreck:metropolis run teleport d30648fb-2527-43ef-a529-946bcb83d467 264 126 144 -94 -5
 execute if score $credits patchwreck.timers matches 3840 in patchwreck:metropolis run summon minecraft:text_display 285 123 125 {UUID: [I; 1476023125, 1249070347, -1617100998, 1606222779], billboard: "center", brightness: {sky: 10, block: 10}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [10f, 10f, 10f]}, text: '{"text": "Coffee_Cake"}'}
 execute if score $credits patchwreck.timers matches 3860 in patchwreck:metropolis run summon minecraft:text_display 288 123 145 {UUID: [I; 37036223, 2051885574, -2033624325, -1584152935], billboard: "center", brightness: {sky: 10, block: 10}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [10f, 10f, 10f]}, text: '{"text": "Lylac"}'}
+
+# Transition to tree credits
+execute if score $credits patchwreck.timers matches 3875 run function patchwreck:monument/credits_end
 
 # Force player to spectate target
 execute if score $credits patchwreck.timers matches 200..3880 run gamemode spectator @a[gamemode=!spectator]
