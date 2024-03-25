@@ -2,7 +2,8 @@
 # Set player spawn point to the nearest checkpoint
 
 # Tag players who are eligible to get checkpoint
-execute as @a unless score @s patchwreck.checkpoint = $checkpoint patchwreck.variables run tag @s add patchwreck.set_checkpoint
+scoreboard players operation $checkpoint_check patchwreck.variables = @s patchwreck.checkpoint
+execute as @a unless score @s patchwreck.checkpoint = $checkpoint_check patchwreck.variables run tag @s add patchwreck.set_checkpoint
 
 # Determine if checkpoint is clear from hazards
 execute store result score $checkpoint.hazard patchwreck.variables run execute if entity @e[distance=..8,type=#minecraft:hasai,type=!minecraft:player,type=!minecraft:axolotl]

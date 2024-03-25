@@ -9,9 +9,7 @@ summon minecraft:bat ~ ~ ~ {Health: 2f, Tags: ["m97_swarm"], Attributes: [{Name:
 summon minecraft:bat ~ ~ ~ {Health: 2f, Tags: ["m97_swarm"], Attributes: [{Name: "generic.max_health", Base: 2}]}
 summon minecraft:bat ~ ~ ~ {Health: 2f, Tags: ["m97_swarm"], Attributes: [{Name: "generic.max_health", Base: 2}]}
 summon minecraft:bat ~ ~ ~ {Health: 2f, Tags: ["m97_swarm"], Attributes: [{Name: "generic.max_health", Base: 2}]}
-summon minecraft:bat ~ ~ ~ {Health: 2f, Tags: ["m97_swarm"], Attributes: [{Name: "generic.max_health", Base: 2}]}
-summon minecraft:bat ~ ~ ~ {Health: 2f, Tags: ["m97_swarm"], Attributes: [{Name: "generic.max_health", Base: 2}]}
-summon minecraft:bat ~ ~ ~ {Health: 2f, Tags: ["m97_swarm"], Attributes: [{Name: "generic.max_health", Base: 2}]}
+
 
 teleport @s ~ -20000 ~
 kill @s

@@ -37,6 +37,7 @@ execute as @e[type=minecraft:axolotl,tag=enderayo.pixie] at @s run function ende
 execute as @e[type=minecraft:phantom,tag=mutantghast] at @s run function patchwreck:mobs/mutant_ghast/tick
 execute as @e[tag=enderayo.battlement] at @s run function patchwreck:mobs/bee_battlement/despawn_check
 execute as @e[type=minecraft:trident,predicate=patchwreck:loyal] run data modify entity @s DealtDamage set value 1b
+execute in patchwreck:gothic positioned 160 60 83 as @e[distance=..300,type=wither_skeleton,tag=!balanced] at @s run function patchwreck:mobs/gothic_skeles_balance
 ## Mob ticking end
 
 # Cooldowns, Flags, etc.
