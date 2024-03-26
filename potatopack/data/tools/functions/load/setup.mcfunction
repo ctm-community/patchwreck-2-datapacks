@@ -42,6 +42,8 @@ scoreboard objectives setdisplay list deaths
 #Force spawner tweaker to load
 scoreboard players set setup spawner_tweaker 0
 
+#Foreload for stickypiston
+forceload add 1020 1020 980 980
 
 #set any needed scores
 scoreboard players reset dummyhp

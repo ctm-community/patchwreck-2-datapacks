@@ -1,7 +1,7 @@
 #> patchwreck:monument/tick
 
 # If player has levitation above monument spawn, align them to spawnpoint
-execute in minecraft:overworld as @a[x=995,y=102,z=995,dx=11,dy=10,dz=11] at @s unless score @s patchwreck.checkpoint matches 1 run teleport @s 1000 ~ 1000
+#execute in minecraft:overworld as @a[x=995,y=102,z=995,dx=11,dy=10,dz=11] at @s unless score @s patchwreck.checkpoint matches 1 run teleport @s 1000 ~ 1000
 
 # Announce invalid monument interactions
 title @a[advancements={patchwreck:progression/orange_wool_check=true,patchwreck:progression/orange_wool=false}] actionbar [{"text": "Hold the "}, {"text": "Orange Wool","color": "gold"}, {"text": " to place it"}]

@@ -1,5 +1,7 @@
 #Starts the game as the player
 
+forceload add 1020 1020 980 980
+fill 999 102 999 1001 113 1001 barrier replace cave_air
 tp @s 1000 112 1000 0 0
 effect give @s blindness 2 0 true
 effect give @s slow_falling 4 0 true

@@ -12,7 +12,7 @@ execute if score $credits patchwreck.timers matches 0 run title @a subtitle {"te
 
 execute if score $credits patchwreck.timers matches 200..280 in patchwreck:gothic run teleport @a 75.24 49.37 137.41 -112.11 16.89
 execute if score $credits patchwreck.timers matches 200..280 in patchwreck:gothic run teleport ad16b146-6069-4ac8-b952-7bcaa4fc8615 75.24 49.37 137.41 -112.11 16.89
-execute if score $credits patchwreck.timers matches 201 as @a at @s run playsound minecraft:credits1 ambient @a
+execute if score $credits patchwreck.timers matches 201 as @a at @s run playsound minecraft:credits1 ambient @s
 execute if score $credits patchwreck.timers matches 200 run title @a times 10t 80t 10t
 execute if score $credits patchwreck.timers matches 200 run title @a title {"text": "Grim and Gothic", "color": "gold"}
 
@@ -54,7 +54,7 @@ execute if score $credits patchwreck.timers matches 840 in patchwreck:gothic run
 
 execute if score $credits patchwreck.timers matches 860..940 in patchwreck:tomb run teleport @a 11.63 109.30 72.82 -105.12 3.96
 execute if score $credits patchwreck.timers matches 860..940 in patchwreck:tomb run teleport 98cfb8d4-02d3-4ee9-b2d2-441d81359f61 11.63 109.30 72.82 -105.12 3.96
-execute if score $credits patchwreck.timers matches 861 as @a at @s run playsound minecraft:credits2 ambient @a
+execute if score $credits patchwreck.timers matches 861 as @a at @s run playsound minecraft:credits2 ambient @s
 execute if score $credits patchwreck.timers matches 860 run title @a times 10t 80t 10t
 execute if score $credits patchwreck.timers matches 860 run title @a title {"text": "Egyptian Tomb", "color": "yellow"}
 
@@ -100,7 +100,7 @@ execute if score $credits patchwreck.timers matches 1560 in patchwreck:tomb run 
 
 execute if score $credits patchwreck.timers matches 1580..1660 in patchwreck:wasteland run teleport @a 109.32 18.70 99.43 -45.94 13.57
 execute if score $credits patchwreck.timers matches 1580..1660 in patchwreck:wasteland run teleport 11b76264-a281-4a2f-aac3-b119d47a4492 109.32 18.70 99.43 -45.94 13.57
-execute if score $credits patchwreck.timers matches 1581 as @a at @s run playsound minecraft:credits3 ambient @a
+execute if score $credits patchwreck.timers matches 1581 as @a at @s run playsound minecraft:credits3 ambient @s
 execute if score $credits patchwreck.timers matches 1580 run title @a times 10t 80t 10t
 execute if score $credits patchwreck.timers matches 1580 run title @a title {"text": "Nuclear Wasteland", "color": "green"}
 
@@ -151,7 +151,7 @@ execute if score $credits patchwreck.timers matches 2360 in patchwreck:wasteland
 
 execute if score $credits patchwreck.timers matches 2380..2460 in patchwreck:grove run teleport @a 184.20 131.22 142.45 -212.31 11.13
 execute if score $credits patchwreck.timers matches 2380..2460 in patchwreck:grove run teleport 75e8b2ef-5293-4566-ae5b-1d63aa906a13 184.20 131.22 142.45 -212.31 11.13
-execute if score $credits patchwreck.timers matches 2381 as @a at @s run playsound minecraft:credits4 ambient @a
+execute if score $credits patchwreck.timers matches 2381 as @a at @s run playsound minecraft:credits4 ambient @s
 execute if score $credits patchwreck.timers matches 2380 run title @a times 10t 80t 10t
 execute if score $credits patchwreck.timers matches 2380 run title @a title {"text": "Enchanted Grove", "color": "aqua"}
 
@@ -201,7 +201,7 @@ execute if score $credits patchwreck.timers matches 3140 in patchwreck:grove run
 
 execute if score $credits patchwreck.timers matches 3160..3240 in patchwreck:metropolis run teleport @a 104.89 110.82 107.65 616.33 15.09
 execute if score $credits patchwreck.timers matches 3160..3240 in patchwreck:metropolis run teleport d30648fb-2527-43ef-a529-946bcb83d467 104.89 110.82 107.65 616.33 15.09
-execute if score $credits patchwreck.timers matches 3161 as @a at @s run playsound minecraft:credits5 ambient @a
+execute if score $credits patchwreck.timers matches 3161 as @a at @s run playsound minecraft:credits5 ambient @s
 execute if score $credits patchwreck.timers matches 3160 run title @a times 10t 80t 10t
 execute if score $credits patchwreck.timers matches 3160 run title @a title {"text": "Neon Metropolis", "color": "dark_purple"}
 

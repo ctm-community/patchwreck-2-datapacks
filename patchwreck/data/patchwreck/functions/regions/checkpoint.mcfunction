@@ -15,6 +15,10 @@ execute if score $checkpoint.hazard patchwreck.variables matches 1.. run return 
 data modify storage patchwreck:storage checkpoint.yaw set from entity @s Rotation[0]
 scoreboard players operation $checkpoint patchwreck.variables = @s patchwreck.checkpoint
 
+# Monument failsafe
+execute in overworld run fill 999 102 999 1001 113 1001 cave_air replace barrier
+
+
 # Update checkpoint for applicable players
 execute at @s as @a[tag=patchwreck.set_checkpoint] run function patchwreck:regions/checkpoint_macro with storage patchwreck:storage checkpoint
 tellraw @a[tag=patchwreck.set_checkpoint] [{"text":"Set spawn point to "},{"selector":"@s"}]
