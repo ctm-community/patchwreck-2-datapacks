@@ -47,6 +47,8 @@ execute if score $cooldown enderayo.demonomicon matches 1.. run scoreboard playe
 execute if score $cooldown enderayo.demonomicon matches 1 run title @a[tag=enderayo.demonomicon] actionbar {"text":"Demonomicon's ability is Ready!","color":"#A10000","bold":false,"italic":false}
 scoreboard players set $remove_xenon_tag temp 0
 scoreboard players set @a patchwreck.dead 0
+scoreboard players add $checkpoint_cd patchwreck.variables 0
+execute if score $checkpoint_cd patchwreck.variables matches 1.. run scoreboard players remove $checkpoint_cd patchwreck.variables 1
 
 # Patchwreck timers
 scoreboard players add 5t patchwreck.timers 1

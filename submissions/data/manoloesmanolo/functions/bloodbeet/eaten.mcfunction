@@ -17,7 +17,7 @@ execute if score @s bloodbeet.stack_count matches ..0 run function manoloesmanol
 execute if score @s bloodbeet.stack_count matches 1.. run function manoloesmanolo:bloodbeet/replace_beet with storage manoloesmanolo:storage bloodbeet
 
 # Simulate item consumption and give effects
-playsound minecraft:entity.player.burp player @a ~ ~ ~ 1 1 1
+playsound minecraft:entity.player.burp player @a ~ ~ ~ 1 1
 effect give @s minecraft:saturation 3 0 true
 
 # Reset eating scoreboards to avoid triggering eaten event twice in one tick
