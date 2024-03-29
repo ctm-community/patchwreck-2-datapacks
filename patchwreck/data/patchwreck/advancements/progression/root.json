@@ -3,7 +3,9 @@
     "icon": {
       "item": "minecraft:filled_map"
     },
-    "title": "Patchwreck II",
+    "title": {
+      "translate": "advancements.root.title"
+    },
     "description": "",
     "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
     "frame": "task",

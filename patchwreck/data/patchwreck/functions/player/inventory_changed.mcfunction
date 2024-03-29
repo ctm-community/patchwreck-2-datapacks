@@ -23,8 +23,8 @@ execute if data storage link:temp Player.inventory[{tag: {bloodbeet: 1b}}] run t
 execute if entity @s[tag=beetrooter] run function manoloesmanolo:bloodbeet/count_beets
 
 # Pixie Bucket
-execute if data storage link:temp Player.selected{id: "minecraft:axolotl_bucket", tag: {display: {Name: '{"text":"Lil\' Pixie","color":"#FF80C3","bold":true}'}}} run loot replace entity @s weapon.mainhand loot patchwreck:grove/bucket_of_pixie
-execute if data storage link:temp Player.inventory[{Slot: -106b, id: "minecraft:axolotl_bucket", tag: {display: {Name: '{"text":"Lil\' Pixie","color":"#FF80C3","bold":true}'}}}] run loot replace entity @s weapon.offhand loot patchwreck:grove/bucket_of_pixie
+execute if data storage link:temp Player.selected{id: "minecraft:axolotl_bucket", tag: {display: {Name: '{"translate":"entity.unknown.1.name.1","color":"#FF80C3","bold":true}'}}} run loot replace entity @s weapon.mainhand loot patchwreck:grove/bucket_of_pixie
+execute if data storage link:temp Player.inventory[{Slot: -106b, id: "minecraft:axolotl_bucket", tag: {display: {Name: '{"translate":"entity.unknown.1.name.1","color":"#FF80C3","bold":true}'}}}] run loot replace entity @s weapon.offhand loot patchwreck:grove/bucket_of_pixie
 
 # Blue eyes shield
 execute if data storage link:temp Player.inventory[{Slot: -106b, id: "minecraft:shield", tag: {enderayo.shieldability: 1b}}] run tag @s add enderayo.shieldability

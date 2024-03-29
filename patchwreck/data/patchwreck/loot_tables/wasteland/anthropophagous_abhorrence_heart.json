@@ -10,7 +10,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display: {Name: '{\"text\":\"Anthropophagous Abhorrence Heart\",\"color\":\"#881100\",\"italic\":false}'}, Enchantments: [{id: \"minecraft:vanishing_curse\", lvl: 1s}], AttributeModifiers: [{AttributeName: \"generic.max_health\", Name: \"generic.max_health\", Amount: 10, Operation: 0, UUID: [I; 744669072, -1454292968, -1321710274, -1623677629], Slot: \"offhand\"}, {AttributeName: \"generic.armor\", Name: \"generic.armor\", Amount: -1.0d, Operation: 0, UUID: [I; -392425327, -1592246148, -1125110667, -1615395114], Slot: \"offhand\"}]}"
+              "tag": "{display: {Name: '{\"translate\":\"item.fermented_spider_eye.1.name.1\",\"color\":\"#881100\",\"italic\":false}'}, Enchantments: [{id: \"minecraft:vanishing_curse\", lvl: 1s}], AttributeModifiers: [{AttributeName: \"generic.max_health\", Name: \"generic.max_health\", Amount: 10, Operation: 0, UUID: [I; 744669072, -1454292968, -1321710274, -1623677629], Slot: \"offhand\"}, {AttributeName: \"generic.armor\", Name: \"generic.armor\", Amount: -1.0d, Operation: 0, UUID: [I; -392425327, -1592246148, -1125110667, -1615395114], Slot: \"offhand\"}]}"
             }
           ]
         }

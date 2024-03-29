@@ -10,7 +10,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display: {Name: '{\"text\":\"Bucket of Pixie\",\"color\":\"#FF5CD3\",\"bold\":true,\"italic\":false}', Lore: ['{\"text\":\"Contains an axolotl that gives\",\"color\":\"gray\",\"bold\":false,\"italic\":false}', '{\"text\":\"Regeneration to nearby players.\",\"color\":\"gray\",\"bold\":false,\"italic\":false}']}, EntityTag: {Invulnerable: 1b, UUID: [I; 351684, 97982, 186684, 83881], CustomNameVisible: 1b, Variant: 0, Tags: [\"enderayo.pixie\"], CustomName: '{\"text\":\"Lil\\' Pixie\",\"color\":\"#FF80C3\",\"bold\":true}'}}"
+              "tag": "{display: {Name: '{\"translate\":\"item.axolotl_bucket.1.name.1\",\"color\":\"#FF5CD3\",\"bold\":true,\"italic\":false}', Lore: ['{\"translate\":\"item.axolotl_bucket.1.lore.0.1\",\"color\":\"gray\",\"bold\":false,\"italic\":false}', '{\"translate\":\"item.axolotl_bucket.2.lore.1.1\",\"color\":\"gray\",\"bold\":false,\"italic\":false}']}, EntityTag: {Invulnerable: 1b, UUID: [I; 351684, 97982, 186684, 83881], CustomNameVisible: 1b, Variant: 0, Tags: [\"enderayo.pixie\"], CustomName: '{\"translate\":\"entity.unknown.1.name.1\",\"color\":\"#FF80C3\",\"bold\":true}'}}"
             }
           ]
         }

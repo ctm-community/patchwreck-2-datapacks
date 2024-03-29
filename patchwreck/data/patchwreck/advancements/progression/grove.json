@@ -3,7 +3,9 @@
     "icon": {
       "item": "minecraft:stripped_crimson_hyphae"
     },
-    "title": "Enchanted Grove",
+    "title": {
+      "translate": "advancements.grove.title"
+    },
     "description": "",
     "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
     "frame": "task",

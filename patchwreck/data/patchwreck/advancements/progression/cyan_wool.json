@@ -3,7 +3,9 @@
     "icon": {
       "item": "minecraft:cyan_wool"
     },
-    "title": "Cyan Wool",
+    "title": {
+      "translate": "advancements.cyan_wool.title"
+    },
     "description": "",
     "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
     "frame": "goal",

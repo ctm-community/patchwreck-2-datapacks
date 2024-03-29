@@ -10,7 +10,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display: {Name: '{\"text\":\"Exoskeleton\",\"color\":\"#FF7700\",\"italic\":false}'}, HideFlags: 128, Damage: 0, AttributeModifiers: [{AttributeName: \"generic.attack_speed\", Name: \"generic.attack_speed\", Amount: 1.0d, Operation: 0, UUID: [I; -1181024746, -659667538, -1087079539, -621521340], Slot: \"chest\"}, {AttributeName: \"generic.armor\", Name: \"generic.armor\", Amount: 8, Operation: 0, UUID: [I; -599356386, -1236251312, -1567147413, -535298908], Slot: \"chest\"}], Trim: {material: \"minecraft:copper\", pattern: \"minecraft:coast\"}}"
+              "tag": "{display: {Name: '{\"translate\":\"item.netherite_chestplate.1.name.1\",\"color\":\"#FF7700\",\"italic\":false}'}, HideFlags: 128, Damage: 0, AttributeModifiers: [{AttributeName: \"generic.attack_speed\", Name: \"generic.attack_speed\", Amount: 1.0d, Operation: 0, UUID: [I; -1181024746, -659667538, -1087079539, -621521340], Slot: \"chest\"}, {AttributeName: \"generic.armor\", Name: \"generic.armor\", Amount: 8, Operation: 0, UUID: [I; -599356386, -1236251312, -1567147413, -535298908], Slot: \"chest\"}], Trim: {material: \"minecraft:copper\", pattern: \"minecraft:coast\"}}"
             }
           ]
         }

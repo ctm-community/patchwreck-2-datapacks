@@ -10,7 +10,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display: {Name: '{\"text\":\"Skull of Bones\",\"color\":\"#D90016\",\"italic\":false}'}, Enchantments: [{id: \"minecraft:protection\", lvl: 1s}, {id: \"minecraft:thorns\", lvl: 10s}], AttributeModifiers: [{AttributeName: \"generic.max_health\", Name: \"generic.max_health\", Amount: 2, Operation: 0, UUID: [I; 968256630, 2056340268, -1358224835, 455604834], Slot: \"head\"}, {AttributeName: \"generic.knockback_resistance\", Name: \"generic.knockback_resistance\", Amount: 0.4d, Operation: 0, UUID: [I; 2136316555, 730286991, -1288834090, 1940823227], Slot: \"head\"}]}"
+              "tag": "{display: {Name: '{\"translate\":\"item.wither_skeleton_skull.1.name.1\",\"color\":\"#D90016\",\"italic\":false}'}, Enchantments: [{id: \"minecraft:protection\", lvl: 1s}, {id: \"minecraft:thorns\", lvl: 10s}], AttributeModifiers: [{AttributeName: \"generic.max_health\", Name: \"generic.max_health\", Amount: 2, Operation: 0, UUID: [I; 968256630, 2056340268, -1358224835, 455604834], Slot: \"head\"}, {AttributeName: \"generic.knockback_resistance\", Name: \"generic.knockback_resistance\", Amount: 0.4d, Operation: 0, UUID: [I; 2136316555, 730286991, -1288834090, 1940823227], Slot: \"head\"}]}"
             }
           ]
         }

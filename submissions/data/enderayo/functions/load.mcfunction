@@ -21,8 +21,8 @@ scoreboard players add $item_slot enderayo.variables 0
 
 # Initialize bossbars
 # NOTE: Hyperdrift bossbar max set to 198 instead of 200 to eliminate dead space caused by 'refill' animation
-bossbar add enderayo:hyperdrift [{"text":"Hyperdrift - Defense Mode", "color":"aqua"}]
-bossbar set enderayo:hyperdrift name [{"text":"Hyperdrift - Defense Mode", "color":"aqua"}]
+bossbar add enderayo:hyperdrift [{"translate":"bossbar.enderayo:hyperdrift.name.1", "color":"aqua"}]
+bossbar set enderayo:hyperdrift name [{"translate":"bossbar.enderayo:hyperdrift.name.1", "color":"aqua"}]
 bossbar set enderayo:hyperdrift color blue
 bossbar set enderayo:hyperdrift max 198
 

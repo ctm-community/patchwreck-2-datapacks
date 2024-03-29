@@ -3,7 +3,9 @@
     "icon": {
       "item": "minecraft:end_crystal"
     },
-    "title": "Patchwreck II Complete",
+    "title": {
+      "translate": "advancements.complete.title"
+    },
     "description": "",
     "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
     "frame": "challenge",

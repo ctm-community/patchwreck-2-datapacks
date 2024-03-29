@@ -3,7 +3,9 @@
     "icon": {
       "item": "minecraft:yellow_wool"
     },
-    "title": "Yellow Wool",
+    "title": {
+      "translate": "advancements.yellow_wool.title"
+    },
     "description": "",
     "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
     "frame": "goal",

@@ -9,8 +9,8 @@ setblock 995 105 1028 minecraft:barrier
 
 # Titles
 title @a times 20t 60t 30t
-title @a title {"text":" ","color":"dark_aqua","italic":false}
-title @a subtitle {"text":"Purple Wool Placed","color":"light_purple","italic":false}
+title @a title {"translate":"wtem.space","color":"dark_aqua","italic":false}
+title @a subtitle {"translate":"patchwreck.functions.monument.placed_purple_wool.2","color":"light_purple","italic":false}
 
 # Grant advancement to remaining players
 advancement grant @a[advancements={patchwreck:progression/purple_wool=false}] only patchwreck:progression/purple_wool

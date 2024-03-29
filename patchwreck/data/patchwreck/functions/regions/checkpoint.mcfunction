@@ -7,8 +7,8 @@ execute as @a unless score @s patchwreck.checkpoint = $checkpoint_check patchwre
 
 # Determine if checkpoint is clear from hazards
 execute store result score $checkpoint.hazard patchwreck.variables run execute if entity @e[distance=..8,type=#minecraft:hasai,type=!minecraft:player,type=!minecraft:axolotl]
-execute if score $checkpoint.hazard patchwreck.variables matches 1 run title @a[distance=..3,tag=patchwreck.set_checkpoint] actionbar [{"text": "Checkpoint blocked, there is 1 monster nearby"}]
-execute if score $checkpoint.hazard patchwreck.variables matches 2.. run title @a[distance=..3,tag=patchwreck.set_checkpoint] actionbar [{"text": "Checkpoint blocked, there are "}, {"score": {"name": "$checkpoint.hazard", "objective": "patchwreck.variables"}}, {"text": " monsters nearby"}]
+execute if score $checkpoint.hazard patchwreck.variables matches 1 run title @a[distance=..3,tag=patchwreck.set_checkpoint] actionbar [{"translate":"patchwreck.functions.regions.checkpoint.1"}]
+execute if score $checkpoint.hazard patchwreck.variables matches 2.. run title @a[distance=..3,tag=patchwreck.set_checkpoint] actionbar [{"translate":"patchwreck.functions.regions.checkpoint.2"}, {"score": {"name": "$checkpoint.hazard", "objective": "patchwreck.variables"}}, {"translate":"patchwreck.functions.regions.checkpoint.3"}]
 execute if score $checkpoint.hazard patchwreck.variables matches 1.. run return fail
 
 # Store checkpoint entity data
@@ -21,6 +21,6 @@ execute if entity @a[tag=patchwreck.set_checkpoint,limit=1] run scoreboard playe
 
 # Update checkpoint for applicable players
 execute at @s as @a[tag=patchwreck.set_checkpoint] run function patchwreck:regions/checkpoint_macro with storage patchwreck:storage checkpoint
-tellraw @a[tag=patchwreck.set_checkpoint] [{"text":"Set spawn point to "},{"selector":"@s"}]
+tellraw @a[tag=patchwreck.set_checkpoint] [{"translate":"patchwreck.functions.regions.checkpoint.4"},{"selector":"@s"}]
 scoreboard players operation @a[tag=patchwreck.set_checkpoint] patchwreck.checkpoint = $checkpoint patchwreck.variables
 tag @a[tag=patchwreck.set_checkpoint] remove patchwreck.set_checkpoint

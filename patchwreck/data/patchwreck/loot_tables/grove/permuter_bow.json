@@ -10,7 +10,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"🍃 Magic Bow 🍃\",\"color\":\"green\",\"bold\":true,\"italic\":false}',Lore:['{\"text\":\" \"}','{\"text\":\"✧ Permutation ✧\",\"color\":\"dark_gray\",\"italic\":false}','{\"text\":\"Transforms when dropped\",\"color\":\"gray\",\"italic\":false}','{\"text\":\" \"}']},Unbreakable:1b,Damage:0,permutation:1,permuter:2,Enchantments:[{id:\"minecraft:flame\",lvl:1s},{id:\"minecraft:infinity\",lvl:1s},{id:\"minecraft:power\",lvl:2s},{id:\"minecraft:punch\",lvl:2s}]}"
+              "tag": "{display:{Name:'{\"translate\":\"patchwreck.loot_tables.grove.permuter_bow.1\",\"color\":\"green\",\"bold\":true,\"italic\":false}',Lore:['{\"translate\":\"wtem.space\"}','{\"translate\":\"item.stick.1.lore.6.1\",\"color\":\"dark_gray\",\"italic\":false}','{\"translate\":\"item.stick.1.lore.7.1\",\"color\":\"gray\",\"italic\":false}','{\"translate\":\"wtem.space\"}']},Unbreakable:1b,Damage:0,permutation:1,permuter:2,Enchantments:[{id:\"minecraft:flame\",lvl:1s},{id:\"minecraft:infinity\",lvl:1s},{id:\"minecraft:power\",lvl:2s},{id:\"minecraft:punch\",lvl:2s}]}"
             }
           ]
         }

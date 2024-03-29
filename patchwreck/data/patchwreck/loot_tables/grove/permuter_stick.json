@@ -10,7 +10,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"🍃 Magic Branch 🍃\",\"color\":\"green\",\"bold\":true,\"italic\":false}',Lore:['{\"text\":\" \"}','{\"text\":\"🔥 Heat Aura 🔥\",\"color\":\"dark_gray\",\"italic\":false,\"underlined\":true}','{\"text\":\"When in offhand, sets\",\"color\":\"gray\",\"italic\":false}','{\"text\":\"nearby enemies ablaze and\",\"color\":\"gray\",\"italic\":false}','{\"text\":\"causes them to glow\",\"color\":\"gray\",\"italic\":false}','{\"text\":\" \"}','{\"text\":\"✧ Permutation ✧\",\"color\":\"dark_gray\",\"italic\":false,\"underlined\":true}','{\"text\":\"Transforms when dropped\",\"color\":\"gray\",\"italic\":false}']},permutation:1,permuter:3,Enchantments:[{}]}"
+              "tag": "{display:{Name:'{\"translate\":\"item.stick.1.name.1\",\"color\":\"green\",\"bold\":true,\"italic\":false}',Lore:['{\"translate\":\"wtem.space\"}','{\"translate\":\"item.stick.1.lore.1.1\",\"color\":\"dark_gray\",\"italic\":false,\"underlined\":true}','{\"translate\":\"item.stick.1.lore.2.1\",\"color\":\"gray\",\"italic\":false}','{\"translate\":\"item.stick.1.lore.3.1\",\"color\":\"gray\",\"italic\":false}','{\"translate\":\"item.stick.1.lore.4.1\",\"color\":\"gray\",\"italic\":false}','{\"translate\":\"wtem.space\"}','{\"translate\":\"item.stick.1.lore.6.1\",\"color\":\"dark_gray\",\"italic\":false,\"underlined\":true}','{\"translate\":\"item.stick.1.lore.7.1\",\"color\":\"gray\",\"italic\":false}']},permutation:1,permuter:3,Enchantments:[{}]}"
             }
           ]
         }

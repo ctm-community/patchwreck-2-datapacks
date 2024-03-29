@@ -12,6 +12,6 @@ effect give @a[distance=..30] saturation 219 200 true
 execute as @e[distance=..30,type=interaction,tag=credits_interaction] run function game:lobby/credit_heads/interaction_tick
 
 #actionbar for heads
-execute as @a[distance=..30] at @s if score 5hz gremloop matches 1 if entity @e[distance=..5,type=item_display,tag=credits_head,tag=!selected] run title @s actionbar {"text":"Click heads for more info"}
-execute as @a[distance=..30] at @s if score 5hz gremloop matches 1 if entity @e[distance=..7,type=item_display,tag=credits_head,tag=selected] run title @s actionbar {"text":" "}
-execute as @a[distance=..30] at @s if score 5hz gremloop matches 1 unless entity @e[distance=..5,type=item_display,tag=credits_head,tag=!selected] run title @s actionbar {"text":" "}
+execute as @a[distance=..30] at @s if score 5hz gremloop matches 1 if entity @e[distance=..5,type=item_display,tag=credits_head,tag=!selected] run title @s actionbar {"translate":"game.functions.lobby.lobby_tick.1"}
+execute as @a[distance=..30] at @s if score 5hz gremloop matches 1 if entity @e[distance=..7,type=item_display,tag=credits_head,tag=selected] run title @s actionbar {"translate":"wtem.space"}
+execute as @a[distance=..30] at @s if score 5hz gremloop matches 1 unless entity @e[distance=..5,type=item_display,tag=credits_head,tag=!selected] run title @s actionbar {"translate":"wtem.space"}

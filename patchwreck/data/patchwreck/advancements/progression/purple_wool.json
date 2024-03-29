@@ -3,7 +3,9 @@
     "icon": {
       "item": "minecraft:purple_wool"
     },
-    "title": "Purple Wool",
+    "title": {
+      "translate": "advancements.purple_wool.title"
+    },
     "description": "",
     "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
     "frame": "goal",

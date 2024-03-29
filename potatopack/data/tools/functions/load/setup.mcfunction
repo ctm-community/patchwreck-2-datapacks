@@ -9,7 +9,7 @@ scoreboard objectives add n dummy
 scoreboard objectives add math dummy
 scoreboard objectives add game dummy
 scoreboard players add gamestate game 0
-scoreboard objectives add health health {"text":"♥","color":"red","italic":false}
+scoreboard objectives add health health {"translate":"score.health.name.1","color":"red","italic":false}
 execute as @a[gamemode=!creative,gamemode=!spectator] run scoreboard objectives remove sidebar
 #scoreboard objectives add sidebar dummy [{"text":"7","font":"loading","color":"aqua","italic":false},{"translate":"intro.2","font":"default","color":"aqua","italic":false},{"text":"7","font":"loading","color":"aqua"}]
 execute as @a[gamemode=!creative,gamemode=!spectator] run scoreboard objectives setdisplay sidebar sidebar

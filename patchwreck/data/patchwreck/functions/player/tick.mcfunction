@@ -24,7 +24,7 @@ execute as @s[scores={enderayo.shieldability=1..}] run scoreboard players set @s
 # Demononicon
 execute as @s[tag=enderayo.demonomicon] run scoreboard players enable @s enderayo.demonomicon
 execute if score @s enderayo.demonomicon matches 1.. if score $cooldown enderayo.demonomicon matches 0 at @s run function enderayo:items/demonomicon
-execute if score @s enderayo.demonomicon matches 1.. if score $cooldown enderayo.demonomicon matches 1.. at @s run title @s actionbar {"text":"Demonomicon's ability is on cooldown.","color":"gray","bold":false,"italic":false}
+execute if score @s enderayo.demonomicon matches 1.. if score $cooldown enderayo.demonomicon matches 1.. at @s run title @s actionbar {"translate":"patchwreck.functions.player.tick.1","color":"gray","bold":false,"italic":false}
 scoreboard players set @s enderayo.demonomicon 0
 
 # Special effects when hit by shulkers

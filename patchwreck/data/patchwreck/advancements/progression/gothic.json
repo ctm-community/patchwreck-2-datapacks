@@ -3,7 +3,9 @@
     "icon": {
       "item": "minecraft:polished_blackstone_bricks"
     },
-    "title": "Grim and Gothic",
+    "title": {
+      "translate": "advancements.gothic.title"
+    },
     "description": "",
     "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
     "frame": "task",

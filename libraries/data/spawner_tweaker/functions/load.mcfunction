@@ -13,7 +13,7 @@ scoreboard objectives add spawner_tweaker_slot_prev dummy
 scoreboard players set setup spawner_tweaker 2
 
 #Teams
-team add spawner_tweaker_green {"text":"Green","color":"green","bold":false,"italic":false,"underlined":false}
-team add spawner_tweaker_red {"text":"Red","color":"red","bold":false,"italic":false,"underlined":false}
+team add spawner_tweaker_green {"translate":"score.spawner_tweaker_green.name.1","color":"green","bold":false,"italic":false,"underlined":false}
+team add spawner_tweaker_red {"translate":"score.spawner_tweaker_red.name.1","color":"red","bold":false,"italic":false,"underlined":false}
 team modify spawner_tweaker_green color green
 team modify spawner_tweaker_red color red

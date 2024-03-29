@@ -3,7 +3,9 @@
     "icon": {
       "item": "minecraft:polished_basalt"
     },
-    "title": "Nuclear Wasteland",
+    "title": {
+      "translate": "advancements.wasteland.title"
+    },
     "description": "",
     "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
     "frame": "task",

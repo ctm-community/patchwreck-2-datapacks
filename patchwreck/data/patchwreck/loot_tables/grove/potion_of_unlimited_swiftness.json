@@ -10,7 +10,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display: {Name: '{\"text\":\"Potion of Unlimited Swiftness\",\"italic\":false}'}, custom_potion_effects: [{id: \"minecraft:speed\", amplifier: 0b, duration: -1}], CustomPotionColor: 2394879}"
+              "tag": "{display: {Name: '{\"translate\":\"item.splash_potion.2.name.1\",\"italic\":false}'}, custom_potion_effects: [{id: \"minecraft:speed\", amplifier: 0b, duration: -1}], CustomPotionColor: 2394879}"
             }
           ]
         }

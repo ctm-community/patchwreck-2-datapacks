@@ -10,7 +10,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display: {Name: '{\"text\":\"Irradiated Boots\",\"color\":\"#6F2F94\",\"italic\":false}', color: 7286676}, HideFlags: 64, Unbreakable: 1b, Damage: 0, Enchantments: [{id: \"minecraft:fire_protection\", lvl: 2s}, {id: \"minecraft:protection\", lvl: 1s}], AttributeModifiers: [{AttributeName: \"generic.movement_speed\", Name: \"generic.movement_speed\", Amount: 0.11d, Operation: 1, UUID: [I; 1866266605, 1134776050, -1235931770, 1430384476], Slot: \"feet\"}, {AttributeName: \"generic.armor\", Name: \"generic.armor\", Amount: 1.9d, Operation: 0, UUID: [I; -1254263885, -289255874, -1359822856, 80395654], Slot: \"feet\"}]}"
+              "tag": "{display: {Name: '{\"translate\":\"item.leather_boots.2.name.1\",\"color\":\"#6F2F94\",\"italic\":false}', color: 7286676}, HideFlags: 64, Unbreakable: 1b, Damage: 0, Enchantments: [{id: \"minecraft:fire_protection\", lvl: 2s}, {id: \"minecraft:protection\", lvl: 1s}], AttributeModifiers: [{AttributeName: \"generic.movement_speed\", Name: \"generic.movement_speed\", Amount: 0.11d, Operation: 1, UUID: [I; 1866266605, 1134776050, -1235931770, 1430384476], Slot: \"feet\"}, {AttributeName: \"generic.armor\", Name: \"generic.armor\", Amount: 1.9d, Operation: 0, UUID: [I; -1254263885, -289255874, -1359822856, 80395654], Slot: \"feet\"}]}"
             }
           ]
         }

@@ -8,10 +8,10 @@ execute unless block 995 105 1030 minecraft:barrier run summon minecraft:block_d
 setblock 995 105 1030 minecraft:barrier
 
 # Bells and whistles
-tellraw @a [{"text":"Neon Metropolis","color":"light_purple","italic":false},{"text":" unlocked","color":"white"}]
+tellraw @a [{"translate":"entity.text_display.24.text.1","color":"light_purple","italic":false},{"translate":"patchwreck.functions.monument.placed_cyan_wool.2","color":"white"}]
 title @a times 20t 60t 30t
-title @a title {"text":" ","color":"dark_aqua","italic":false}
-title @a subtitle {"text":"Cyan Wool Placed","color":"dark_aqua","italic":false}
+title @a title {"translate":"wtem.space","color":"dark_aqua","italic":false}
+title @a subtitle {"translate":"patchwreck.functions.monument.placed_cyan_wool.4","color":"dark_aqua","italic":false}
 
 # Grant advancement to remaining players
 advancement grant @a[advancements={patchwreck:progression/cyan_wool=false}] only patchwreck:progression/cyan_wool

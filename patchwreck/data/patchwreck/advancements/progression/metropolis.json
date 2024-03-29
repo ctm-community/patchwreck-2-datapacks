@@ -3,7 +3,9 @@
     "icon": {
       "item": "minecraft:polished_deepslate"
     },
-    "title": "Neon Metropolis",
+    "title": {
+      "translate": "advancements.metropolis.title"
+    },
     "description": "",
     "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
     "frame": "task",

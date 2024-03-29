@@ -3,7 +3,9 @@
     "icon": {
       "item": "minecraft:lime_wool"
     },
-    "title": "Lime Wool",
+    "title": {
+      "translate": "advancements.lime_wool.title"
+    },
     "description": "",
     "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
     "frame": "goal",
